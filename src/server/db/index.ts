@@ -1,4 +1,6 @@
-import { drizzle } from "drizzle-orm/postgres-js";
+// import { drizzle } from "drizzle-orm/postgres-js";
+import { drizzle } from "drizzle-orm/vercel-postgres";
+
 import postgres from "postgres";
 
 import { env } from "@/env";
