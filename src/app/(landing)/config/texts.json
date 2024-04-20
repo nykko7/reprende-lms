@@ -1,0 +1,165 @@
+{
+  "heroSection": {
+    "badgeText": "¿Quieres cambiar el miedo por seguridad?",
+    "titleAccent": "Reaprende",
+    "titleNormal": " las matemáticas",
+    "description": "Talleres de nivelación en matemáticas diseñados para comprender los contenidos desde cero.",
+    "buttonText": "Comenzar"
+  },
+  "dashboardPreviewSection": {
+    "imagePath": "/landing/dashboard-preview.png",
+    "imageAlt": "Vista previa del dashboard"
+  },
+  "learningRouteSection": {
+    "title": "Ruta de Aprendizaje",
+    "description": "Un recorrido paso a paso diseñado para fortalecer tus habilidades matemáticas y aumentar tu confianza.",
+    "imagePath": "/landing/learning-route.png",
+    "steps": [
+      {
+        "title": "Números",
+        "description": "Aprende a utilizar los números de manera efectiva y desarrolla habilidades matemáticas fundamentales. Explora los números enteros, fracciones, decimales y porcentajes."
+      },
+      {
+        "title": "Álgebra y Funciones",
+        "description": "Domina el álgebra básica y aprende a resolver ecuaciones y desigualdades lineales. Conviértete en un experto en simplificación y manipulación de expresiones algebraicas."
+      },
+      {
+        "title": "Geometría",
+        "description": "Observa el mundo a través de la geometría y aprende a reconocer figuras, cuerpos y sus características. Descubrirás conceptos elementales como puntos, líneas, ángulos y cómo estos nos sirvan para formar polígonos, círculos y cuerpos."
+      },
+      {
+        "title": "Probabilidades y Estadística",
+        "description": "Aprende a analizar y entender datos en este taller práctico. Descubre cómo trabajar con medidas de tendencia central, dispersión, gráficos estadísticos y conceptos básicos de probabilidad."
+      }
+    ],
+    "imageAlt": "Ruta de aprendizaje"
+  },
+  "featuresSection": {
+    "title": "¿Qué Hace Únicos a Nuestros Talleres?",
+    "description": "Descubre las características que hacen de nuestros talleres una nueva experiencia de aprendizaje de las matemáticas.",
+    "features": [
+      {
+        "title": "Aprende desde Cero",
+        "description": "Los talleres están diseñados para que puedas aprender desde cero, sin importar tu nivel de conocimiento previo.",
+        "icon": "GraduationCap"
+      },
+      {
+        "title": "A tu Propio Ritmo",
+        "description": "Puedes tomar los talleres a tu propio ritmo, sin presiones ni fechas límite.",
+        "icon": "Activity"
+      },
+      {
+        "title": "Accesible",
+        "description": "Los talleres están diseñados para que puedas acceder a ellos desde cualquier dispositivo.",
+        "icon": "MonitorPlay"
+      }
+    ]
+  },
+  "methodologySection": {
+    "title": "Metodología de Aprendizaje",
+    "description": "Descubre RECREA, nuestra metodología única que combina reflexión, curiosidad y aplicación práctica para un aprendizaje matemático efectivo y emocionante.",
+    "imagePath": "/landing/methodology.png",
+    "imageAlt": "Metodología de aprendizaje",
+    "steps": [
+      {
+        "title": "Reflexión sobre el Error",
+        "description": "Enfocarse en los errores cometidos para comprender su origen y aprender de ellos."
+      },
+      {
+        "title": "Estimular la Curiosidad",
+        "description": "Utilizar la curiosidad como una herramienta para impulsar el aprendizaje, motivando a los estudiantes a preguntar y explorar."
+      },
+      {
+        "title": "Construcción del Conocimiento",
+        "description": "Los alumnos construyen activamente su conocimiento, integrando la nueva información con sus conocimientos previos."
+      },
+      {
+        "title": "Reconocimiento de Patrones",
+        "description": "Fomentar la exploración de patrones para identificar relaciones y conexiones en el contenido matemático."
+      },
+      {
+        "title": "Exploración Emocional",
+        "description": "Integrar las emociones en el proceso de aprendizaje para hacerlo más significativo y memorable."
+      },
+      {
+        "title": "Aplicación y Modelado",
+        "description": "Ayudar a los estudiantes a modelar fórmulas, pasando del lenguaje natural al lenguaje algebraico y matemático, y aplicar lo que han aprendido en contextos prácticos."
+      }
+    ]
+  },
+  "stepsSection": {
+    "title": "Comienza Ahora...",
+    "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius?",
+    "steps": [
+      {
+        "step": "Paso 1",
+        "title": "Regístrate",
+        "description": "Una vez completado tu registro podrás acceder a los talleres."
+      },
+      {
+        "step": "Paso 2",
+        "title": "Escoge tu Modalidad",
+        "description": "Puedes tomar los talleres de manera individual o tomar la ruta completa."
+      },
+      {
+        "step": "Paso 3",
+        "title": "Accede a los Talleres",
+        "description": "Podrás acceder a los talleres y comenzar tu aprendizaje."
+      }
+    ]
+  },
+  "testimonialsSection": {
+    "title": "Testimonios",
+    "items": [
+      {
+        "name": "Juan",
+        "testimonial": "La profe cambió mi perspectiva sobre las matemáticas."
+      },
+      {
+        "name": "María",
+        "testimonial": "Gracias a estos talleres, ahora me siento confiada en mis habilidades matemáticas."
+      }
+    ]
+  },
+  "modalitiesSection": {
+    "title": "Elige tu camino de aprendizaje",
+    "items": [
+      {
+        "name": "Individual",
+        "description": "Aprende a tu propio ritmo con acceso ilimitado a un taller individual."
+      },
+      {
+        "name": "Completo",
+        "description": "Acceso total a todos los talleres y material adicional para un aprendizaje integral."
+      }
+    ]
+  },
+  "pricingSection": {
+    "title": "Planes y Precios",
+    "items": [
+      {
+        "plan": "Básico",
+        "price": "$20/mes",
+        "features": [
+          "Acceso a un taller",
+          "Soporte por email",
+          "Acceso a la comunidad"
+        ]
+      },
+      {
+        "plan": "Premium",
+        "price": "$50/mes",
+        "features": [
+          "Acceso a todos los talleres",
+          "Soporte prioritario",
+          "Sesiones en vivo"
+        ]
+      }
+    ]
+  },
+  "whoAmISection": {
+    "title": "¿Quién Soy?",
+    "description": "Hola, soy [Nombre], tu instructor y mentor en esta jornada de aprendizaje. Estoy aquí para ayudarte a descubrir y potenciar tus habilidades matemáticas.",
+    "imageAlt": "Imagen del instructor"
+  }
+}
