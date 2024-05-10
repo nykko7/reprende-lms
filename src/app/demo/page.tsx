@@ -6,7 +6,7 @@ import {
   StepsSection,
 } from "./_sections";
 
-import texts from "./config/texts.json";
+import texts from "./_config/texts.json";
 
 export default async function Home() {
   return (
