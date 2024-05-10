@@ -1,7 +1,7 @@
 "use client";
 
 import { CopyIcon } from "lucide-react";
-import { landingRoutes } from "../routes";
+import { landingRoutes } from "../_config/routes";
 import SidebarItem from "./SidebarItem";
 
 export const SidebarRoutes = () => {

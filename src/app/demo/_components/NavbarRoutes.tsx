@@ -11,7 +11,7 @@ import {
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import React from "react";
-import { landingRoutes } from "../routes";
+import { landingRoutes } from "../_config/routes";
 
 export const NavbarRoutes = () => {
   return (

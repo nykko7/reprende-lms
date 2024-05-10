@@ -1,6 +1,5 @@
 import Logo from "@/components/brand/Logo";
 import { Separator } from "@/components/ui/separator";
-import { SidebarRoutes } from "./SidebarRoutes";
 
 export const Sidebar = () => {
   return (
@@ -9,7 +8,7 @@ export const Sidebar = () => {
         <Logo />
       </div>
       <div className="space-y-4 py-4">
-        <SidebarRoutes />
+        {/* <SidebarRoutes /> */}
         <Separator />
         {/* <div className="px-3 py-2">
           <h2 className="mb-2 px-4 text-lg font-semibold tracking-tight">
