@@ -16,20 +16,22 @@
 // };
 
 import { icons } from "lucide-react";
+import { type FC } from "react";
 
 export type iconName = keyof typeof icons;
 
-interface IconProps {
+type IconProps = {
   name: string;
-}
+  className?: string;
+};
 
-const Icon = ({ name }: IconProps) => {
+const Icon: FC<IconProps> = ({ name, className }) => {
   if (!icons[name as iconName]) {
     return null;
   }
   const LucideIcon = icons[name as iconName];
 
-  return <LucideIcon />;
+  return <LucideIcon className={className} />;
 };
 
 export default Icon;

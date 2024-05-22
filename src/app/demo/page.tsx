@@ -1,9 +1,9 @@
 import {
-  FeaturesSection,
   HeroSection,
   LearningRouteSection,
   MethodologySection,
   StepsSection,
+  TargetAudienceSection,
 } from "./_sections";
 
 import texts from "./_config/texts.json";
@@ -17,11 +17,11 @@ export default async function Home() {
       {/* Dashboard Video and/or Image: */}
       {/* <DashboardPreviewSection {...texts.dashboardPreviewSection} /> */}
 
+      {/* Target Audience section */}
+      <TargetAudienceSection {...texts.targetAudienceSection} />
+
       {/* Learning route section*/}
       <LearningRouteSection {...texts.learningRouteSection} />
-
-      {/* Features section */}
-      <FeaturesSection {...texts.featuresSection} />
 
       {/* Methodology section */}
       <MethodologySection {...texts.methodologySection} />

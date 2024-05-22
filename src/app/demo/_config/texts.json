@@ -3,90 +3,196 @@
     "badgeText": "¿Quieres cambiar el miedo por seguridad?",
     "titleAccent": "Reaprende",
     "titleNormal": " las matemáticas",
-    "description": "Talleres de nivelación en matemáticas diseñados para comprender los contenidos desde cero.",
-    "buttonText": "Comenzar"
+    "description": "Curso de nivelación en matemáticas diseñado para comprender los contenidos desde cero.",
+    "buttonText": "Reserva tu cupo"
   },
-  "dashboardPreviewSection": {
-    "imagePath": "/landing/dashboard-preview.png",
-    "imageAlt": "Vista previa del dashboard"
+  "targetAudienceSection": {
+    "title": "🤔 ¿Para quién es este curso?",
+    "profiles": {
+      "title": "👉 Si eres...",
+      "list": [
+        {
+          "title": "Estudiante",
+          "descriptions": [
+            "Estás en enseñanza media (1° a 4° medio) buscando fortalecer tus habilidades matemáticas.",
+            "Te estás preparando para la PAES 2024."
+          ]
+        },
+        {
+          "title": "Profesor",
+          "descriptions": ["Quieres aprender nuevas estrategias de enseñanza."]
+        },
+        {
+          "title": "Profesional o Egresado",
+          "descriptions": [
+            "Necesitas mejorar tu comprensión matemática.",
+            "Estás considerando estudiar una nueva carrera."
+          ]
+        },
+        {
+          "title": "Persona con dificultades en matemáticas",
+          "descriptions": [
+            "Siempre has tenido dificultades con las matemáticas y quieres cambiar esta situación."
+          ]
+        }
+      ]
+    },
+    "goals": {
+      "title": "✅ Y quieres...",
+      "list": [
+        "Saber qué hacer, cómo y por qué frente a cualquier ejercicio matemático.",
+        "Poseer estrategias para resolver ejercicios de manera efectiva y eficiente.",
+        "Reconocer patrones y representarlos de forma numérica y algebraica.",
+        "Reconocer tus errores como elementos valiosos del proceso de aprendizaje.",
+        "Aprender nuevos contenidos de forma autónoma.",
+        "Ser reflexivo y crítico con los problemas matemáticos."
+      ]
+    },
+    "footer": "Si te identificas con alguna de estas descripciones, este curso es para ti."
+  },
+  "methodologySection": {
+    "title": "Metodología de aprendizaje",
+    "description": "Aprende desde la reflexión, la curiosidad y la aplicación práctica para un aprendizaje efectivo y emocionante.",
+    "features": [
+      {
+        "title": "Reflexión sobre el error",
+        "description": "Prestar atención a los errores cometidos para comprender su origen y aprender de ellos.",
+        "icon": "ShieldAlert"
+      },
+      {
+        "title": "Estimular la curiosidad",
+        "description": "Utilizar la curiosidad como una herramienta para impulsar el aprendizaje, motivando a los estudiantes a preguntar y explorar.",
+        "icon": "Lightbulb"
+      },
+      {
+        "title": "Aprendizaje activo",
+        "description": "Los alumnos construyen activamente su conocimiento, integrando la nueva información con sus conocimientos previos.",
+        "icon": "TestTubeDiagonal"
+      },
+      {
+        "title": "Reconocimiento de patrones",
+        "description": "Fomentar la exploración de patrones para identificar relaciones y conexiones en el contenido matemático.",
+        "icon": "BrainCircuit"
+      },
+      {
+        "title": "Exploración emocional",
+        "description": "Integrar las emociones en el proceso de aprendizaje para hacerlo más significativo y memorable.",
+        "icon": "HeartHandshake"
+      },
+      {
+        "title": "Aplicación y modelado",
+        "description": "Enseñar a modelar fórmulas, pasando del lenguaje natural al lenguaje algebraico y matemático, aplicando el contenido a contextos prácticos.",
+        "icon": "PencilRuler"
+      }
+    ]
   },
   "learningRouteSection": {
     "title": "Ruta de Aprendizaje",
-    "description": "Un recorrido paso a paso diseñado para fortalecer tus habilidades matemáticas y aumentar tu confianza.",
+    "description": "El curso se compone de 4 niveles progresivos, diseñados para que el estudiante construya una comprensión integral de las matemáticas.",
     "imagePath": "/landing/learning-route.png",
     "steps": [
       {
+        "color": "blue",
         "title": "Números",
-        "description": "Aprende a utilizar los números de manera efectiva y desarrolla habilidades matemáticas fundamentales. Explora los números enteros, fracciones, decimales y porcentajes."
+        "description": "Entenderás la lógica y las bases de las matemáticas",
+        "details": [
+          {
+            "type": "paragraph",
+            "content": "Aprenderás a operar (sumar, restar, multiplicar y dividir) todos los tipos de números:"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Negativos y positivos",
+              "Potencias y raíces",
+              "Fracciones y decimales",
+              "Porcentaje",
+              "Razones y proporcionalidad directa e inversa"
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": "Junto con sus propiedades y aplicaciones."
+          }
+        ]
       },
       {
+        "color": "green",
         "title": "Álgebra y Funciones",
-        "description": "Domina el álgebra básica y aprende a resolver ecuaciones y desigualdades lineales. Conviértete en un experto en simplificación y manipulación de expresiones algebraicas."
+        "description": "Expande tu comprensión de las matemáticas más allá de números",
+        "details": [
+          {
+            "type": "paragraph",
+            "content": "Identificarás patrones y relaciones algebraicas:"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Expresiones algebraicas",
+              "Reducción de términos",
+              "Productos notables",
+              "Ecuación y función lineal",
+              "Sistema de ecuaciones",
+              "Ecuación y función cuadrática"
+            ]
+          }
+        ]
       },
       {
+        "color": "yellow",
         "title": "Geometría",
-        "description": "Observa el mundo a través de la geometría y aprende a reconocer figuras, cuerpos y sus características. Descubrirás conceptos elementales como puntos, líneas, ángulos y cómo estos nos sirvan para formar polígonos, círculos y cuerpos."
+        "description": "Desarrollarás una comprensión visual y espacial de las matemáticas",
+        "details": [
+          {
+            "type": "paragraph",
+            "content": "Podrás reconocer cómo se construyen las fórmulas de:"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Perímetro, área de figuras geométricas",
+              "Área y perímetro del círculo.",
+              "Volumen de cuerpos geométricos",
+              "Teorema de Pitágoras"
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": "Además de aprender:"
+          },
+
+          {
+            "type": "list",
+            "items": ["Vectores", "Transformaciones isométricas"]
+          }
+        ]
       },
       {
+        "color": "red",
         "title": "Probabilidades y Estadística",
-        "description": "Aprende a analizar y entender datos en este taller práctico. Descubre cómo trabajar con medidas de tendencia central, dispersión, gráficos estadísticos y conceptos básicos de probabilidad."
+        "description": "Utilizarás TODO lo anterior para comunicar información",
+        "details": [
+          {
+            "type": "paragraph",
+            "content": "Ordenarás y clasificarás los datos para obtener información:"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Medidas de tendencia central (datos agrupados y desagrupados)",
+              "Gráficos y tablas",
+              "Medidas de posición",
+              "Diagrama de cajón",
+              "Regla de Laplace",
+              "Probabilidades"
+            ]
+          }
+        ]
       }
     ],
     "imageAlt": "Ruta de aprendizaje"
   },
-  "featuresSection": {
-    "title": "¿Qué Hace Únicos a Nuestros Talleres?",
-    "description": "Descubre las características que hacen de nuestros talleres una nueva experiencia de aprendizaje de las matemáticas.",
-    "features": [
-      {
-        "title": "Aprende desde Cero",
-        "description": "Los talleres están diseñados para que puedas aprender desde cero, sin importar tu nivel de conocimiento previo.",
-        "icon": "GraduationCap"
-      },
-      {
-        "title": "A tu Propio Ritmo",
-        "description": "Puedes tomar los talleres a tu propio ritmo, sin presiones ni fechas límite.",
-        "icon": "Activity"
-      },
-      {
-        "title": "Accesible",
-        "description": "Los talleres están diseñados para que puedas acceder a ellos desde cualquier dispositivo.",
-        "icon": "MonitorPlay"
-      }
-    ]
-  },
-  "methodologySection": {
-    "title": "Metodología de Aprendizaje",
-    "description": "Descubre RECREA, nuestra metodología única que combina reflexión, curiosidad y aplicación práctica para un aprendizaje matemático efectivo y emocionante.",
-    "imagePath": "/landing/methodology.png",
-    "imageAlt": "Metodología de aprendizaje",
-    "steps": [
-      {
-        "title": "Reflexión sobre el Error",
-        "description": "Enfocarse en los errores cometidos para comprender su origen y aprender de ellos."
-      },
-      {
-        "title": "Estimular la Curiosidad",
-        "description": "Utilizar la curiosidad como una herramienta para impulsar el aprendizaje, motivando a los estudiantes a preguntar y explorar."
-      },
-      {
-        "title": "Construcción del Conocimiento",
-        "description": "Los alumnos construyen activamente su conocimiento, integrando la nueva información con sus conocimientos previos."
-      },
-      {
-        "title": "Reconocimiento de Patrones",
-        "description": "Fomentar la exploración de patrones para identificar relaciones y conexiones en el contenido matemático."
-      },
-      {
-        "title": "Exploración Emocional",
-        "description": "Integrar las emociones en el proceso de aprendizaje para hacerlo más significativo y memorable."
-      },
-      {
-        "title": "Aplicación y Modelado",
-        "description": "Ayudar a los estudiantes a modelar fórmulas, pasando del lenguaje natural al lenguaje algebraico y matemático, y aplicar lo que han aprendido en contextos prácticos."
-      }
-    ]
-  },
+
   "stepsSection": {
     "title": "Comienza Ahora...",
     "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius?",
@@ -113,50 +219,38 @@
     "items": [
       {
         "name": "Juan",
+        "description": "Estudiante de 4to medio",
         "testimonial": "La profe cambió mi perspectiva sobre las matemáticas."
       },
       {
         "name": "María",
-        "testimonial": "Gracias a estos talleres, ahora me siento confiada en mis habilidades matemáticas."
+        "description": "Estudiante universitaria",
+        "testimonial": "Gracias a este curso, ahora me siento confiada en mis habilidades matemáticas."
       }
     ]
   },
   "modalitiesSection": {
-    "title": "Elige tu camino de aprendizaje",
+    "title": "Elige tu Camino de Aprendizaje",
     "items": [
       {
-        "name": "Individual",
-        "description": "Aprende a tu propio ritmo con acceso ilimitado a un taller individual."
+        "name": "Grabado",
+        "description": "Clases grabadas, consultas ilimitadas por WhatsApp, material descargable y videos complementarios.",
+        "price": "$45,000/mes",
+        "features": ["Sesiones grabadas", "Acompañamiento por Whatsapp"]
       },
       {
-        "name": "Completo",
-        "description": "Acceso total a todos los talleres y material adicional para un aprendizaje integral."
-      }
-    ]
-  },
-  "pricingSection": {
-    "title": "Planes y Precios",
-    "items": [
-      {
-        "plan": "Básico",
-        "price": "$20/mes",
+        "name": "En Vivo",
+        "description": "Clases en Zoom, consultas ilimitadas por WhatsApp, acceso a maratones PAES y material descargable.",
+        "price": "$65,000/mes",
         "features": [
-          "Acceso a un taller",
-          "Soporte por email",
-          "Acceso a la comunidad"
-        ]
-      },
-      {
-        "plan": "Premium",
-        "price": "$50/mes",
-        "features": [
-          "Acceso a todos los talleres",
-          "Soporte prioritario",
-          "Sesiones en vivo"
+          "Sesiones en vivo",
+          "Acompañamiento por Whatsapp",
+          "Resolución de dudas en tiempo real"
         ]
       }
     ]
   },
+
   "whoAmISection": {
     "title": "¿Quién Soy?",
     "description": "Hola, soy [Nombre], tu instructor y mentor en esta jornada de aprendizaje. Estoy aquí para ayudarte a descubrir y potenciar tus habilidades matemáticas.",

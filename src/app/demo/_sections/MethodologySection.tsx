@@ -1,26 +1,17 @@
-import Image from "next/image";
 import { type FC } from "react";
+import Feature, { type FeatureProps } from "../_components/Feature";
 import { SectionWrapper } from "../_components/SectionWrapper";
-
-interface MethodologyStep {
-  title: string;
-  description: string;
-}
 
 interface MethodologySectionProps {
   title: string;
   description: string;
-  imagePath: string;
-  imageAlt: string;
-  steps: MethodologyStep[];
+  features: FeatureProps[];
 }
 
 const MethodologySection: FC<MethodologySectionProps> = ({
   title,
   description,
-  steps,
-  imagePath,
-  imageAlt,
+  features,
 }) => {
   return (
     <SectionWrapper className="mb-32 mt-32">
@@ -28,31 +19,16 @@ const MethodologySection: FC<MethodologySectionProps> = ({
         <h2 className="text-4xl font-bold sm:text-5xl">{title}</h2>
         <p className="mt-4 text-lg text-muted-foreground">{description}</p>
       </div>
-      <div className="md:gap:32 mx-auto grid max-w-6xl grid-cols-1 gap-16 lg:grid-cols-2">
-        <div className="flex items-center justify-center">
-          <Image
-            src={imagePath}
-            alt={imageAlt}
-            width={600}
-            height={400}
-            quality={100}
-            className="rounded-md bg-background shadow-2xl ring-1"
-          />
-        </div>
-        <div className="ml-10">
-          <ol className="relative border-l-4">
-            {steps.map((step, index) => (
-              <li key={index} className="mb-10 ml-10">
-                <span className="absolute -left-6 flex h-12 w-12 items-center justify-center rounded-full bg-primary text-2xl font-bold text-primary-foreground transition-all">
-                  {step.title[0]}
-                </span>
-                <h3 className="text-xl font-medium">{step.title}</h3>
-                <p className="text-base text-muted-foreground">
-                  {step.description}
-                </p>
-              </li>
-            ))}
-          </ol>
+      <div className="mx-auto max-w-6xl px-6 lg:px-8">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+          {features.map((feature, index) => (
+            <Feature
+              key={index}
+              title={feature.title}
+              description={feature.description}
+              icon={feature.icon}
+            />
+          ))}
         </div>
       </div>
     </SectionWrapper>
