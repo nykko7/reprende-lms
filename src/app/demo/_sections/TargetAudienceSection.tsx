@@ -1,6 +1,13 @@
 "use client";
+import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { ArrowRightIcon, CheckIcon, ChevronRight } from "lucide-react";
+import {
+  ArrowRight,
+  ArrowRightIcon,
+  CheckIcon,
+  ChevronRight,
+} from "lucide-react";
+import Link from "next/link";
 import { type FC } from "react";
 import { SectionWrapper } from "../_components/SectionWrapper";
 
@@ -18,6 +25,7 @@ interface TargetAudienceSectionProps {
     list: string[];
   };
   footer: string;
+  buttonText: string;
 }
 
 const TargetAudienceSection: FC<TargetAudienceSectionProps> = ({
@@ -25,10 +33,13 @@ const TargetAudienceSection: FC<TargetAudienceSectionProps> = ({
   profiles,
   goals,
   footer,
+  buttonText,
 }) => {
   return (
-    <SectionWrapper className="mb-32 mt-32 flex flex-col gap-y-6">
-      <h2 className="text-center text-4xl font-bold sm:text-5xl">{title}</h2>
+    <SectionWrapper className="flex flex-col gap-y-6">
+      <h2 className="mb-4 text-center text-4xl font-bold sm:text-5xl">
+        {title}
+      </h2>
       <div className="grid gap-6 md:grid-cols-2">
         <Card className="border-4 border-orange-500">
           <CardHeader>
@@ -79,6 +90,18 @@ const TargetAudienceSection: FC<TargetAudienceSectionProps> = ({
         </Card>
       </div>
       <h3 className="text-center text-2xl font-bold">{footer}</h3>
+      <div className="flex justify-center">
+        <Button
+          asChild
+          size={"lg"}
+          className="border-2 font-bold"
+          variant={"outline"}
+        >
+          <Link href="/#inscripciones">
+            {buttonText} <ArrowRight className="ml-2 h-5 w-5" />
+          </Link>
+        </Button>
+      </div>
     </SectionWrapper>
   );
 };

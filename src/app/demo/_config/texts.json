@@ -18,10 +18,7 @@
             "Te estás preparando para la PAES 2024."
           ]
         },
-        {
-          "title": "Profesor",
-          "descriptions": ["Quieres aprender nuevas estrategias de enseñanza."]
-        },
+
         {
           "title": "Profesional o Egresado",
           "descriptions": [
@@ -29,11 +26,10 @@
             "Estás considerando estudiar una nueva carrera."
           ]
         },
+
         {
-          "title": "Persona con dificultades en matemáticas",
-          "descriptions": [
-            "Siempre has tenido dificultades con las matemáticas y quieres cambiar esta situación."
-          ]
+          "title": "Docente",
+          "descriptions": ["Quieres aprender nuevas estrategias de enseñanza."]
         }
       ]
     },
@@ -41,24 +37,20 @@
       "title": "✅ Y quieres...",
       "list": [
         "Saber qué hacer, cómo y por qué frente a cualquier ejercicio matemático.",
-        "Poseer estrategias para resolver ejercicios de manera efectiva y eficiente.",
+        "Tener estrategias para resolver ejercicios de manera efectiva y eficiente.",
         "Reconocer patrones y representarlos de forma numérica y algebraica.",
         "Reconocer tus errores como elementos valiosos del proceso de aprendizaje.",
         "Aprender nuevos contenidos de forma autónoma.",
         "Ser reflexivo y crítico con los problemas matemáticos."
       ]
     },
-    "footer": "Si te identificas con alguna de estas descripciones, este curso es para ti."
+    "footer": "Si te identificas con alguna de estas descripciones, este curso es para ti.",
+    "buttonText": "Inscríbete ahora"
   },
   "methodologySection": {
-    "title": "Metodología de aprendizaje",
+    "title": "📖 Metodología de aprendizaje",
     "description": "Aprende desde la reflexión, la curiosidad y la aplicación práctica para un aprendizaje efectivo y emocionante.",
     "features": [
-      {
-        "title": "Reflexión sobre el error",
-        "description": "Prestar atención a los errores cometidos para comprender su origen y aprender de ellos.",
-        "icon": "ShieldAlert"
-      },
       {
         "title": "Estimular la curiosidad",
         "description": "Utilizar la curiosidad como una herramienta para impulsar el aprendizaje, motivando a los estudiantes a preguntar y explorar.",
@@ -75,20 +67,25 @@
         "icon": "BrainCircuit"
       },
       {
-        "title": "Exploración emocional",
-        "description": "Integrar las emociones en el proceso de aprendizaje para hacerlo más significativo y memorable.",
-        "icon": "HeartHandshake"
-      },
-      {
         "title": "Aplicación y modelado",
         "description": "Enseñar a modelar fórmulas, pasando del lenguaje natural al lenguaje algebraico y matemático, aplicando el contenido a contextos prácticos.",
         "icon": "PencilRuler"
+      },
+      {
+        "title": "Reflexión sobre el error",
+        "description": "Prestar atención a los errores cometidos para comprender su origen y aprender de ellos.",
+        "icon": "ShieldAlert"
+      },
+      {
+        "title": "Exploración emocional",
+        "description": "Integrar las emociones en el proceso de aprendizaje para hacerlo más significativo y memorable.",
+        "icon": "HeartHandshake"
       }
     ]
   },
   "learningRouteSection": {
-    "title": "Ruta de Aprendizaje",
-    "description": "El curso se compone de 4 niveles progresivos, diseñados para que el estudiante construya una comprensión integral de las matemáticas.",
+    "title": "🚀 Ruta de Aprendizaje",
+    "description": "El curso se compone de 4 niveles, diseñados de manera progresiva para una comprensión integral de las matemáticas.",
     "imagePath": "/landing/learning-route.png",
     "steps": [
       {
@@ -106,19 +103,27 @@
               "Negativos y positivos",
               "Potencias y raíces",
               "Fracciones y decimales",
-              "Porcentaje",
-              "Razones y proporcionalidad directa e inversa"
+              "Porcentaje"
             ]
           },
           {
             "type": "paragraph",
-            "content": "Junto con sus propiedades y aplicaciones."
+            "content": "Además de aprender:"
+          },
+
+          {
+            "type": "list",
+            "items": ["Razones", "Proporcionalidad directa e inversa"]
+          },
+          {
+            "type": "paragraph",
+            "content": "Junto con sus propiedades y aplicaciones"
           }
         ]
       },
       {
         "color": "green",
-        "title": "Álgebra y Funciones",
+        "title": "Álgebra y funciones",
         "description": "Expande tu comprensión de las matemáticas más allá de números",
         "details": [
           {
@@ -169,7 +174,7 @@
       },
       {
         "color": "red",
-        "title": "Probabilidades y Estadística",
+        "title": "Probabilidades y estadística",
         "description": "Utilizarás TODO lo anterior para comunicar información",
         "details": [
           {
@@ -189,8 +194,7 @@
           }
         ]
       }
-    ],
-    "imageAlt": "Ruta de aprendizaje"
+    ]
   },
 
   "stepsSection": {

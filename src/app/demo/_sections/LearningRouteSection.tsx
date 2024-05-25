@@ -1,5 +1,4 @@
 import { cn } from "@/lib/utils";
-import Image from "next/image";
 import { Fragment, type FC } from "react";
 import { SectionWrapper } from "../_components/SectionWrapper";
 
@@ -7,7 +6,6 @@ interface LearningRouteSectionProps {
   title: string;
   description: string;
   imagePath: string;
-  imageAlt: string;
   steps: {
     title: string;
     description: string;
@@ -27,66 +25,76 @@ const CourseColors: Record<string, string> = {
   yellow: "bg-yellow-700",
 };
 
+const CourseBgColors: Record<string, string> = {
+  red: "bg-red-900/10",
+  blue: "bg-blue-900/10",
+  green: "bg-green-900/10",
+  yellow: "bg-yellow-700/10",
+};
+
 const LearningRouteSection: FC<LearningRouteSectionProps> = ({
   title,
   description,
   steps,
-  imagePath,
-  imageAlt,
 }) => {
   return (
-    <SectionWrapper className="mb-32 mt-32">
-      <div className="mx-auto mb-12 max-w-2xl sm:text-center">
+    <SectionWrapper className="mb-0">
+      <div className="mx-auto mb-12 max-w-3xl text-center">
         <h2 className="text-4xl font-bold sm:text-5xl">{title}</h2>
         <p className="mt-4 text-lg text-muted-foreground">{description}</p>
       </div>
-      <div className="md:gap:32 mx-auto grid max-w-6xl grid-cols-1 gap-16 lg:grid-cols-2">
-        <div className="ml-10 ">
-          <ol className="relative border-l-4">
+      <div className="mx-auto flex max-w-3xl justify-center">
+        <div className="ml-4 ">
+          <ol className="relative border-l-8">
             {steps.map((step, index) => (
               <li key={index} className="mb-10 ml-10">
                 <span
                   className={cn(
-                    "absolute -left-6 flex h-12 w-12 items-center justify-center rounded-full text-2xl font-bold text-accent-foreground transition-all",
+                    "absolute -left-8 flex h-14 w-14 items-center justify-center rounded-full text-3xl font-extrabold text-accent-foreground transition-all",
                     CourseColors[step.color],
                   )}
                 >
                   {index + 1}
                 </span>
-                <h3 className="text-xl font-medium">{step.title}</h3>
-                <p className="text-base text-muted-foreground">
-                  {step.description}
-                </p>
-                <div className="my-2 flex flex-col gap-y-2 text-sm">
-                  {step.details.map((detail, index) => (
-                    <Fragment key={index}>
-                      {detail.type === "paragraph" && (
-                        <p className="">{detail.content}</p>
-                      )}
-                      {detail.type === "list" && (
-                        <ul className="ml-4 list-inside list-disc text-sm">
-                          {detail.items?.map((item, subIndex) => (
-                            <li key={subIndex}>{item}</li>
-                          ))}
-                        </ul>
-                      )}
-                    </Fragment>
-                  ))}
+                <div
+                  className={cn(
+                    "rounded-lg border bg-red-900/20",
+                    CourseBgColors[step.color],
+                  )}
+                >
+                  <h3
+                    className={cn(
+                      "rounded-t-lg px-5 py-3 text-xl font-bold",
+                      CourseColors[step.color],
+                    )}
+                  >
+                    {step.title}
+                  </h3>
+                  <div className="px-5 py-3">
+                    <p className="text-base font-medium text-muted-foreground">
+                      {step.description}
+                    </p>
+                    <div className="my-2 flex flex-col gap-y-2 text-sm">
+                      {step.details.map((detail, index) => (
+                        <Fragment key={index}>
+                          {detail.type === "paragraph" && (
+                            <p className="">{detail.content}</p>
+                          )}
+                          {detail.type === "list" && (
+                            <ul className="ml-4 list-inside list-disc text-sm">
+                              {detail.items?.map((item, subIndex) => (
+                                <li key={subIndex}>{item}</li>
+                              ))}
+                            </ul>
+                          )}
+                        </Fragment>
+                      ))}
+                    </div>
+                  </div>
                 </div>
               </li>
             ))}
           </ol>
-        </div>
-
-        <div className="flex items-center justify-center">
-          <Image
-            src={imagePath}
-            alt={imageAlt}
-            width={600}
-            height={400}
-            quality={100}
-            className="rounded-md bg-background shadow-2xl ring-1"
-          />
         </div>
       </div>
     </SectionWrapper>
