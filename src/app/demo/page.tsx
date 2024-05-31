@@ -2,13 +2,16 @@ import {
   HeroSection,
   LearningRouteSection,
   MethodologySection,
-  StepsSection,
   TargetAudienceSection,
 } from "./_sections";
 
-import { Button } from "@/components/ui/button";
-import Link from "next/link";
 import texts from "./_config/texts.json";
+import { InscriptionBannerSection } from "./_sections/InscriptionBannerSection";
+import ModalitiesSection from "./_sections/ModalitiesSection";
+import { SocialProofBannerSection } from "./_sections/SocialProofBannerSection";
+import TestimonialBannerSection from "./_sections/TestimonialBanner";
+import TestimonialsSection from "./_sections/TestimonialsSection";
+import WhoAmISection from "./_sections/WhoAmI";
 
 export default async function Home() {
   return (
@@ -19,48 +22,25 @@ export default async function Home() {
       {/* Dashboard Video and/or Image: */}
       {/* <DashboardPreviewSection {...texts.dashboardPreviewSection} /> */}
 
-      {/* Target Audience section */}
+      <SocialProofBannerSection {...texts.socialProofSection} />
+
       <TargetAudienceSection {...texts.targetAudienceSection} />
 
       {/* Learning route section*/}
       <LearningRouteSection {...texts.learningRouteSection} />
 
-      {/* TODO: Cambiar por banner final*/}
-      <div className="align center my-0 flex flex-col justify-center gap-4 bg-primary/60 py-8 text-center text-primary-foreground">
-        <h2 className="text-3xl font-bold">
-          ¡Inscríbete ahora y comienza a{" "}
-          <span
-            className="text-secondary"
-            // style={
-            //   {
-            //     // textShadow: "0 0 1px #000, 0 0 2px #000, 0 0 3px #000",
-            //   }
-            // }
-          >
-            reaprender
-          </span>
-          !
-        </h2>
-        <div className="flex justify-center">
-          <Button asChild size={"lg"} variant={"outline"}>
-            <Link href="#inscripciones">¡Quiero reaprender!</Link>
-          </Button>
-        </div>
-      </div>
+      <InscriptionBannerSection />
 
-      {/* Methodology section */}
       <MethodologySection {...texts.methodologySection} />
+      <TestimonialBannerSection {...texts.testimonialBannerSection} />
 
-      {/* TODO: Testimonials */}
+      <TestimonialsSection {...texts.testimonialsSection} />
 
-      {/* TODO: Modalities */}
-
-      {/* Steps section */}
-      <StepsSection {...texts.stepsSection} />
+      <ModalitiesSection {...texts.modalitiesSection} />
 
       {/* TODO: Pricing section*/}
 
-      {/* TODO: Who am i section*/}
+      <WhoAmISection {...texts.whoAmISection} />
     </main>
   );
 }

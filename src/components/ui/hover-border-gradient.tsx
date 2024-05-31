@@ -36,7 +36,7 @@ export function HoverBorderGradient({
   };
 
   const movingMap: Record<Direction, string> = {
-    TOP: "radial-gradient(20.7% 50% at 50% 0%, hsl(0, 0%, 100%) 0%, rgba(255, 255, 255, 0) 100%)",
+    TOP: "radial-gradient(20.7% 50% at 50% 0%, hsl(0, 0%, 40%) 0%, rgba(255, 255, 255, 0) 100%)",
     LEFT: "radial-gradient(16.6% 43.1% at 0% 50%, hsl(0, 0%, 100%) 0%, rgba(255, 255, 255, 0) 100%)",
     BOTTOM:
       "radial-gradient(20.7% 50% at 50% 100%, hsl(0, 0%, 100%) 0%, rgba(255, 255, 255, 0) 100%)",
@@ -63,14 +63,14 @@ export function HoverBorderGradient({
       }}
       onMouseLeave={() => setHovered(false)}
       className={cn(
-        "relative flex h-full w-fit  flex-col flex-nowrap content-center items-center justify-center gap-10 overflow-visible  bg-background/20 decoration-clone p-px transition duration-500 hover:bg-background/10 dark:bg-background/20",
+        "relative flex h-full w-fit  flex-col flex-nowrap content-center items-center justify-center gap-10 overflow-visible  bg-background decoration-clone p-px transition duration-500 hover:bg-background/10",
         containerClassName,
       )}
       {...props}
     >
       <div
         className={cn(
-          "z-10 h-full w-auto rounded-[inherit]  border bg-background",
+          "z-10 h-full w-auto rounded-[inherit] border border-primary/50 bg-background",
           className,
         )}
       >
@@ -81,10 +81,11 @@ export function HoverBorderGradient({
           "absolute inset-0 z-0 flex-none overflow-hidden rounded-[inherit]",
         )}
         style={{
-          filter: "blur(3px)",
+          filter: "blur(4px)",
           position: "absolute",
-          width: "100%",
-          height: "100%",
+          inset: "-2%",
+          width: "104%",
+          height: "104%",
         }}
         initial={{ background: movingMap[direction] }}
         animate={{

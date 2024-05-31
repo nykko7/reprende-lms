@@ -2,7 +2,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import {
-  ArrowRight,
+  ArrowDown,
   ArrowRightIcon,
   CheckIcon,
   ChevronRight,
@@ -98,7 +98,7 @@ const TargetAudienceSection: FC<TargetAudienceSectionProps> = ({
           variant={"outline"}
         >
           <Link href="/#inscripciones">
-            {buttonText} <ArrowRight className="ml-2 h-5 w-5" />
+            {buttonText} <ArrowDown className="ml-2 h-5 w-5" />
           </Link>
         </Button>
       </div>

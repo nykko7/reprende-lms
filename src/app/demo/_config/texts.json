@@ -7,7 +7,7 @@
     "buttonText": "Reserva tu cupo"
   },
   "targetAudienceSection": {
-    "title": "🤔 ¿Para quién es este curso?",
+    "title": "🫵 ¿Para quién es este curso?",
     "profiles": {
       "title": "👉 Si eres...",
       "list": [
@@ -34,7 +34,7 @@
       ]
     },
     "goals": {
-      "title": "✅ Y quieres...",
+      "title": "🏆 Y quieres...",
       "list": [
         "Saber qué hacer, cómo y por qué frente a cualquier ejercicio matemático.",
         "Tener estrategias para resolver ejercicios de manera efectiva y eficiente.",
@@ -45,7 +45,7 @@
       ]
     },
     "footer": "Si te identificas con alguna de estas descripciones, este curso es para ti.",
-    "buttonText": "Inscríbete ahora"
+    "buttonText": "Inscríbete aquí"
   },
   "methodologySection": {
     "title": "📖 Metodología de aprendizaje",
@@ -85,7 +85,7 @@
   },
   "learningRouteSection": {
     "title": "🚀 Ruta de Aprendizaje",
-    "description": "El curso se compone de 4 niveles, diseñados de manera progresiva para una comprensión integral de las matemáticas.",
+    "description": "El curso se compone de 4 niveles, diseñados para comprender las matemáticas de manera progresiva e integral.",
     "imagePath": "/landing/learning-route.png",
     "steps": [
       {
@@ -156,7 +156,7 @@
             "type": "list",
             "items": [
               "Perímetro, área de figuras geométricas",
-              "Área y perímetro del círculo.",
+              "Área y perímetro del círculo",
               "Volumen de cuerpos geométricos",
               "Teorema de Pitágoras"
             ]
@@ -197,29 +197,16 @@
     ]
   },
 
-  "stepsSection": {
-    "title": "Comienza Ahora...",
-    "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius?",
-    "steps": [
-      {
-        "step": "Paso 1",
-        "title": "Regístrate",
-        "description": "Una vez completado tu registro podrás acceder a los talleres."
-      },
-      {
-        "step": "Paso 2",
-        "title": "Escoge tu Modalidad",
-        "description": "Puedes tomar los talleres de manera individual o tomar la ruta completa."
-      },
-      {
-        "step": "Paso 3",
-        "title": "Accede a los Talleres",
-        "description": "Podrás acceder a los talleres y comenzar tu aprendizaje."
-      }
-    ]
+  "testimonialBannerSection": {
+    "testimonial": "Aprendí demasiado con el curso, ahora me siento con mucha más seguridad para resolver cualquier ejercicio",
+    "studentName": "Verónica Saéz",
+    "studentDescription": "Estudiante de 4to medio",
+    "imageSrc": "/landing/testimonial-student.jpg",
+    "imageAlt": "Imagen de Juanita Pérez, estudiante de 4to medio"
   },
   "testimonialsSection": {
-    "title": "Testimonios",
+    "title": "🤔 ¿Aún no estás seguro?",
+    "description": "Esto es lo que dicen nuestros estudiantes...",
     "items": [
       {
         "name": "Juan",
@@ -234,18 +221,21 @@
     ]
   },
   "modalitiesSection": {
-    "title": "Elige tu Camino de Aprendizaje",
-    "items": [
+    "title": "🕹️ Elige tu camino de aprendizaje",
+    "description": "Elige la modalidad que mejor se adapte a tus necesidades y estilo de aprendizaje.",
+    "modalities": [
       {
         "name": "Grabado",
         "description": "Clases grabadas, consultas ilimitadas por WhatsApp, material descargable y videos complementarios.",
-        "price": "$45,000/mes",
+        "price": "$45.000/nivel",
+        "duration": "Depende del estudiante",
         "features": ["Sesiones grabadas", "Acompañamiento por Whatsapp"]
       },
       {
-        "name": "En Vivo",
+        "name": "En vivo",
         "description": "Clases en Zoom, consultas ilimitadas por WhatsApp, acceso a maratones PAES y material descargable.",
         "price": "$65,000/mes",
+        "duration": "4 meses",
         "features": [
           "Sesiones en vivo",
           "Acompañamiento por Whatsapp",
@@ -254,10 +244,38 @@
       }
     ]
   },
+  "socialProofSection": {
+    "socialProofs": [
+      {
+        "number": "+500",
+        "description": "estudiantes satisfechos"
+      },
+      {
+        "number": "+3 años",
+        "description": "acompañando a estudiantes en su aprendizaje"
+      },
+      {
+        "number": "100%",
+        "description": "recomendado por nuestros estudiantes"
+      }
+    ]
+  },
 
   "whoAmISection": {
-    "title": "¿Quién Soy?",
-    "description": "Hola, soy [Nombre], tu instructor y mentor en esta jornada de aprendizaje. Estoy aquí para ayudarte a descubrir y potenciar tus habilidades matemáticas.",
-    "imageAlt": "Imagen del instructor"
+    "title": "👩‍🏫 ¿Quién será tu guía?",
+    "description": "Conoce a la profesora detrás de **Reaprende**",
+    "name": "Isidora Pi",
+    "role": "Profesora de Educación Básica con mención en Matemáticas",
+    "instagramUrl": "https://www.instagram.com/reaprende.mate/",
+    "instagramTag": "@reaprende.mate",
+    "bio": "Mi viaje en el mundo de la educación comenzó hace más de 10 años cuando entré a estudiar Ingeniería Comercial en la PUCV. Durante mis años universitarios, descubrí mi pasión por la enseñanza al impartir clases de matemáticas a estudiantes con diferentes dificultades en Valparaíso.\n\nDurante cuatro años, me di cuenta de que muchos problemas de aprendizaje se originan en una **base deficiente en la educación básica**. En 2017, decidí cambiar mi carrera a Educación Básica con mención en Matemáticas. Este cambio no solo fue una decisión profesional, sino una misión para abordar las raíces de los problemas educativos que había identificado.\n\nEn 2021, en tiempos de pandemia, nació **@reaprende.mate** con el objetivo de fomentar una comprensión profunda de las matemáticas, centrándose en construir una base sólida desde cero y con una narrativa distinta.\n\n**Isidora Pi**\n**¡Nos vemos en clases!**",
+    "imageAlt": "Imagen de la profesora",
+    "imagePath": "/shared/logo.png"
+  },
+  "contactSection": {
+    "title": "📞 Contáctame",
+    "description": "Si tienes alguna duda o consulta, no dudes en contactarme. Estoy aquí para ayudarte.",
+    "buttonText": "Contáctame",
+    "email": ""
   }
 }

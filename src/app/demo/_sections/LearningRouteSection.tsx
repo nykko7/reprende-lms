@@ -18,11 +18,18 @@ interface LearningRouteSectionProps {
   }[];
 }
 
-const CourseColors: Record<string, string> = {
+const CourseStepColors: Record<string, string> = {
   red: "bg-red-900",
   blue: "bg-blue-900",
   green: "bg-green-900",
   yellow: "bg-yellow-700",
+};
+
+const CourseTitleColors: Record<string, string> = {
+  red: "bg-red-900/30",
+  blue: "bg-blue-900/30",
+  green: "bg-green-900/30",
+  yellow: "bg-yellow-700/30",
 };
 
 const CourseBgColors: Record<string, string> = {
@@ -30,6 +37,13 @@ const CourseBgColors: Record<string, string> = {
   blue: "bg-blue-900/10",
   green: "bg-green-900/10",
   yellow: "bg-yellow-700/10",
+};
+
+const CourseBorderColors: Record<string, string> = {
+  red: "border-red-900",
+  blue: "border-blue-900",
+  green: "border-green-900",
+  yellow: "border-yellow-700",
 };
 
 const LearningRouteSection: FC<LearningRouteSectionProps> = ({
@@ -51,21 +65,23 @@ const LearningRouteSection: FC<LearningRouteSectionProps> = ({
                 <span
                   className={cn(
                     "absolute -left-8 flex h-14 w-14 items-center justify-center rounded-full text-3xl font-extrabold text-accent-foreground transition-all",
-                    CourseColors[step.color],
+                    CourseStepColors[step.color],
                   )}
                 >
                   {index + 1}
                 </span>
                 <div
                   className={cn(
-                    "rounded-lg border bg-red-900/20",
+                    "rounded-lg border",
                     CourseBgColors[step.color],
+                    CourseBorderColors[step.color],
                   )}
                 >
                   <h3
                     className={cn(
-                      "rounded-t-lg px-5 py-3 text-xl font-bold",
-                      CourseColors[step.color],
+                      "rounded-t-lg border-b px-5 py-3 text-xl font-bold",
+                      CourseTitleColors[step.color],
+                      CourseBorderColors[step.color],
                     )}
                   >
                     {step.title}

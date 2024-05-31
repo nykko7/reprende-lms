@@ -8,13 +8,13 @@ export const SectionWrapper = ({
   children: React.ReactNode;
 }) => {
   return (
-    <div
+    <section
       className={cn(
         "mx-auto my-20 w-full max-w-screen-xl px-4 sm:px-6  lg:px-8 ",
         className,
       )}
     >
       {children}
-    </div>
+    </section>
   );
 };
