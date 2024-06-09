@@ -9,8 +9,7 @@ import texts from "./_config/texts.json";
 import { InscriptionBannerSection } from "./_sections/InscriptionBannerSection";
 import ModalitiesSection from "./_sections/ModalitiesSection";
 import { SocialProofBannerSection } from "./_sections/SocialProofBannerSection";
-import TestimonialBannerSection from "./_sections/TestimonialBanner";
-import TestimonialsSection from "./_sections/TestimonialsSection";
+import TestimonialsSection from "./_sections/Testimonials/TestimonialsSection";
 import WhoAmISection from "./_sections/WhoAmI";
 
 export default async function Home() {
@@ -32,7 +31,7 @@ export default async function Home() {
       <InscriptionBannerSection />
 
       <MethodologySection {...texts.methodologySection} />
-      <TestimonialBannerSection {...texts.testimonialBannerSection} />
+      {/* <TestimonialBannerSection {...texts.testimonialBannerSection} /> */}
 
       <TestimonialsSection {...texts.testimonialsSection} />
 

@@ -197,28 +197,109 @@
     ]
   },
 
-  "testimonialBannerSection": {
-    "testimonial": "Aprendí demasiado con el curso, ahora me siento con mucha más seguridad para resolver cualquier ejercicio",
-    "studentName": "Verónica Saéz",
-    "studentDescription": "Estudiante de 4to medio",
-    "imageSrc": "/landing/testimonial-student.jpg",
-    "imageAlt": "Imagen de Juanita Pérez, estudiante de 4to medio"
-  },
   "testimonialsSection": {
     "title": "🤔 ¿Aún no estás seguro?",
     "description": "Esto es lo que dicen nuestros estudiantes...",
-    "items": [
-      {
-        "name": "Juan",
-        "description": "Estudiante de 4to medio",
-        "testimonial": "La profe cambió mi perspectiva sobre las matemáticas."
-      },
-      {
-        "name": "María",
-        "description": "Estudiante universitaria",
-        "testimonial": "Gracias a este curso, ahora me siento confiada en mis habilidades matemáticas."
-      }
-    ]
+    "testimonials": {
+      "textTestimonials": [
+        {
+          "testimonial": "Aprendí demasiado con el curso, ahora me siento con mucha más seguridad para resolver cualquier ejercicio",
+          "studentName": "Verónica Saéz",
+          "studentDescription": "Estudiante de 4to medio",
+          "imageSrc": "/landing/testimonials/testimonial-student1.jpg",
+          "imageAlt": "Imagen de Verónica Saéz, estudiante de 4to medio"
+        },
+        {
+          "testimonial": "Los profesores son muy dedicados y el material es excelente.",
+          "studentName": "Juan Pérez",
+          "studentDescription": "Estudiante de 3ro medio",
+          "imageSrc": "/landing/testimonials/testimonial-student2.jpg",
+          "imageAlt": "Imagen de Juan Pérez, estudiante de 3ro medio"
+        }
+      ],
+      "imageTestimonials": [
+        {
+          "imageSrc": "/landing/testimonials/testimonial-image1.PNG",
+          "imageAlt": "Pantallazo de mensaje positivo 1"
+        },
+        {
+          "imageSrc": "/landing/testimonials/testimonial-image2.png",
+          "imageAlt": "Pantallazo de mensaje positivo 2"
+        },
+        {
+          "imageSrc": "/landing/testimonials/testimonial-image3.png",
+          "imageAlt": "Pantallazo de mensaje positivo 3"
+        },
+        {
+          "imageSrc": "/landing/testimonials/testimonial-image4.png",
+          "imageAlt": "Pantallazo de mensaje positivo 4"
+        },
+        {
+          "imageSrc": "/landing/testimonials/testimonial-image5.png",
+          "imageAlt": "Pantallazo de mensaje positivo 5"
+        },
+        {
+          "imageSrc": "/landing/testimonials/testimonial-image6.jpg",
+          "imageAlt": "Pantallazo de mensaje positivo 6"
+        },
+        {
+          "imageSrc": "/landing/testimonials/testimonial-image7.jpg",
+          "imageAlt": "Pantallazo de mensaje positivo 7"
+        },
+        {
+          "imageSrc": "/landing/testimonials/testimonial-image8.jpg",
+          "imageAlt": "Pantallazo de mensaje positivo 8"
+        },
+        {
+          "imageSrc": "/landing/testimonials/testimonial-image9.jpg",
+          "imageAlt": "Pantallazo de mensaje positivo 9"
+        },
+        {
+          "imageSrc": "/landing/testimonials/testimonial-image10.jpg",
+          "imageAlt": "Pantallazo de mensaje positivo 10"
+        },
+        {
+          "imageSrc": "/landing/testimonials/testimonial-image11.jpg",
+          "imageAlt": "Pantallazo de mensaje positivo 11"
+        },
+        {
+          "imageSrc": "/landing/testimonials/testimonial-image12.jpg",
+          "imageAlt": "Pantallazo de mensaje positivo 12"
+        },
+        {
+          "imageSrc": "/landing/testimonials/testimonial-image13.jpg",
+          "imageAlt": "Pantallazo de mensaje positivo 13"
+        },
+        {
+          "imageSrc": "/landing/testimonials/testimonial-image14.jpg",
+          "imageAlt": "Pantallazo de mensaje positivo 14"
+        },
+        {
+          "imageSrc": "/landing/testimonials/testimonial-image15.jpg",
+          "imageAlt": "Pantallazo de mensaje positivo 15"
+        },
+        {
+          "imageSrc": "/landing/testimonials/testimonial-image16.jpg",
+          "imageAlt": "Pantallazo de mensaje positivo 16"
+        },
+        {
+          "imageSrc": "/landing/testimonials/testimonial-image17.jpg",
+          "imageAlt": "Pantallazo de mensaje positivo 17"
+        },
+        {
+          "imageSrc": "/landing/testimonials/testimonial-image18.jpg",
+          "imageAlt": "Pantallazo de mensaje positivo 18"
+        },
+        {
+          "imageSrc": "/landing/testimonials/testimonial-image19.jpg",
+          "imageAlt": "Pantallazo de mensaje positivo 19"
+        },
+        {
+          "imageSrc": "/landing/testimonials/testimonial-image20.jpg",
+          "imageAlt": "Pantallazo de mensaje positivo 20"
+        }
+      ]
+    }
   },
   "modalitiesSection": {
     "title": "🕹️ Elige tu camino de aprendizaje",
