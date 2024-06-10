@@ -19,8 +19,7 @@ const ImageTestimonialCard: FC<ImageTestimonial> = ({ imageSrc, imageAlt }) => (
       alt={imageAlt}
       width={300}
       height={200}
-      objectFit="cover"
-      className="rounded-xl"
+      className="rounded-xl object-cover"
     />
   </motion.div>
 );

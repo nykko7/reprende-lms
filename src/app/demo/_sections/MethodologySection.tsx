@@ -14,7 +14,7 @@ const MethodologySection: FC<MethodologySectionProps> = ({
   features,
 }) => {
   return (
-    <SectionWrapper className="my-0 max-w-none border-b-2  py-16">
+    <SectionWrapper className="my-0 max-w-none py-16">
       <div className="mx-auto mb-12 max-w-3xl text-center">
         <h2 className="text-4xl font-bold sm:text-5xl">{title}</h2>
         <p className="mt-4 text-lg text-muted-foreground">{description}</p>

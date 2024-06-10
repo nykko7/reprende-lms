@@ -55,7 +55,7 @@ const TestimonialsSection: FC<TestimonialsSectionProps> = ({
   };
 
   return (
-    <SectionWrapper className="">
+    <SectionWrapper className="my-0">
       <div className="mx-auto mb-12 flex max-w-3xl flex-col gap-2 text-center">
         <h2 className="text-4xl font-bold sm:text-5xl">{title}</h2>
         <p className="text-lg text-muted-foreground">{description}</p>
@@ -64,8 +64,8 @@ const TestimonialsSection: FC<TestimonialsSectionProps> = ({
         <TextTestimonialsCarousel testimonials={textTestimonials} />
         <Masonry
           breakpointCols={breakpointColumnsObj}
-          className="flex w-auto gap-8"
-          // columnClassName="flex justify-center flex-wrap items-center"
+          className="-ml-8 flex w-auto gap-8"
+          columnClassName="pl-8 bg-clip-padding"
         >
           {imageTestimonials.slice(0, visibleImagesCount).map((testimonial) => (
             <ImageTestimonialCard key={testimonial.imageSrc} {...testimonial} />
