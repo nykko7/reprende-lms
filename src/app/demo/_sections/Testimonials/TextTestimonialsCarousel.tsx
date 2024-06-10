@@ -27,7 +27,7 @@ const TextTestimonialsCarousel: FC<TextTestimonialsCarouselProps> = ({
   return (
     <Carousel
       className="mx-auto mb-8 max-w-[90%]"
-      autoplay={5000}
+      autoplay={6000}
       opts={{
         loop: true,
         slidesToScroll: 1,
@@ -46,14 +46,14 @@ const TextTestimonialsCarousel: FC<TextTestimonialsCarouselProps> = ({
             index,
           ) => (
             <CarouselItem key={index}>
-              <div className="group mx-auto flex h-full flex-col items-center justify-between gap-y-2">
+              <div className="group mx-auto flex h-full flex-col items-center justify-between gap-y-2 border-b-2 py-4  transition-all duration-300 ease-in hover:border-b-primary">
                 <div className="flex flex-col items-center gap-y-2">
                   <Quote className="size-12 fill-transparent transition-all duration-300 ease-in group-hover:fill-primary" />
                   <h2 className="text-center text-3xl font-bold">
                     {testimonial}
                   </h2>
                 </div>
-                <div className="flex items-center justify-center gap-2 border-b-2 py-2 text-center text-lg transition-all duration-300 ease-in group-hover:border-b-primary">
+                <div className="flex items-center justify-center gap-2 text-center text-lg ">
                   <Avatar className="border">
                     <AvatarFallback>
                       {studentName

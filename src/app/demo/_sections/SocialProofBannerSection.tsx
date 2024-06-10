@@ -15,7 +15,7 @@ export const SocialProofBannerSection = ({
             <dt className="mb-2 text-4xl font-extrabold drop-shadow-[0_1.5px_1.5px_rgba(8,8,8,0.8)]">
               {socialProof.number}
             </dt>
-            <dd className="text-lg font-medium text-muted-foreground drop-shadow-[0_1.2px_1.2px_rgba(8,8,8,0.8)]">
+            <dd className="text-lg font-medium text-muted-foreground drop-shadow-lg">
               {socialProof.description}
             </dd>
           </div>

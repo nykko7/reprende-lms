@@ -19,7 +19,7 @@ const ModalitiesSection: FC<ModalitiesSectionProps> = ({
   description,
 }) => {
   return (
-    <SectionWrapper className="">
+    <SectionWrapper id="inscripciones" className="">
       <div className="mx-auto mb-12 flex max-w-3xl flex-col gap-2 text-center">
         <h2 className="text-4xl font-bold sm:text-5xl">{title}</h2>
         <p className="text-lg text-muted-foreground">{description}</p>

@@ -97,7 +97,7 @@ const TargetAudienceSection: FC<TargetAudienceSectionProps> = ({
           className="border-2 font-bold"
           variant={"outline"}
         >
-          <Link href="/#inscripciones">
+          <Link href="#inscripciones">
             {buttonText} <ArrowDown className="ml-2 h-5 w-5" />
           </Link>
         </Button>

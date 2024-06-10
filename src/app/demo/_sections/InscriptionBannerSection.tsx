@@ -14,8 +14,8 @@ export const InscriptionBannerSection = () => {
         !
       </h2>
 
-      <div className="flex justify-center">
-        <Button asChild size={"lg"} variant={"outline"}>
+      <div className="flex justify-center text-foreground">
+        <Button size={"lg"} variant={"outline"}>
           <Link href="#inscripciones">¡Quiero reaprender!</Link>
         </Button>
       </div>
