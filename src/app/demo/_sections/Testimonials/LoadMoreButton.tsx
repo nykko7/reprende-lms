@@ -6,10 +6,10 @@ interface LoadMoreButtonProps {
   hasMore: boolean;
 }
 
-const LoadMoreButton: FC<LoadMoreButtonProps> = ({ onClick, hasMore }) => (
-  <Button onClick={onClick}>
-    {hasMore ? "Ver más testimonios" : "Mostrar código de descuento"}
-  </Button>
-);
+const LoadMoreButton: FC<LoadMoreButtonProps> = ({ onClick, hasMore }) =>
+  hasMore ? (
+    <Button onClick={onClick}>Ver más testimonios</Button>
+  ) : null;
+  // <Button onClick={onClick}>Mostrar código de descuento</Button>
 
 export default LoadMoreButton;
