@@ -40,11 +40,9 @@ const TestimonialsSection: FC<TestimonialsSectionProps> = ({
 
   const handleLoadMore = () => {
     if (visibleImagesCount >= imageTestimonials.length) {
-      setShowDiscount(true);
+      // setShowDiscount(true);
     } else {
-      setVisibleImagesCount(
-        (prevCount) => prevCount + Math.floor(Math.random() * 3 + 1),
-      );
+      setVisibleImagesCount((prevCount) => prevCount + 3);
     }
   };
 
