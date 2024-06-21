@@ -11,10 +11,6 @@ interface HeroSectionProps {
   titleNormal: string;
   description: string;
   buttonText: string;
-  socialProofs: {
-    number: string;
-    description: string;
-  }[];
 }
 
 const HeroSection: FC<HeroSectionProps> = ({
@@ -23,7 +19,6 @@ const HeroSection: FC<HeroSectionProps> = ({
   titleNormal,
   description,
   buttonText,
-  socialProofs,
 }) => {
   return (
     // h-[calc(100vh-250px)] is a utility class that sets the height of the element to the viewport height minus 250px
