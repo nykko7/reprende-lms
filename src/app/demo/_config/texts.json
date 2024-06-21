@@ -4,7 +4,10 @@
     "titleAccent": "Reaprende",
     "titleNormal": " las matemáticas",
     "description": "Curso de nivelación en matemáticas diseñado para comprender los contenidos desde cero.",
-    "buttonText": "Reserva tu cupo",
+    "buttonText": "Reserva tu cupo"
+  },
+  "socialProofSection": {
+    "title": "🌟 ¿Por qué elegir Reaprende?",
     "socialProofs": [
       {
         "number": "+500",
@@ -213,7 +216,7 @@
 
   "testimonialsSection": {
     "title": "🤔 ¿Aún no estás seguro?",
-    "description": "Esto es lo que dicen nuestros estudiantes...",
+    "description": "Esto es lo que dicen algunos de nuestros estudiantes",
     "testimonials": {
       "textTestimonials": [
         {

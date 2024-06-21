@@ -10,6 +10,7 @@ import { InscriptionBannerSection } from "./_sections/InscriptionBannerSection";
 import ModalitiesSection from "./_sections/ModalitiesSection";
 import TestimonialsSection from "./_sections/Testimonials/TestimonialsSection";
 import WhoAmISection from "./_sections/WhoAmI";
+import { SocialProofBannerSection } from "./_sections/SocialProofBannerSection";
 
 export default async function Home() {
   return (
@@ -20,7 +21,7 @@ export default async function Home() {
       {/* Dashboard Video and/or Image: */}
       {/* <DashboardPreviewSection {...texts.dashboardPreviewSection} /> */}
 
-      {/* <SocialProofBannerSection {...texts.socialProofSection} /> */}
+      <SocialProofBannerSection {...texts.socialProofSection} />
 
       <TargetAudienceSection {...texts.targetAudienceSection} />
 
