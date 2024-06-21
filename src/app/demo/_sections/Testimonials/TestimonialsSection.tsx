@@ -40,7 +40,7 @@ const TestimonialsSection: FC<TestimonialsSectionProps> = ({
 
   const handleLoadMore = () => {
     if (visibleImagesCount >= imageTestimonials.length) {
-      // setShowDiscount(true);
+      setShowDiscount(true);
     } else {
       setVisibleImagesCount((prevCount) => prevCount + 3);
     }
@@ -60,22 +60,24 @@ const TestimonialsSection: FC<TestimonialsSectionProps> = ({
       </div>
       <div className="mx-auto max-w-6xl px-6 lg:px-8">
         <TextTestimonialsCarousel testimonials={textTestimonials} />
+
         <Masonry
           breakpointCols={breakpointColumnsObj}
           className="-ml-8 flex w-auto gap-8"
           columnClassName="pl-8 bg-clip-padding"
+          style={{
+            maskImage: `linear-gradient(#000, #000 ${showDiscount ? "100%" : "70%"}, transparent 95%)`,
+          }}
         >
           {imageTestimonials.slice(0, visibleImagesCount).map((testimonial) => (
             <ImageTestimonialCard key={testimonial.imageSrc} {...testimonial} />
           ))}
         </Masonry>
-        <div className="mt-8 text-center">
-          {!showDiscount && (
-            <LoadMoreButton
-              onClick={handleLoadMore}
-              hasMore={visibleImagesCount < imageTestimonials.length}
-            />
-          )}
+        <div className="text-center">
+          <LoadMoreButton
+            onClick={handleLoadMore}
+            showDiscount={showDiscount}
+          />
           {showDiscount && <DiscountMessage />}
         </div>
       </div>

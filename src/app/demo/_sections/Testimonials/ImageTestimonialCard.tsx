@@ -9,10 +9,10 @@ interface ImageTestimonial {
 
 const ImageTestimonialCard: FC<ImageTestimonial> = ({ imageSrc, imageAlt }) => (
   <motion.div
-    className="relative mb-8 flex w-full justify-center rounded-xl p-2"
-    initial={{ opacity: 0, scale: 0.8 }}
+    className="relative mb-8 flex w-full justify-center rounded-xl p-2 last:mb-0"
+    initial={{ opacity: 0, scale: 0.6 }}
     animate={{ opacity: 1, scale: 1 }}
-    transition={{ duration: 0.5 }}
+    transition={{ duration: 0.8 }}
   >
     <Image
       src={imageSrc}

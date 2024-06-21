@@ -32,18 +32,18 @@ const HeroSection: FC<HeroSectionProps> = ({
       <div className="relative flex flex-col items-center justify-between text-center">
         <div className="flex  flex-col items-center  gap-y-4 ">
           {/* <div className="pointer-events-none absolute inset-0 flex items-center justify-center  bg-background [mask-image:radial-gradient(ellipse_at_center,transparent_30%,black)]"></div> */}
-          <div className="z-1 absolute right-0 top-0 h-1/4 w-1/4 animate-spin-slow opacity-50 blur-[120px] filter">
+          <div className="z-1 absolute -top-52 right-0 h-1/4 w-1/4 animate-spin-slow opacity-50 blur-[120px] filter">
             <div className="relative">
               <div className="h-64 w-full rounded-full bg-blue-600"></div>
-              <div className="absolute -left-24 bottom-24 h-60 w-full rounded-full bg-blue-700"></div>
-              <div className="absolute left-24 top-24 h-60 w-full rounded-full bg-purple-600"></div>
+              <div className="absolute -left-24 bottom-24 h-5/6 w-full rounded-full bg-blue-700"></div>
+              <div className="absolute left-24 top-24 h-5/6 w-full rounded-full bg-purple-600"></div>
             </div>
           </div>
-          <div className="z-1 absolute bottom-0 left-0 h-1/4 w-1/4 animate-spin-slow opacity-50 blur-[120px] filter">
+          <div className="z-1 absolute -bottom-48 left-0 h-1/4 w-1/4 animate-spin-slow opacity-40 blur-[120px] filter">
             <div className="relative">
               <div className="h-64 w-full rounded-full bg-purple-800"></div>
-              <div className="absolute -left-24 bottom-24 h-60 w-full rounded-full bg-red-800"></div>
-              <div className="absolute left-24 top-24 h-60 w-full rounded-full bg-purple-600"></div>
+              <div className="absolute -left-24 bottom-24 h-5/6 w-full rounded-full bg-red-800"></div>
+              <div className="absolute left-24 top-24 h-5/6 w-full rounded-full bg-purple-600"></div>
             </div>
           </div>
 

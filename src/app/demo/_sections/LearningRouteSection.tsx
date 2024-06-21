@@ -40,10 +40,10 @@ const CourseBgColors: Record<string, string> = {
 };
 
 const CourseBorderColors: Record<string, string> = {
-  red: "border-red-900",
-  blue: "border-blue-900",
-  green: "border-green-900",
-  yellow: "border-yellow-700",
+  red: "border-red-900 group-hover:border-red-600",
+  blue: "border-blue-900 group-hover:border-blue-600",
+  green: "border-green-900 group-hover:border-green-600",
+  yellow: "border-yellow-700 group-hover:border-yellow-600",
 };
 
 const LearningRouteSection: FC<LearningRouteSectionProps> = ({
@@ -61,25 +61,30 @@ const LearningRouteSection: FC<LearningRouteSectionProps> = ({
         <div className="ml-4 ">
           <ol className="relative border-l-8">
             {steps.map((step, index) => (
-              <li key={index} className="mb-10 ml-10">
+              <li
+                key={index}
+                className="group mb-10 ml-10 
+              "
+              >
                 <span
                   className={cn(
-                    "absolute -left-8 flex h-14 w-14 items-center justify-center rounded-full text-3xl font-extrabold text-accent-foreground transition-all",
+                    "absolute -left-8 flex h-14 w-14 items-center justify-center rounded-full border-2 text-3xl font-extrabold text-accent-foreground transition-all  duration-500",
                     CourseStepColors[step.color],
+                    CourseBorderColors[step.color],
                   )}
                 >
                   {index + 1}
                 </span>
                 <div
                   className={cn(
-                    "rounded-lg border",
+                    "rounded-lg border-2 transition-all duration-500",
                     CourseBgColors[step.color],
                     CourseBorderColors[step.color],
                   )}
                 >
                   <h3
                     className={cn(
-                      "rounded-t-lg border-b px-5 py-3 text-xl font-bold",
+                      "rounded-t-lg border-b px-5 py-3 text-xl font-bold transition-all duration-500",
                       CourseTitleColors[step.color],
                       CourseBorderColors[step.color],
                     )}
