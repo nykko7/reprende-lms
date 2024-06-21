@@ -8,7 +8,7 @@ export const SocialProofBannerSection = ({
   socialProofs,
 }: SocialProofBannerSectionProps) => {
   return (
-    <section className="align center group my-0 flex flex-col justify-center gap-4 bg-primary/60 py-8 text-center text-primary-foreground ">
+    <section className="align center bg-gradient from-bg-primary/60 group my-0 flex flex-col justify-center gap-4 to-secondary/60 py-8 text-center text-primary-foreground ">
       <dl className="mx-auto grid max-w-screen-md gap-16  text-gray-900 dark:text-white sm:grid-cols-3">
         {socialProofs?.map((socialProof, index) => (
           <div key={index} className="flex max-w-40 flex-col items-center  ">

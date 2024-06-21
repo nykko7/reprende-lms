@@ -4,7 +4,21 @@
     "titleAccent": "Reaprende",
     "titleNormal": " las matemáticas",
     "description": "Curso de nivelación en matemáticas diseñado para comprender los contenidos desde cero.",
-    "buttonText": "Reserva tu cupo"
+    "buttonText": "Reserva tu cupo",
+    "socialProofs": [
+      {
+        "number": "+500",
+        "description": "estudiantes satisfechos"
+      },
+      {
+        "number": "+3 años",
+        "description": "acompañando a estudiantes en su aprendizaje"
+      },
+      {
+        "number": "100%",
+        "description": "recomendado por nuestros estudiantes"
+      }
+    ]
   },
   "targetAudienceSection": {
     "title": "🫵 ¿Para quién es este curso?",
@@ -322,22 +336,6 @@
           "Acompañamiento por Whatsapp",
           "Resolución de dudas en tiempo real"
         ]
-      }
-    ]
-  },
-  "socialProofSection": {
-    "socialProofs": [
-      {
-        "number": "+500",
-        "description": "estudiantes satisfechos"
-      },
-      {
-        "number": "+3 años",
-        "description": "acompañando a estudiantes en su aprendizaje"
-      },
-      {
-        "number": "100%",
-        "description": "recomendado por nuestros estudiantes"
       }
     ]
   },
