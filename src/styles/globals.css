@@ -59,6 +59,10 @@
 }
 
 @layer utilities {
+  .dasharray-0 {
+    stroke-dasharray: 0;
+  }
+
   .bg-instagram {
     /* background: linear-gradient(
       45deg,

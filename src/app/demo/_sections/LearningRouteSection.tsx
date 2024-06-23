@@ -40,10 +40,10 @@ const CourseBgColors: Record<string, string> = {
 };
 
 const CourseBorderColors: Record<string, string> = {
-  red: "border-red-900 group-hover:border-red-600",
-  blue: "border-blue-900 group-hover:border-blue-600",
-  green: "border-green-900 group-hover:border-green-600",
-  yellow: "border-yellow-700 group-hover:border-yellow-600",
+  red: "border-red-900 group-hover:border-red-500",
+  blue: "border-blue-900 group-hover:border-blue-500",
+  green: "border-green-900 group-hover:border-green-500",
+  yellow: "border-yellow-700 group-hover:border-yellow-500",
 };
 
 const LearningRouteSection: FC<LearningRouteSectionProps> = ({
@@ -68,7 +68,7 @@ const LearningRouteSection: FC<LearningRouteSectionProps> = ({
               >
                 <span
                   className={cn(
-                    "absolute -left-8 flex h-14 w-14 items-center justify-center rounded-full border-2 text-3xl font-extrabold text-accent-foreground transition-all  duration-500",
+                    "absolute -left-8 flex h-14 w-14 items-center justify-center rounded-full border-2 text-3xl font-extrabold text-accent-foreground  transition-all duration-500",
                     CourseStepColors[step.color],
                     CourseBorderColors[step.color],
                   )}
