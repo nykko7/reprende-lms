@@ -52,23 +52,25 @@ const LearningRouteSection: FC<LearningRouteSectionProps> = ({
   steps,
 }) => {
   return (
-    <SectionWrapper className="mb-0">
+    <SectionWrapper className="relative mb-0">
       <div className="mx-auto mb-12 max-w-3xl text-center">
         <h2 className="text-4xl font-bold sm:text-5xl">{title}</h2>
         <p className="mt-4 text-lg text-muted-foreground">{description}</p>
       </div>
       <div className="mx-auto flex max-w-3xl justify-center">
         <div className="ml-4 ">
-          <ol className="relative border-l-8">
+          <ol className="relative">
             {steps.map((step, index) => (
               <li
                 key={index}
-                className="group mb-10 ml-10 
+                className="group mb-10 flex gap-4
               "
               >
+                <div className="absolute bottom-0 left-5 top-0 -z-10 w-2 rounded-full bg-accent opacity-30"></div>
+
                 <span
                   className={cn(
-                    "absolute -left-8 flex h-14 w-14 items-center justify-center rounded-full border-2 text-3xl font-extrabold text-accent-foreground  transition-all duration-500",
+                    "sticky top-16 flex h-12 min-w-12 items-center justify-center rounded-full border-2 text-3xl font-extrabold text-accent-foreground transition-all duration-500",
                     CourseStepColors[step.color],
                     CourseBorderColors[step.color],
                   )}
@@ -77,7 +79,7 @@ const LearningRouteSection: FC<LearningRouteSectionProps> = ({
                 </span>
                 <div
                   className={cn(
-                    "rounded-lg border-2 transition-all duration-500",
+                    "w-full rounded-lg border-2 transition-all duration-500",
                     CourseBgColors[step.color],
                     CourseBorderColors[step.color],
                   )}

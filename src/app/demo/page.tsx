@@ -8,13 +8,13 @@ import {
 import texts from "./_config/texts.json";
 import { InscriptionBannerSection } from "./_sections/InscriptionBannerSection";
 import ModalitiesSection from "./_sections/ModalitiesSection";
+import { SocialProofBannerSection } from "./_sections/SocialProofBannerSection";
 import TestimonialsSection from "./_sections/Testimonials/TestimonialsSection";
 import WhoAmISection from "./_sections/WhoAmI";
-import { SocialProofBannerSection } from "./_sections/SocialProofBannerSection";
 
 export default async function Home() {
   return (
-    <main className="overflow-hidden">
+    <main className="overflow-clip">
       {/* Hero Section */}
       <HeroSection {...texts.heroSection} />
 
