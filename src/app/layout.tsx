@@ -6,9 +6,9 @@ import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { type Metadata } from "next";
 
-import { Inter } from "next/font/google";
+import { Inter as FontSans } from "next/font/google";
 
-const inter = Inter({
+const fontSants = FontSans({
   subsets: ["latin"],
   variable: "--font-sans",
 });
@@ -25,11 +25,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="es" suppressHydrationWarning>
       <body
         className={cn(
           "min-h-screen scroll-smooth font-sans antialiased",
-          inter.variable,
+          fontSants.variable,
         )}
       >
         <ThemeProvider
