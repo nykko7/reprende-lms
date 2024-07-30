@@ -43,7 +43,7 @@ const HeroSection: FC<HeroSectionProps> = ({
           </div>
 
           <div className="relative">
-            <div className="z-1 absolute inset-0 rounded-full bg-gradient-to-r from-secondary to-primary opacity-50 blur-md filter"></div>
+            <div className="z-1 absolute inset-0 rounded-full bg-white opacity-25 blur-sm filter"></div>
             <Badge variant={"animated"} className="relative z-20 h-8">
               {badgeText}
             </Badge>
