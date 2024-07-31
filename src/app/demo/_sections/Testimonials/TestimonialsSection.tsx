@@ -75,7 +75,7 @@ const TestimonialsSection: FC<TestimonialsSectionProps> = ({
                 priority={index < visibleImagesCount} // Prioritize images within the visible count
               />
             ))}
-          {imageTestimonials
+          {/* {imageTestimonials
             .slice(visibleImagesCount, visibleImagesCount + 3)
             .map((testimonial) => (
               <ImageTestimonialCard
@@ -83,7 +83,7 @@ const TestimonialsSection: FC<TestimonialsSectionProps> = ({
                 {...testimonial}
                 priority={false} // Ensure next images are loaded eagerly
               />
-            ))}
+            ))} */}
         </Masonry>
         <div className="text-center">
           <LoadMoreButton
