@@ -111,10 +111,10 @@ const ModalitiesSection: FC<ModalitiesSectionProps> = ({
           <Button
             size="lg"
             asChild
-            className="flex h-full flex-wrap text-wrap bg-green-800 p-4 text-2xl font-bold hover:bg-green-800/80"
+            className="flex h-full flex-wrap text-wrap bg-green-800 p-4 text-xl font-bold hover:bg-green-800/80"
           >
             <Link
-              href="https://wa.me/56944768853?text=Hola!%20Vengo%20desde%20www.reaprende.cl%20y%20me%20gustaría%inscribirme%en%20la%modalidad%..."
+              href="https://wa.me/56944768853?text=Hola!%20Vengo%20desde%20https://www.reaprende.cl%20y%20me%20gustaría%20inscribirme%20en%20la%20modalidad%20..."
               target="_blank"
             >
               <FaWhatsapp className="mr-2 h-8 w-8" />

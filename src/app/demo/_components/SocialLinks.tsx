@@ -32,7 +32,7 @@ export const SocialLinks = () => {
         className="hover:bg-whatsapp rounded-full p-0 transition-all hover:text-white"
       >
         <Link
-          href="https://wa.me/56944768853?text=Hola!%20Vengo%20desde%20www.reaprende.cl%20y%20me%20gustaría%20consultar%20sobre%20..."
+          href="https://wa.me/56944768853?text=Hola!%20Vengo%20desde%20https://www.reaprende.cl%20y%20me%20gustaría%20consultar%20sobre%20..."
           target="_blank"
         >
           <FaWhatsapp className="h-5 w-5 " />
