@@ -66,7 +66,7 @@ const TestimonialsSection: FC<TestimonialsSectionProps> = ({
           className="-ml-8 flex w-auto gap-8"
           columnClassName="pl-8 bg-clip-padding"
           style={{
-            maskImage: `linear-gradient(#000, #000 ${showDiscount ? "100%" : "70%"}, transparent 95%)`,
+            maskImage: `linear-gradient(#000, #000 ${showDiscount ? "100%" : "75%"}, transparent 95%)`,
           }}
         >
           {imageTestimonials
