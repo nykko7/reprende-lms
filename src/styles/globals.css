@@ -63,6 +63,10 @@
     stroke-dasharray: 0;
   }
 
+  .dasharray-100 {
+    stroke-dasharray: 100;
+  }
+
   .bg-instagram {
     /* background: linear-gradient(
       45deg,
