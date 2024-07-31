@@ -1,8 +1,12 @@
+"use client";
+
+import { CTAButtonRefContext } from "@/components/providers/CTAButttonProvider";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { handleScroll } from "@/lib/utils";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
-import { type FC } from "react";
+import { useContext, type FC } from "react";
 import { SectionWrapper } from "../_components/SectionWrapper";
 
 interface HeroSectionProps {
@@ -20,6 +24,7 @@ const HeroSection: FC<HeroSectionProps> = ({
   description,
   buttonText,
 }) => {
+  const ctaRef = useContext(CTAButtonRefContext);
   return (
     // h-[calc(100vh-250px)] is a utility class that sets the height of the element to the viewport height minus 250px
     <SectionWrapper className="my-0 flex h-[calc(100svh-56px)] flex-col justify-center py-20">
@@ -61,7 +66,13 @@ const HeroSection: FC<HeroSectionProps> = ({
 
           <p className="z-20 max-w-xl text-lg text-foreground">{description}</p>
           <Button asChild size={"lg"} className="z-20 font-bold">
-            <Link href="#inscripciones">
+            <Link
+              // href="https://wa.me/56944768853?text=Hola!%20Vengo%20desde%20www.reaprende.cl%20y%20me%20gustaría%20consultar%20sobre%20..."
+              href="#inscripciones"
+              onClick={handleScroll}
+              target="_blank"
+              ref={ctaRef}
+            >
               {buttonText} <ArrowRight className="ml-2 h-5 w-5" />
             </Link>
           </Button>

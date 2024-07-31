@@ -1,6 +1,7 @@
 "use client";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { handleScroll } from "@/lib/utils";
 import {
   ArrowDown,
   ArrowRightIcon,
@@ -95,9 +96,9 @@ const TargetAudienceSection: FC<TargetAudienceSectionProps> = ({
           asChild
           size={"lg"}
           className="border-2 font-bold"
-          variant={"outline"}
+          // variant={"outline"}
         >
-          <Link href="#inscripciones">
+          <Link href="#inscripciones" onClick={handleScroll}>
             {buttonText} <ArrowDown className="ml-2 h-5 w-5" />
           </Link>
         </Button>

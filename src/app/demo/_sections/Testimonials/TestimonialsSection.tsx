@@ -58,7 +58,7 @@ const TestimonialsSection: FC<TestimonialsSectionProps> = ({
         <h2 className="text-4xl font-bold sm:text-5xl">{title}</h2>
         <p className="text-lg text-muted-foreground">{description}</p>
       </div>
-      <div className="mx-auto max-w-6xl px-6 lg:px-8">
+      <div className="mx-auto flex max-w-6xl flex-col gap-y-3 px-6 lg:px-8">
         <TextTestimonialsCarousel testimonials={textTestimonials} />
 
         <Masonry
@@ -69,9 +69,24 @@ const TestimonialsSection: FC<TestimonialsSectionProps> = ({
             maskImage: `linear-gradient(#000, #000 ${showDiscount ? "100%" : "70%"}, transparent 95%)`,
           }}
         >
-          {imageTestimonials.slice(0, visibleImagesCount).map((testimonial) => (
-            <ImageTestimonialCard key={testimonial.imageSrc} {...testimonial} />
-          ))}
+          {imageTestimonials
+            .slice(0, visibleImagesCount)
+            .map((testimonial, index) => (
+              <ImageTestimonialCard
+                key={testimonial.imageSrc}
+                {...testimonial}
+                priority={index < visibleImagesCount} // Prioritize images within the visible count
+              />
+            ))}
+          {imageTestimonials
+            .slice(visibleImagesCount, visibleImagesCount + 3)
+            .map((testimonial) => (
+              <ImageTestimonialCard
+                key={testimonial.imageSrc}
+                {...testimonial}
+                priority={false} // Ensure next images are loaded eagerly
+              />
+            ))}
         </Masonry>
         <div className="text-center">
           <LoadMoreButton

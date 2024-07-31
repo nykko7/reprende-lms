@@ -102,7 +102,7 @@
   },
   "learningRouteSection": {
     "title": "🚀 Ruta de Aprendizaje",
-    "description": "El curso se compone de 4 niveles, diseñados para comprender las matemáticas de manera progresiva e integral.",
+    "description": "El curso se compone de 4 módulos, diseñados para comprender las matemáticas de manera progresiva e integral la lógica y las bases de las matemáticas.",
     "imagePath": "/landing/learning-route.png",
     "steps": [
       {
@@ -320,27 +320,68 @@
   },
   "modalitiesSection": {
     "title": "🕹️ Elige tu camino de aprendizaje",
-    "description": "Elige la modalidad que mejor se adapte a tus necesidades y estilo de aprendizaje.",
+
+    "description": "Existen 3 modalidades de aprendizaje para tomar el curso, que cubren los 4 módulos. Elige la modalidad que mejor se adapte a tus necesidades y estilo de aprendizaje.",
+
     "modalities": [
       {
-        "name": "Grabado",
-        "description": "Clases grabadas, consultas ilimitadas por WhatsApp, material descargable y videos complementarios.",
-        "price": "$45.000/nivel",
-        "duration": "Depende del estudiante",
-        "features": ["Sesiones grabadas", "Acompañamiento por Whatsapp"]
-      },
-      {
-        "name": "En vivo",
-        "description": "Clases en Zoom, consultas ilimitadas por WhatsApp, acceso a maratones PAES y material descargable.",
-        "price": "$65,000/mes",
+        "name": "Modalidad en vivo",
+        "icon": "PlayCircle",
+        "tagline": "¡Comienza el 03 de agosto! (Última versión del año)",
+        "description": "Aprende de manera dinámica y interactiva para acelerar tu aprendizaje.",
+        "price": "$65.000 CLP por módulo",
         "duration": "4 meses",
         "features": [
-          "Sesiones en vivo",
-          "Acompañamiento por Whatsapp",
-          "Resolución de dudas en tiempo real"
-        ]
+          "Aprox 4 meses de duración (1 módulo por mes)",
+          "3 clases semanales de 2 horas",
+          "Trabajo grupal dinámico",
+          "Consultas en vivo",
+          "Acceso a grabaciones por 1 año"
+        ],
+        "urgencyNote": "¡Últimos cupos disponibles!"
+      },
+      {
+        "name": "Modalidad grabada",
+        "icon": "Video",
+        "tagline": "¡Comienza cuando quieras!",
+        "description": "Aprende a tu ritmo con clases grabadas y material descargable.",
+        "price": "$45.000 CLP por módulo",
+        "duration": "A tu ritmo",
+        "features": [
+          "Acceso instantáneo",
+          "Clases de generaciones anteriores",
+          "Estudia cuando y donde quieras",
+          "Repasa las veces que necesites"
+        ],
+        "notUrgencyNote": "¡Cupos ilimitados!"
+      },
+      {
+        "name": "Modalidad híbrida",
+        "icon": "Users",
+        "tagline": "¡Comienza cuando quieras!",
+        "description": "Obtén un acompañamiento personalizado adaptado a tu ritmo de aprendizaje.",
+        "price": "$100.000 CLP mensuales",
+        "duration": "Personalizada",
+        "features": [
+          "Clases particulares 1 a 1",
+          "Contenido grabado a tu disposición",
+          "Trabajo autónomo guiado",
+          "Diagnóstico inicial personalizado"
+        ],
+        "urgencyNote": "¡Cupos muy limitados!"
       }
-    ]
+    ],
+    "commonBenefits": {
+      "title": "Beneficios en todas las modalidades",
+      "benefits": [
+        "Consultas ilimitadas por WhatsApp",
+        "Material descargable exclusivo",
+        "Guías de estudio especializadas",
+        "Ensayos PAES con resolución detallada"
+      ]
+    },
+    "ctaText": "Invierte en tu futuro académico hoy. Nuestro equipo está listo para guiarte hacia la modalidad que maximice tu potencial en matemáticas.",
+    "ctaButtonText": "Escribenos al WhatsApp para inscribirte"
   },
 
   "whoAmISection": {
