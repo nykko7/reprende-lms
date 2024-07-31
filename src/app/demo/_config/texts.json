@@ -102,7 +102,7 @@
   },
   "learningRouteSection": {
     "title": "🚀 Ruta de Aprendizaje",
-    "description": "El curso se compone de 4 módulos, diseñados para comprender las matemáticas de manera progresiva e integral la lógica y las bases de las matemáticas.",
+    "description": "El curso se compone de 4 módulos, diseñados para comprender de manera progresiva e integral la lógica y las bases de las matemáticas.",
     "imagePath": "/landing/learning-route.png",
     "steps": [
       {
@@ -328,7 +328,7 @@
         "name": "Modalidad en vivo",
         "icon": "PlayCircle",
         "tagline": "¡Comienza el 03 de agosto! (Última versión del año)",
-        "description": "Aprende de manera dinámica y interactiva para acelerar tu aprendizaje.",
+        "description": "Aprende de manera dinámica e interactiva para acelerar tu aprendizaje.",
         "price": "$65.000 CLP por módulo",
         "duration": "4 meses",
         "features": [

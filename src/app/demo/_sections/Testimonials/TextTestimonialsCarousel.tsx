@@ -48,8 +48,8 @@ const TextTestimonialsCarousel: FC<TextTestimonialsCarouselProps> = ({
             <CarouselItem key={index}>
               <div className="group mx-auto flex h-full flex-col items-center justify-between gap-y-2 py-4  transition-all duration-300 ease-in ">
                 <div className="flex flex-col items-center gap-y-2">
-                  <Quote className="size-12 fill-transparent transition-all duration-300 ease-in group-hover:fill-primary" />
-                  <h2 className="text-center text-3xl font-bold">
+                  <Quote className="size-12 fill-primary transition-all duration-300 ease-in group-hover:fill-primary lg:fill-transparent" />
+                  <h2 className="text-center text-xl font-bold sm:text-2xl lg:text-3xl">
                     {testimonial}
                   </h2>
                 </div>
@@ -63,7 +63,7 @@ const TextTestimonialsCarousel: FC<TextTestimonialsCarouselProps> = ({
                     </AvatarFallback>
                     <AvatarImage src={imageSrc} alt={imageAlt} />
                   </Avatar>
-                  <p>{studentName}</p>
+                  <p className="font-bold">{studentName}</p>
                   <p className="border-l-2 pl-2 text-muted-foreground">
                     {studentDescription}
                   </p>
