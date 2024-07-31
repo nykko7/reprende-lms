@@ -106,7 +106,7 @@ const ModalitiesSection: FC<ModalitiesSectionProps> = ({
             </ul>
           </CardContent>
         </Card>
-        <p className="mb-6 text-center text-xl">{ctaText}</p>
+        <p className="mb-6 text-center text-lg">{ctaText}</p>
         <div className="text-center">
           <Button
             size="lg"
