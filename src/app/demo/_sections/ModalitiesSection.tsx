@@ -108,12 +108,16 @@ const ModalitiesSection: FC<ModalitiesSectionProps> = ({
         </Card>
         <p className="mb-6 text-center text-xl">{ctaText}</p>
         <div className="text-center">
-          <Button size="lg" asChild>
+          <Button
+            size="lg"
+            asChild
+            className="flex h-full flex-wrap text-wrap bg-green-800 p-4 text-2xl font-bold hover:bg-green-800/80"
+          >
             <Link
               href="https://wa.me/56944768853?text=Hola!%20Vengo%20desde%20www.reaprende.cl%20y%20me%20gustaría%inscribirme%en%20la%modalidad%..."
               target="_blank"
             >
-              <FaWhatsapp className="mr-2 h-5 w-5" />
+              <FaWhatsapp className="mr-2 h-8 w-8" />
               {ctaButtonText}
             </Link>
           </Button>
