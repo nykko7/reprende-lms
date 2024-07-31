@@ -27,7 +27,7 @@ export const InscriptionBannerSection = () => {
             <defs>
               <linearGradient id="gradient" x1="0" y1="0" x2="1" y2="0">
                 <stop offset="0%" stopColor="hsl(var(--primary))" />
-                <stop offset="100%" stopColor="rgba(255, 0, 0, 0)" />
+                <stop offset="100%" stopColor="hsl(var(--secondary))" />
               </linearGradient>
             </defs>
           </svg>
