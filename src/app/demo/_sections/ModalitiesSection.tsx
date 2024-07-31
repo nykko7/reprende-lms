@@ -60,7 +60,7 @@ const ModalitiesSection: FC<ModalitiesSectionProps> = ({
             >
               <CardHeader className="min-h-56 text-center">
                 {iconComponents[modality.icon] ?? null}
-                <h3 className="text-2xl font-bold text-primary">
+                <h3 className="text-2xl font-bold text-primary-foreground">
                   {modality.name}
                 </h3>
                 <p className="text-lg font-semibold text-muted-foreground">
@@ -90,10 +90,10 @@ const ModalitiesSection: FC<ModalitiesSectionProps> = ({
             </Card>
           ))}
         </div>
-        <Card className="mb-8 rounded-lg border-2 bg-primary/20 p-6">
-          <CardContent className="flex flex-col gap-4 pt-6">
-            <BookOpen className="mx-auto mb-2 h-16 w-16 text-primary-foreground" />
-            <h4 className="mb-2 text-center text-2xl font-bold text-primary-foreground/80">
+        <Card className="mb-8 rounded-lg border-2 border-secondary p-6">
+          <CardContent className="flex flex-col items-center gap-4 pt-6 text-center">
+            <BookOpen className="mb-4 h-16 w-16 text-primary-foreground" />
+            <h4 className="mb-4 text-2xl font-bold text-primary-foreground">
               {commonBenefits.title}
             </h4>
             <ul className="grid gap-2 text-primary-foreground md:grid-cols-2">
@@ -106,7 +106,7 @@ const ModalitiesSection: FC<ModalitiesSectionProps> = ({
             </ul>
           </CardContent>
         </Card>
-        <p className="mb-6 text-center text-card-foreground">{ctaText}</p>
+        <p className="mb-6 text-center text-xl">{ctaText}</p>
         <div className="text-center">
           <Button size="lg" asChild>
             <Link
