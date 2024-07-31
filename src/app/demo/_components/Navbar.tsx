@@ -58,7 +58,9 @@ export const Navbar = () => {
             className={cn(isVisible ? "block" : "hidden")}
           >
             <Link href="#inscripciones" onClick={handleScroll}>
-              Inscribirme al curso
+              {window.innerWidth <= 768
+                ? "Inscripción"
+                : "Inscribirme al curso"}
             </Link>
           </Button>
         </nav>

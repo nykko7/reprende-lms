@@ -39,10 +39,10 @@ const ModalitiesSection: FC<ModalitiesSectionProps> = ({
 }) => {
   const iconComponents: Record<string, JSX.Element> = {
     PlayCircle: (
-      <PlayCircle className="mx-auto mb-2 h-16 w-16 text-primary-foreground" />
+      <PlayCircle className="mx-auto h-16 w-16 text-primary-foreground" />
     ),
-    Video: <Video className="mx-auto mb-2 h-16 w-16 text-primary-foreground" />,
-    Users: <Users className="mx-auto mb-2 h-16 w-16 text-primary-foreground" />,
+    Video: <Video className="mx-auto h-16 w-16 text-primary-foreground" />,
+    Users: <Users className="mx-auto h-16 w-16 text-primary-foreground" />,
   };
 
   return (
