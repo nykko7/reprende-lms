@@ -13,7 +13,7 @@ interface TextTestimonial {
   testimonial: string;
   studentName: string;
   studentDescription: string;
-  imageSrc: string;
+  imageSrc?: string;
   imageAlt: string;
 }
 
