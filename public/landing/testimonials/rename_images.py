@@ -17,7 +17,7 @@ def rename_and_get_images_info(folder_path):
         file_extension = os.path.splitext(filename)[1].lower()
         
         # Crear el nuevo nombre
-        new_name = f"testimonial-image{index}{file_extension}"
+        new_name = f"testimonial-image-{index}{file_extension}"
         
         # Obtener la ruta completa de los archivos
         old_file = os.path.join(folder_path, filename)
