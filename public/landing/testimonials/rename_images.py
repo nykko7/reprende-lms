@@ -11,7 +11,7 @@ def rename_and_get_images_info(folder_path):
 
     for index, filename in enumerate(sorted(image_files), start=1):
         file_extension = os.path.splitext(filename)[1].lower()
-        new_name = f"testimonial-image-{index}{file_extension}"
+        new_name = f"testimonial-image{index}{file_extension}"
         old_file = os.path.join(folder_path, filename)
         new_file = os.path.join(folder_path, new_name)
         os.rename(old_file, new_file)
