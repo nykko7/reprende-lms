@@ -20,6 +20,7 @@ interface ModalitiesSectionProps {
     duration: string;
     features: string[];
     urgencyNote?: string;
+    semiUrgencyNote?: string;
     notUrgencyNote?: string;
   }[];
   commonBenefits: {
@@ -85,6 +86,9 @@ const ModalitiesSection: FC<ModalitiesSectionProps> = ({
                 )}
                 {modality.notUrgencyNote && (
                   <p className="text-green-400">{modality.notUrgencyNote}</p>
+                )}
+                {modality.semiUrgencyNote && (
+                  <p className="text-yellow-400">{modality.semiUrgencyNote}</p>
                 )}
               </CardContent>
             </Card>

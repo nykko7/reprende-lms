@@ -408,7 +408,7 @@
           "Trabajo autónomo guiado",
           "Diagnóstico inicial personalizado"
         ],
-        "urgencyNote": "¡Cupos muy limitados!"
+        "semiUrgencyNote": "¡Cupos muy limitados!"
       }
     ],
     "commonBenefits": {
