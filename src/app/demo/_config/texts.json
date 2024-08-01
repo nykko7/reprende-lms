@@ -117,7 +117,7 @@
           {
             "type": "list",
             "items": [
-              "Negativos y positivos",
+              "Neglativos y de un estudiantes",
               "Potencias y raíces",
               "Fracciones y decimales",
               "Porcentaje"
@@ -220,100 +220,140 @@
     "testimonials": {
       "textTestimonials": [
         {
-          "testimonial": "Aprendí demasiado con el curso, ahora me siento con mucha más seguridad para resolver cualquier ejercicio",
-          "studentName": "Verónica Saéz",
+          "testimonial": "He mejorado muchismo mis notas, al principio del año me sacaba 5.0 y mi ultima prueba me saque un 7.0, algo q en matematica creía imposible.",
+          "studentName": "Antonia Oteiza",
           "studentDescription": "Estudiante de 4to medio",
-          "imageSrc": "/landing/testimonials/testimonial-student1.jpg",
-          "imageAlt": "Imagen de Verónica Saéz, estudiante de 4to medio"
+          "imageAlt": "Avatar de Antonia Oteiza, estudiante de 4to medio"
         },
         {
-          "testimonial": "Los profesores son muy dedicados y el material es excelente.",
-          "studentName": "Juan Pérez",
+          "testimonial": "Cada mes fui desarrollando más habilidades matemáticas, de a poco fui perdiendo el miedo a equivocarme y logré entender muchos contenidos que en el colegio nunca entendí.",
+          "studentName": "Julio Hidalgo",
           "studentDescription": "Estudiante de 3ro medio",
-          "imageSrc": "/landing/testimonials/testimonial-student2.jpg",
-          "imageAlt": "Imagen de Juan Pérez, estudiante de 3ro medio"
+          "imageAlt": "Avatar de Julio Hidalgo, estudiante de 3ro medio"
+        },
+        {
+          "testimonial": "100% recomendable para aquellas personas q no tienen una buena base.",
+          "studentName": "Emilia Salazar",
+          "studentDescription": "Estudiante de 4to medio",
+          "imageAlt": "Avatar de Emilia Salazar, estudiante de 4to medio"
+        },
+        {
+          "testimonial": "Ha sido una experiencia muy buena, aporta mucho y también es una herramienta fundamental para el desarrollo del aprendizaje de las matemáticas.",
+          "studentName": "Lucas Sanhueza",
+          "studentDescription": "Estudiante de 3ro medio",
+          "imageAlt": "Avatar de Lucas Sanhueza, estudiante de 3ro medio"
+        },
+        {
+          "testimonial": "Cambié el miedo por seguridad como el objetivo del curso. ",
+          "studentName": "Julio Hidalgo",
+          "studentDescription": "Estudiante de 3ro medio",
+          "imageAlt": "Avatar de Julio Hidalgo, estudiante de 3ro medio"
+        },
+        {
+          "testimonial": "Creo que me ha ayudado bastante a comprender las matemáticas de una manera más didáctica y entretenida.",
+          "studentName": "Emilia Salazar",
+          "studentDescription": "Estudiante de 4to medio",
+          "imageAlt": "Avatar de Emilia Salazar, estudiante de 4to medio"
+        },
+        {
+          "testimonial": "Destaco mucho la energía y dedicación de la profe, eso vale mucho y sobre todo ayuda bastante a comprender mejor las matemáticas.",
+          "studentName": "Julio Hidalgo",
+          "studentDescription": "Estudiante de 3ro medio",
+          "imageAlt": "Avatar de Julio Hidalgo, estudiante de 3ro medio"
         }
       ],
       "imageTestimonials": [
         {
-          "imageSrc": "/landing/testimonials/testimonial-image1.PNG",
-          "imageAlt": "Pantallazo de mensaje positivo 1"
+          "imageSrc": "/landing/testimonials/testimonial-image1.png",
+          "imageAlt": "Pantallazo del mensaje de un estudiante 1"
         },
         {
-          "imageSrc": "/landing/testimonials/testimonial-image2.png",
-          "imageAlt": "Pantallazo de mensaje positivo 2"
+          "imageSrc": "/landing/testimonials/testimonial-image2.jpg",
+          "imageAlt": "Pantallazo del mensaje de un estudiante 2"
         },
         {
-          "imageSrc": "/landing/testimonials/testimonial-image3.png",
-          "imageAlt": "Pantallazo de mensaje positivo 3"
+          "imageSrc": "/landing/testimonials/testimonial-image3.jpg",
+          "imageAlt": "Pantallazo del mensaje de un estudiante 3"
         },
         {
-          "imageSrc": "/landing/testimonials/testimonial-image4.png",
-          "imageAlt": "Pantallazo de mensaje positivo 4"
+          "imageSrc": "/landing/testimonials/testimonial-image4.jpg",
+          "imageAlt": "Pantallazo del mensaje de un estudiante 4"
         },
         {
-          "imageSrc": "/landing/testimonials/testimonial-image5.png",
-          "imageAlt": "Pantallazo de mensaje positivo 5"
+          "imageSrc": "/landing/testimonials/testimonial-image5.jpg",
+          "imageAlt": "Pantallazo del mensaje de un estudiante 5"
         },
         {
           "imageSrc": "/landing/testimonials/testimonial-image6.jpg",
-          "imageAlt": "Pantallazo de mensaje positivo 6"
+          "imageAlt": "Pantallazo del mensaje de un estudiante 6"
         },
         {
-          "imageSrc": "/landing/testimonials/testimonial-image7.jpg",
-          "imageAlt": "Pantallazo de mensaje positivo 7"
+          "imageSrc": "/landing/testimonials/testimonial-image7.png",
+          "imageAlt": "Pantallazo del mensaje de un estudiante 7"
         },
         {
           "imageSrc": "/landing/testimonials/testimonial-image8.jpg",
-          "imageAlt": "Pantallazo de mensaje positivo 8"
+          "imageAlt": "Pantallazo del mensaje de un estudiante 8"
         },
         {
-          "imageSrc": "/landing/testimonials/testimonial-image9.jpg",
-          "imageAlt": "Pantallazo de mensaje positivo 9"
+          "imageSrc": "/landing/testimonials/testimonial-image9.png",
+          "imageAlt": "Pantallazo del mensaje de un estudiante 9"
         },
         {
-          "imageSrc": "/landing/testimonials/testimonial-image10.jpg",
-          "imageAlt": "Pantallazo de mensaje positivo 10"
+          "imageSrc": "/landing/testimonials/testimonial-image10.png",
+          "imageAlt": "Pantallazo del mensaje de un estudiante 10"
         },
         {
-          "imageSrc": "/landing/testimonials/testimonial-image11.jpg",
-          "imageAlt": "Pantallazo de mensaje positivo 11"
+          "imageSrc": "/landing/testimonials/testimonial-image11.png",
+          "imageAlt": "Pantallazo del mensaje de un estudiante 11"
         },
         {
-          "imageSrc": "/landing/testimonials/testimonial-image12.jpg",
-          "imageAlt": "Pantallazo de mensaje positivo 12"
+          "imageSrc": "/landing/testimonials/testimonial-image12.png",
+          "imageAlt": "Pantallazo del mensaje de un estudiante 12"
         },
         {
           "imageSrc": "/landing/testimonials/testimonial-image13.jpg",
-          "imageAlt": "Pantallazo de mensaje positivo 13"
+          "imageAlt": "Pantallazo del mensaje de un estudiante 13"
         },
         {
           "imageSrc": "/landing/testimonials/testimonial-image14.jpg",
-          "imageAlt": "Pantallazo de mensaje positivo 14"
+          "imageAlt": "Pantallazo del mensaje de un estudiante 14"
         },
         {
           "imageSrc": "/landing/testimonials/testimonial-image15.jpg",
-          "imageAlt": "Pantallazo de mensaje positivo 15"
+          "imageAlt": "Pantallazo del mensaje de un estudiante 15"
         },
         {
           "imageSrc": "/landing/testimonials/testimonial-image16.jpg",
-          "imageAlt": "Pantallazo de mensaje positivo 16"
+          "imageAlt": "Pantallazo del mensaje de un estudiante 16"
         },
         {
-          "imageSrc": "/landing/testimonials/testimonial-image17.jpg",
-          "imageAlt": "Pantallazo de mensaje positivo 17"
+          "imageSrc": "/landing/testimonials/testimonial-image17.png",
+          "imageAlt": "Pantallazo del mensaje de un estudiante 17"
         },
         {
-          "imageSrc": "/landing/testimonials/testimonial-image18.jpg",
-          "imageAlt": "Pantallazo de mensaje positivo 18"
+          "imageSrc": "/landing/testimonials/testimonial-image18.png",
+          "imageAlt": "Pantallazo del mensaje de un estudiante 18"
         },
         {
           "imageSrc": "/landing/testimonials/testimonial-image19.jpg",
-          "imageAlt": "Pantallazo de mensaje positivo 19"
+          "imageAlt": "Pantallazo del mensaje de un estudiante 19"
         },
         {
           "imageSrc": "/landing/testimonials/testimonial-image20.jpg",
-          "imageAlt": "Pantallazo de mensaje positivo 20"
+          "imageAlt": "Pantallazo del mensaje de un estudiante 20"
+        },
+        {
+          "imageSrc": "/landing/testimonials/testimonial-image21.jpg",
+          "imageAlt": "Pantallazo del mensaje de un estudiante 21"
+        },
+        {
+          "imageSrc": "/landing/testimonials/testimonial-image22.jpg",
+          "imageAlt": "Pantallazo del mensaje de un estudiante 22"
+        },
+        {
+          "imageSrc": "/landing/testimonials/testimonial-image23.jpg",
+          "imageAlt": "Pantallazo del mensaje de un estudiante 23"
         }
       ]
     }

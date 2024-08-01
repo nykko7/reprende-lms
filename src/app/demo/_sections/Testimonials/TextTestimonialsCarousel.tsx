@@ -53,7 +53,7 @@ const TextTestimonialsCarousel: FC<TextTestimonialsCarouselProps> = ({
                     {testimonial}
                   </h2>
                 </div>
-                <div className="flex items-center justify-center gap-2 border-b-2 py-3 text-center text-lg  transition-all duration-300 ease-in group-hover:border-b-primary/50">
+                <div className="flex items-center justify-center gap-2 border-b-2 border-b-primary/50 py-3 text-center  text-lg transition-all duration-300 ease-in group-hover:border-b-primary/50 lg:border-transparent">
                   <Avatar className="border">
                     <AvatarFallback>
                       {studentName

@@ -35,7 +35,7 @@ const TestimonialsSection: FC<TestimonialsSectionProps> = ({
   description,
   testimonials: { textTestimonials, imageTestimonials },
 }) => {
-  const [visibleImagesCount, setVisibleImagesCount] = useState(6);
+  const [visibleImagesCount, setVisibleImagesCount] = useState(3);
   const [showDiscount, setShowDiscount] = useState(false);
 
   const handleLoadMore = () => {
