@@ -40,7 +40,7 @@ export const Navbar = () => {
 
   return (
     <header id="navbar" className="sticky inset-y-0 top-0 z-50 w-full border-b">
-      <div className="flex items-center justify-between bg-background px-6 py-2 sm:px-8">
+      <div className="flex items-center justify-between gap-x-2 bg-background px-6 py-2 sm:px-8">
         <nav className="flex">
           {/* <MobileSidebar /> */}
 
@@ -55,12 +55,16 @@ export const Navbar = () => {
           <Button
             asChild
             ref={buttonRef}
-            className={cn(isVisible ? "block" : "hidden")}
+            className={cn(
+              isVisible ? "flex items-center" : "hidden",
+              "text-wrap px-2 text-center text-xs sm:px-4 sm:text-sm",
+            )}
           >
             <Link href="#inscripciones" onClick={handleScroll}>
-              {typeof window !== "undefined" && window?.innerWidth >= 768
+              {/* {typeof window !== "undefined" && window?.innerWidth >= 768
                 ? "Inscribirme al curso"
-                : "Inscripción"}
+                : "Inscripción"} */}
+              Inscribirme al curso
             </Link>
           </Button>
         </nav>
