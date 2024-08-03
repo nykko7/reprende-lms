@@ -15,7 +15,8 @@ const fontSants = FontSans({
 
 export const metadata: Metadata = {
   title: "Reaprende Mate",
-  description: "Reaprende las matemáticas desde cero",
+  description:
+    "Curso de nivelación en matemáticas diseñado para comprender los contenidos desde cero.",
   icons: [{ rel: "icon", url: "/favicon.ico" }],
 };
 
