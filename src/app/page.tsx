@@ -1,7 +1,9 @@
-import { redirect } from "next/navigation";
+import { permanentRedirect } from "next/navigation";
 
 export default function UnderConstructionPage() {
-  redirect("/curso");
+  // redirect("/curso");
+
+  permanentRedirect("/curso");
 
   // return (
   //   <div className="flex min-h-[100dvh] flex-col items-center justify-center bg-[#f5f5f5] px-4 dark:bg-[#111111]">
