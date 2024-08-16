@@ -72,7 +72,7 @@ const HeroSection: FC<HeroSectionProps> = ({
             </CTAButton>
             <Button size={"lg"} className="z-20 font-bold" asChild>
               <Link
-                href="https://wa.me/56944768853?text=Hola!%20Vengo%20desde%20https://www.reaprende.cl%20y%20me%20gustaría%20inscribirme%20en%20la%20modalidad%20..."
+                href="https://wa.me/56944768853?text=Hola!%20Vengo%20desde%20https://www.reaprende.cl%20y%20me%20gustaría%20participar%20del%20curso%20de%20nivelación"
                 target="_blank"
               >
                 <FaWhatsapp className="mr-2 h-5 w-5 " />
