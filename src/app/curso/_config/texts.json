@@ -4,7 +4,8 @@
     "titleAccent": "Reaprende",
     "titleNormal": " las matemáticas",
     "description": "Curso de nivelación en matemáticas diseñado para comprender los contenidos desde cero.",
-    "buttonText": "Reserva tu cupo"
+    "modalitiesButtonText": "Ver modalidades",
+    "ctaButtonText": "Reservar cupo"
   },
   "socialProofSection": {
     "title": "🌟 ¿Por qué elegir Reaprende?",
@@ -102,7 +103,7 @@
   },
   "learningRouteSection": {
     "title": "🚀 Ruta de Aprendizaje",
-    "description": "El curso se compone de 4 módulos, diseñados para comprender de manera progresiva e integral la lógica y las bases de las matemáticas.",
+    "description": "El curso se compone de 4 módulos, diseñados para comprender la lógica y las bases de las matemáticas de manera progresiva e integral.",
     "imagePath": "/landing/learning-route.png",
     "steps": [
       {

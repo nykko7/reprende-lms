@@ -1,5 +1,5 @@
 import { type FC } from "react";
-import { SectionWrapper } from "../_components/SectionWrapper";
+import { SectionWrapper } from "../../_components/SectionWrapper";
 
 interface Step {
   step: string;

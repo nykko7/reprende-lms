@@ -21,7 +21,7 @@ interface TextTestimonialsCarouselProps {
   testimonials: TextTestimonial[];
 }
 
-const TextTestimonialsCarousel: FC<TextTestimonialsCarouselProps> = ({
+const TestimonialCarousel: FC<TextTestimonialsCarouselProps> = ({
   testimonials,
 }) => {
   return (
@@ -79,4 +79,4 @@ const TextTestimonialsCarousel: FC<TextTestimonialsCarouselProps> = ({
   );
 };
 
-export default TextTestimonialsCarousel;
+export default TestimonialCarousel;

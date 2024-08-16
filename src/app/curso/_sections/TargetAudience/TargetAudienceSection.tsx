@@ -1,16 +1,13 @@
-"use client";
-import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { handleScroll } from "@/lib/utils";
 import {
   ArrowDown,
   ArrowRightIcon,
   CheckIcon,
   ChevronRight,
 } from "lucide-react";
-import Link from "next/link";
 import { type FC } from "react";
-import { SectionWrapper } from "../_components/SectionWrapper";
+import { SectionWrapper } from "../../_components/SectionWrapper";
+import CTAButton from "./CTAButton";
 
 interface TargetAudienceSectionProps {
   title: string;
@@ -92,16 +89,9 @@ const TargetAudienceSection: FC<TargetAudienceSectionProps> = ({
       </div>
       <h3 className="text-center text-2xl font-bold">{footer}</h3>
       <div className="flex justify-center">
-        <Button
-          asChild
-          size={"lg"}
-          className="border-2 font-bold"
-          // variant={"outline"}
-        >
-          <Link href="#inscripciones" onClick={handleScroll}>
-            {buttonText} <ArrowDown className="ml-2 h-5 w-5" />
-          </Link>
-        </Button>
+        <CTAButton>
+          {buttonText} <ArrowDown className="ml-2 h-5 w-5" />
+        </CTAButton>
       </div>
     </SectionWrapper>
   );

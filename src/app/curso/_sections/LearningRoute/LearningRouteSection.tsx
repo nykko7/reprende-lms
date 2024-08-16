@@ -1,6 +1,6 @@
 import { cn } from "@/lib/utils";
 import { Fragment, type FC } from "react";
-import { SectionWrapper } from "../_components/SectionWrapper";
+import { SectionWrapper } from "../../_components/SectionWrapper";
 
 interface LearningRouteSectionProps {
   title: string;

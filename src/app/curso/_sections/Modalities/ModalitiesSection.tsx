@@ -1,12 +1,10 @@
-"use client";
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { BookOpen, CheckCircle, PlayCircle, Users, Video } from "lucide-react";
 import Link from "next/link";
 import { type FC } from "react";
 import { FaWhatsapp } from "react-icons/fa";
-import { SectionWrapper } from "../_components/SectionWrapper";
+import { SectionWrapper } from "../../_components/SectionWrapper";
 
 interface ModalitiesSectionProps {
   title: string;

@@ -1,10 +1,6 @@
-"use client";
+import CTAButton from "./CTAButton";
 
-import { Button } from "@/components/ui/button";
-import { handleScroll } from "@/lib/utils";
-import Link from "next/link";
-
-export const InscriptionBannerSection = () => {
+const InscriptionBannerSection = () => {
   return (
     <section className="align center group my-0 flex flex-col justify-center gap-4 border-y border-primary py-20 text-center text-primary-foreground  transition duration-700 ease-out hover:border-primary lg:border-transparent">
       <h2 className="text-3xl font-bold">
@@ -36,12 +32,10 @@ export const InscriptionBannerSection = () => {
       </h2>
 
       <div className="flex justify-center text-foreground">
-        <Button size={"lg"} asChild>
-          <Link href="#inscripciones" onClick={handleScroll}>
-            ¡Quiero reaprender!
-          </Link>
-        </Button>
+        <CTAButton>¡Quiero reaprender!</CTAButton>
       </div>
     </section>
   );
 };
+
+export default InscriptionBannerSection;

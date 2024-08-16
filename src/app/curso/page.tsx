@@ -1,16 +1,16 @@
 import {
   HeroSection,
+  InscriptionBannerSection,
   LearningRouteSection,
   MethodologySection,
+  ModalitiesSection,
+  SocialProofBannerSection,
   TargetAudienceSection,
+  TestimonialsSection,
+  WhoAmISection,
 } from "./_sections";
 
 import texts from "./_config/texts.json";
-import { InscriptionBannerSection } from "./_sections/InscriptionBannerSection";
-import ModalitiesSection from "./_sections/ModalitiesSection";
-import { SocialProofBannerSection } from "./_sections/SocialProofBannerSection";
-import TestimonialsSection from "./_sections/Testimonials/TestimonialsSection";
-import WhoAmISection from "./_sections/WhoAmI";
 
 export default async function Home() {
   return (

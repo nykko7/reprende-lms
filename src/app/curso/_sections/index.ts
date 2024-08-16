@@ -1,15 +1,21 @@
-import DashboardPreviewSection from "./DashboardPreviewSection";
-import HeroSection from "./HeroSection";
-import LearningRouteSection from "./LearningRouteSection";
-import MethodologySection from "./MethodologySection";
-import StepsSection from "./StepsSection";
-import TargetAudienceSection from "./TargetAudienceSection";
+import HeroSection from "./Hero/HeroSection";
+import InscriptionBannerSection from "./InscriptionBanner/InscriptionBannerSection";
+import LearningRouteSection from "./LearningRoute/LearningRouteSection";
+import MethodologySection from "./Methodology/MethodologySection";
+import ModalitiesSection from "./Modalities/ModalitiesSection";
+import SocialProofBannerSection from "./SocialProofBanner/SocialProofBannerSection";
+import TargetAudienceSection from "./TargetAudience/TargetAudienceSection";
+import TestimonialsSection from "./Testimonials/TestimonialsSection";
+import WhoAmISection from "./WhoAmI/WhoAmISection";
 
 export {
-  DashboardPreviewSection,
   HeroSection,
+  InscriptionBannerSection,
   LearningRouteSection,
   MethodologySection,
-  StepsSection,
+  ModalitiesSection,
+  SocialProofBannerSection,
   TargetAudienceSection,
+  TestimonialsSection,
+  WhoAmISection,
 };

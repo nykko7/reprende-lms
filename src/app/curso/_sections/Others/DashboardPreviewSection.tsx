@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { type FC } from "react";
-import BackgroundDecorator from "../_components/BackgroundDecorator";
+import BackgroundDecorator from "../../_components/BackgroundDecorator";
 
 interface DashboardSectionProps {
   imagePath: string;

@@ -1,20 +1,20 @@
-"use client";
-
-import { CTAButtonRefContext } from "@/components/providers/CTAButttonProvider";
 import { Badge } from "@/components/ui/badge";
+
 import { Button } from "@/components/ui/button";
-import { handleScroll } from "@/lib/utils";
-import { ArrowRight } from "lucide-react";
+import { Joystick } from "lucide-react";
 import Link from "next/link";
-import { useContext, type FC } from "react";
-import { SectionWrapper } from "../_components/SectionWrapper";
+import { type FC } from "react";
+import { FaWhatsapp } from "react-icons/fa";
+import { SectionWrapper } from "../../_components/SectionWrapper";
+import CTAButton from "./CTAButton";
 
 interface HeroSectionProps {
   badgeText: string;
   titleAccent: string;
   titleNormal: string;
   description: string;
-  buttonText: string;
+  ctaButtonText: string;
+  modalitiesButtonText: string;
 }
 
 const HeroSection: FC<HeroSectionProps> = ({
@@ -22,9 +22,9 @@ const HeroSection: FC<HeroSectionProps> = ({
   titleAccent,
   titleNormal,
   description,
-  buttonText,
+  ctaButtonText,
+  modalitiesButtonText,
 }) => {
-  const ctaRef = useContext(CTAButtonRefContext);
   return (
     // h-[calc(100vh-250px)] is a utility class that sets the height of the element to the viewport height minus 250px
     <SectionWrapper className="my-0 flex h-[calc(100svh-56px)] flex-col justify-center py-20">
@@ -65,17 +65,21 @@ const HeroSection: FC<HeroSectionProps> = ({
           </h1>
 
           <p className="z-20 max-w-xl text-lg text-foreground">{description}</p>
-          <Button asChild size={"lg"} className="z-20 font-bold">
-            <Link
-              // href="https://wa.me/56944768853?text=Hola!%20Vengo%20desde%20www.reaprende.cl%20y%20me%20gustaría%20consultar%20sobre%20..."
-              href="#inscripciones"
-              onClick={handleScroll}
-              target="_blank"
-              ref={ctaRef}
-            >
-              {buttonText} <ArrowRight className="ml-2 h-5 w-5" />
-            </Link>
-          </Button>
+          <div className="flex gap-2">
+            <CTAButton>
+              <Joystick className="mr-2 h-5 w-5 " />
+              {modalitiesButtonText}
+            </CTAButton>
+            <Button size={"lg"} className="z-20 font-bold" asChild>
+              <Link
+                href="https://wa.me/56944768853?text=Hola!%20Vengo%20desde%20https://www.reaprende.cl%20y%20me%20gustaría%20inscribirme%20en%20la%20modalidad%20..."
+                target="_blank"
+              >
+                <FaWhatsapp className="mr-2 h-5 w-5 " />
+                {ctaButtonText}
+              </Link>
+            </Button>
+          </div>
         </div>
       </div>
     </SectionWrapper>

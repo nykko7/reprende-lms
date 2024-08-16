@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { type FC } from "react";
-import { SectionWrapper } from "../_components/SectionWrapper";
+import { SectionWrapper } from "../../_components/SectionWrapper";
 
 interface WhoAmISectionProps {
   title: string;

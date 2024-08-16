@@ -1,6 +1,6 @@
 import { type FC } from "react";
-import Feature, { type FeatureProps } from "../_components/Feature";
-import { SectionWrapper } from "../_components/SectionWrapper";
+import Feature, { type FeatureProps } from "../../_components/Feature";
+import { SectionWrapper } from "../../_components/SectionWrapper";
 
 interface MethodologySectionProps {
   title: string;

@@ -1,12 +1,8 @@
-"use client";
-
-import { type FC, useState } from "react";
-import Masonry from "react-masonry-css";
+import { type FC } from "react";
 import { SectionWrapper } from "../../_components/SectionWrapper";
-import DiscountMessage from "./DiscountMessage";
-import ImageTestimonialCard from "./ImageTestimonialCard";
-import LoadMoreButton from "./LoadMoreButton";
-import TextTestimonialsCarousel from "./TextTestimonialsCarousel";
+
+import TestimonialCarousel from "./TestimonialCarousel";
+import TestimonialMasonry from "./TestimonialMasonry";
 
 interface TextTestimonial {
   testimonial: string;
@@ -35,23 +31,6 @@ const TestimonialsSection: FC<TestimonialsSectionProps> = ({
   description,
   testimonials: { textTestimonials, imageTestimonials },
 }) => {
-  const [visibleImagesCount, setVisibleImagesCount] = useState(3);
-  const [showDiscount, setShowDiscount] = useState(false);
-
-  const handleLoadMore = () => {
-    if (visibleImagesCount >= imageTestimonials.length) {
-      setShowDiscount(true);
-    } else {
-      setVisibleImagesCount((prevCount) => prevCount + 3);
-    }
-  };
-
-  const breakpointColumnsObj = {
-    default: 3,
-    1100: 2,
-    700: 1,
-  };
-
   return (
     <SectionWrapper className="my-0">
       <div className="mx-auto mb-12 flex max-w-3xl flex-col gap-2 text-center">
@@ -59,39 +38,8 @@ const TestimonialsSection: FC<TestimonialsSectionProps> = ({
         <p className="text-lg text-muted-foreground">{description}</p>
       </div>
       <div className="mx-auto flex max-w-6xl flex-col gap-y-3 px-6 lg:px-8">
-        <TextTestimonialsCarousel testimonials={textTestimonials} />
-
-        <Masonry
-          breakpointCols={breakpointColumnsObj}
-          className="-ml-8 flex w-auto gap-8"
-          columnClassName="pl-8 bg-clip-padding"
-        >
-          {imageTestimonials
-            .slice(0, visibleImagesCount)
-            .map((testimonial, index) => (
-              <ImageTestimonialCard
-                key={testimonial.imageSrc}
-                {...testimonial}
-                priority={index < visibleImagesCount} // Prioritize images within the visible count
-              />
-            ))}
-          {/* {imageTestimonials
-            .slice(visibleImagesCount, visibleImagesCount + 3)
-            .map((testimonial) => (
-              <ImageTestimonialCard
-                key={testimonial.imageSrc}
-                {...testimonial}
-                priority={false} // Ensure next images are loaded eagerly
-              />
-            ))} */}
-        </Masonry>
-        <div className="text-center">
-          <LoadMoreButton
-            onClick={handleLoadMore}
-            showDiscount={showDiscount}
-          />
-          {showDiscount && <DiscountMessage />}
-        </div>
+        <TestimonialCarousel testimonials={textTestimonials} />
+        <TestimonialMasonry testimonials={imageTestimonials} />
       </div>
     </SectionWrapper>
   );

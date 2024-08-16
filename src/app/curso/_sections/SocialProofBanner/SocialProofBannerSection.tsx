@@ -4,7 +4,7 @@ type SocialProofBannerSectionProps = {
     description: string;
   }[];
 };
-export const SocialProofBannerSection = ({
+const SocialProofBannerSection = ({
   socialProofs,
 }: SocialProofBannerSectionProps) => {
   return (
@@ -24,3 +24,5 @@ export const SocialProofBannerSection = ({
     </section>
   );
 };
+
+export default SocialProofBannerSection;
