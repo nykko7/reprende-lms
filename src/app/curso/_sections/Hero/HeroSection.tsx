@@ -66,7 +66,11 @@ const HeroSection: FC<HeroSectionProps> = ({
 
           <p className="z-20 max-w-xl text-lg text-foreground">{description}</p>
           <div className="flex flex-wrap justify-center gap-4">
-            <CTAButton className="z-20 w-full sm:w-fit" variant={"outline"}>
+            <CTAButton
+              className="z-20 w-full sm:w-fit"
+              variant={"outline"}
+              isHero
+            >
               <Joystick className="mr-2 h-5 w-5 " />
               {modalitiesButtonText}
             </CTAButton>

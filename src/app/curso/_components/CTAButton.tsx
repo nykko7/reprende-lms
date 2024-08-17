@@ -11,7 +11,8 @@ export default function CTAButton({
   children,
   className,
   variant,
-}: ButtonProps) {
+  isHero,
+}: ButtonProps & { isHero?: boolean }) {
   const ctaRef = useContext(CTAButtonRefContext);
   return (
     <Button
@@ -25,7 +26,7 @@ export default function CTAButton({
         href="#inscripciones"
         onClick={handleScroll}
         target="_blank"
-        ref={ctaRef}
+        ref={isHero ? ctaRef : undefined}
       >
         {children}
       </Link>

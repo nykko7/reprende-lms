@@ -51,7 +51,7 @@ const ModalitiesSection: FC<ModalitiesSectionProps> = ({
         <p className="text-lg text-muted-foreground">{description}</p>
       </div>
       <div className="mx-auto max-w-6xl px-6 lg:px-8">
-        <div className="mb-8 grid gap-6 md:grid-cols-3">
+        <div className="mb-8 grid gap-6 lg:grid-cols-3">
           {modalities.map((modality, index) => (
             <Card
               key={index}
