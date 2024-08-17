@@ -10,6 +10,7 @@ interface ModalitiesSectionProps {
   title: string;
   description: string;
   modalities: {
+    id: "live" | "recorded" | "hybrid";
     name: string;
     icon: string;
     tagline: string;
@@ -44,6 +45,14 @@ const ModalitiesSection: FC<ModalitiesSectionProps> = ({
     Users: <Users className="mx-auto h-16 w-16 text-primary-foreground" />,
   };
 
+  const whatsappLinkById = {
+    live: "https://wa.me/56944768853?text=Hola!%20Vengo%20desde%20https://www.reaprende.cl%20y%20me%20gustaría%20inscribir%20en%20la%20modalidad%20en%20vivo",
+    recorded:
+      "https://wa.me/56944768853?text=Hola!%20Vengo%20desde%20https://www.reaprende.cl%20y%20me%20gustaría%20inscribir%20en%20la%20modalidad%20grabada",
+    hybrid:
+      "https://wa.me/56944768853?text=Hola!%20Vengo%20desde%20https://www.reaprende.cl%20y%20me%20gustaría%20inscribir%20en%20la%20modalidad%20híbrida",
+  };
+
   return (
     <SectionWrapper id="inscripciones" className="">
       <div className="mx-auto mb-12 flex max-w-3xl flex-col gap-2 text-center">
@@ -55,9 +64,9 @@ const ModalitiesSection: FC<ModalitiesSectionProps> = ({
           {modalities.map((modality, index) => (
             <Card
               key={index}
-              className="flex flex-col rounded-lg border-2 border-primary p-6"
+              className="relative flex flex-col rounded-lg border-2 border-primary p-6"
             >
-              <CardHeader className="min-h-56 text-center">
+              <CardHeader className="min-h-48 text-center">
                 {iconComponents[modality.icon] ?? null}
                 <h3 className="text-2xl font-bold text-primary-foreground">
                   {modality.name}
@@ -66,7 +75,7 @@ const ModalitiesSection: FC<ModalitiesSectionProps> = ({
                   {modality.tagline}
                 </p>
               </CardHeader>
-              <CardContent className="flex h-full flex-col justify-between gap-4 text-center">
+              <CardContent className="flex h-full flex-col gap-6 text-center">
                 <p className="text-card-foreground">{modality.description}</p>
                 <ul className="text-left text-card-foreground">
                   {modality.features.map((feature, featureIndex) => (
@@ -76,18 +85,38 @@ const ModalitiesSection: FC<ModalitiesSectionProps> = ({
                     </li>
                   ))}
                 </ul>
-                <p className="text-2xl font-extrabold text-primary-foreground">
-                  {modality.price}
-                </p>
-                {modality.urgencyNote && (
-                  <p className="text-red-400">{modality.urgencyNote}</p>
-                )}
-                {modality.notUrgencyNote && (
-                  <p className="text-green-400">{modality.notUrgencyNote}</p>
-                )}
-                {modality.semiUrgencyNote && (
-                  <p className="text-yellow-400">{modality.semiUrgencyNote}</p>
-                )}
+
+                <div className="flex h-full flex-col justify-end gap-2">
+                  <p className="text-2xl font-extrabold text-primary-foreground">
+                    {modality.price}
+                  </p>
+                  <Button
+                    size="lg"
+                    asChild
+                    className="flex h-fit flex-wrap text-wrap p-4 font-bold"
+                  >
+                    <Link href={whatsappLinkById[modality.id]} target="_blank">
+                      <FaWhatsapp className="mr-2 h-5 w-5" />
+                      Consultar disponiblidad
+                    </Link>
+                  </Button>
+                  {/* <Button size={"lg"}></Button> */}
+                  {modality.urgencyNote && (
+                    <p className="text-sm text-red-400">
+                      {modality.urgencyNote}
+                    </p>
+                  )}
+                  {modality.notUrgencyNote && (
+                    <p className="text-sm text-green-400">
+                      {modality.notUrgencyNote}
+                    </p>
+                  )}
+                  {modality.semiUrgencyNote && (
+                    <p className="text-sm text-yellow-400">
+                      {modality.semiUrgencyNote}
+                    </p>
+                  )}
+                </div>
               </CardContent>
             </Card>
           ))}
@@ -109,21 +138,21 @@ const ModalitiesSection: FC<ModalitiesSectionProps> = ({
           </CardContent>
         </Card>
         <p className="mb-6 text-center text-lg">{ctaText}</p>
-        <div className="text-center">
+        {/* <div className="text-center">
           <Button
             size="lg"
             asChild
             className="flex h-full flex-wrap text-wrap bg-green-800 p-4 text-xl font-bold hover:bg-green-800/80"
           >
             <Link
-              href="https://wa.me/56944768853?text=Hola!%20Vengo%20desde%20https://www.reaprende.cl%20y%20me%20gustaría%20inscribirme%20en%20la%20modalidad%20..."
+              href="https://wa.me/56944768853?text=Hola!%20Vengo%20desde%20https://www.reaprende.cl%20y%20me%20gustaría%20inscribir%20en%20la%20modalidad%20..."
               target="_blank"
             >
               <FaWhatsapp className="mr-2 h-8 w-8" />
               {ctaButtonText}
             </Link>
           </Button>
-        </div>
+        </div> */}
       </div>
     </SectionWrapper>
   );

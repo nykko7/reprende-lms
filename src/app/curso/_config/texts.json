@@ -366,9 +366,10 @@
 
     "modalities": [
       {
+        "id": "live",
         "name": "Modalidad en vivo",
         "icon": "PlayCircle",
-        "tagline": "¡Comienza el 03 de agosto! (Última versión del año)",
+        "tagline": "¡Comenzó el 03 de agosto!",
         "description": "Aprende de manera dinámica e interactiva para acelerar tu aprendizaje.",
         "price": "$65.000 CLP por módulo",
         "duration": "4 meses",
@@ -382,6 +383,7 @@
         "urgencyNote": "¡Últimos cupos disponibles!"
       },
       {
+        "id": "recorded",
         "name": "Modalidad grabada",
         "icon": "Video",
         "tagline": "¡Comienza cuando quieras!",
@@ -392,11 +394,13 @@
           "Acceso instantáneo",
           "Clases de generaciones anteriores",
           "Estudia cuando y donde quieras",
-          "Repasa las veces que necesites"
+          "Repasa las veces que necesites",
+          "Acceso por 1 año"
         ],
         "notUrgencyNote": "¡Cupos ilimitados!"
       },
       {
+        "id": "hybrid",
         "name": "Modalidad híbrida",
         "icon": "Users",
         "tagline": "¡Comienza cuando quieras!",
@@ -407,7 +411,8 @@
           "Clases particulares 1 a 1",
           "Contenido grabado a tu disposición",
           "Trabajo autónomo guiado",
-          "Diagnóstico inicial personalizado"
+          "Diagnóstico inicial personalizado",
+          "Material de trabajo personalizado"
         ],
         "semiUrgencyNote": "¡Cupos muy limitados!"
       }
