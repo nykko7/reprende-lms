@@ -1,3 +1,4 @@
+import CTAButton from "@/app/curso/_components/CTAButton";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import {
   ArrowDown,
@@ -7,7 +8,6 @@ import {
 } from "lucide-react";
 import { type FC } from "react";
 import { SectionWrapper } from "../../_components/SectionWrapper";
-import CTAButton from "./CTAButton";
 
 interface TargetAudienceSectionProps {
   title: string;

@@ -5,8 +5,8 @@ import { Joystick } from "lucide-react";
 import Link from "next/link";
 import { type FC } from "react";
 import { FaWhatsapp } from "react-icons/fa";
+import CTAButton from "../../_components/CTAButton";
 import { SectionWrapper } from "../../_components/SectionWrapper";
-import CTAButton from "./CTAButton";
 
 interface HeroSectionProps {
   badgeText: string;
@@ -65,12 +65,16 @@ const HeroSection: FC<HeroSectionProps> = ({
           </h1>
 
           <p className="z-20 max-w-xl text-lg text-foreground">{description}</p>
-          <div className="flex gap-2">
-            <CTAButton>
+          <div className="flex flex-wrap justify-center gap-4">
+            <CTAButton className="z-20 w-full sm:w-fit" variant={"outline"}>
               <Joystick className="mr-2 h-5 w-5 " />
               {modalitiesButtonText}
             </CTAButton>
-            <Button size={"lg"} className="z-20 font-bold" asChild>
+            <Button
+              size={"lg"}
+              className="z-20 w-full font-bold sm:w-fit"
+              asChild
+            >
               <Link
                 href="https://wa.me/56944768853?text=Hola!%20Vengo%20desde%20https://www.reaprende.cl%20y%20me%20gustaría%20participar%20del%20curso%20de%20nivelación"
                 target="_blank"

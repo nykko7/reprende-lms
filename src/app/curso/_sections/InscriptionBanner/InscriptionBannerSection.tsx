@@ -1,4 +1,4 @@
-import CTAButton from "./CTAButton";
+import CTAButton from "@/app/curso/_components/CTAButton";
 
 const InscriptionBannerSection = () => {
   return (
