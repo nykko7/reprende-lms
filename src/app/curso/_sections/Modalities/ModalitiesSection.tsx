@@ -10,7 +10,7 @@ interface ModalitiesSectionProps {
   title: string;
   description: string;
   modalities: {
-    id: "live" | "recorded" | "hybrid";
+    id: string;
     name: string;
     icon: string;
     tagline: string;
@@ -45,7 +45,7 @@ const ModalitiesSection: FC<ModalitiesSectionProps> = ({
     Users: <Users className="mx-auto h-16 w-16 text-primary-foreground" />,
   };
 
-  const whatsappLinkById = {
+  const whatsappLinkById: Record<string, string> = {
     live: "https://wa.me/56944768853?text=Hola!%20Vengo%20desde%20https://www.reaprende.cl%20y%20me%20gustaría%20inscribir%20en%20la%20modalidad%20en%20vivo",
     recorded:
       "https://wa.me/56944768853?text=Hola!%20Vengo%20desde%20https://www.reaprende.cl%20y%20me%20gustaría%20inscribir%20en%20la%20modalidad%20grabada",
@@ -95,7 +95,7 @@ const ModalitiesSection: FC<ModalitiesSectionProps> = ({
                     asChild
                     className="flex h-fit flex-wrap text-wrap p-4 font-bold"
                   >
-                    <Link href={whatsappLinkById[modality.id]} target="_blank">
+                    <Link href={whatsappLinkById[modality.id]!} target="_blank">
                       <FaWhatsapp className="mr-2 h-5 w-5" />
                       Consultar disponiblidad
                     </Link>
