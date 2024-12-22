@@ -11,7 +11,7 @@ export const handleScroll = (
   event.preventDefault();
   const targetId = event.currentTarget.getAttribute("href")?.substring(1) ?? "";
   const targetElement = document.getElementById(targetId);
-  const navbarHeight = 80;
+  const navbarHeight = 20;
 
   if (targetElement) {
     const elementPosition =

@@ -1,7 +1,7 @@
 "use client";
 
 import { cn } from "@/lib/utils";
-import { Raleway } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -10,7 +10,7 @@ interface LogoProps extends React.HTMLAttributes<HTMLAnchorElement> {
   showTitle?: boolean;
 }
 
-const nunito = Raleway({
+const montserrat = Montserrat({
   subsets: ["latin"],
 });
 
@@ -20,7 +20,13 @@ const Logo = ({ showTitle = true, className }: LogoProps) => {
   const href = pathname.startsWith("/dashboard") ? "/dashboard" : "/";
 
   return (
-    <Link className={cn("flex items-center gap-1", className)} href={href}>
+    <Link
+      className={cn(
+        "flex items-center gap-2.5 font-bold transition-transform duration-300 hover:scale-105",
+        className,
+      )}
+      href={href}
+    >
       <Image
         src="/shared/logo.png"
         width={40}
@@ -31,9 +37,9 @@ const Logo = ({ showTitle = true, className }: LogoProps) => {
       <h2
         className={cn(
           !showTitle && "hidden",
-          "font text-xl font-bold tracking-tight md:text-2xl",
+          "font text-xl md:text-2xl",
           // "font text-xl font-bold md:text-2xl",
-          nunito.className,
+          montserrat.className,
         )}
       >
         Reaprende

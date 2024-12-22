@@ -28,10 +28,7 @@ export default function RootLayout({
   return (
     <html lang="es" suppressHydrationWarning>
       <body
-        className={cn(
-          "min-h-screen scroll-smooth font-sans antialiased",
-          fontSants.variable,
-        )}
+        className={cn("min-h-screen font-sans antialiased", fontSants.variable)}
       >
         <ThemeProvider
           attribute="class"

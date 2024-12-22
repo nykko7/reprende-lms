@@ -1,0 +1,456 @@
+{
+  "heroSection": {
+    "badgeText": "¿Quieres cambiar el miedo por seguridad?",
+    "titleAccent": "Reaprende",
+    "titleNormal": " las matemáticas",
+    "description": "Curso de nivelación en matemáticas diseñado para comprender los contenidos desde cero.",
+    "modalitiesButtonText": "Ver modalidades",
+    "ctaButtonText": "Reservar cupo"
+  },
+  "socialProofSection": {
+    "title": "🌟 ¿Por qué elegir Reaprende?",
+    "socialProofs": [
+      {
+        "number": "+500",
+        "description": "estudiantes satisfechos"
+      },
+      {
+        "number": "+3 años",
+        "description": "acompañando a estudiantes en su aprendizaje"
+      },
+      {
+        "number": "100%",
+        "description": "recomendado por nuestros estudiantes"
+      }
+    ]
+  },
+  "targetAudienceSection": {
+    "title": "🫵 ¿Para quién es este curso?",
+    "profiles": {
+      "title": "👉 Si eres...",
+      "list": [
+        {
+          "title": "Estudiante",
+          "descriptions": [
+            "Estás en enseñanza media (1° a 4° medio) buscando fortalecer tus habilidades matemáticas.",
+            "Te estás preparando para la PAES 2024."
+          ]
+        },
+
+        {
+          "title": "Profesional o Egresado",
+          "descriptions": [
+            "Necesitas mejorar tu comprensión matemática.",
+            "Estás considerando estudiar una nueva carrera."
+          ]
+        },
+
+        {
+          "title": "Docente",
+          "descriptions": ["Quieres aprender nuevas estrategias de enseñanza."]
+        }
+      ]
+    },
+    "goals": {
+      "title": "🏆 Y quieres...",
+      "list": [
+        "Saber qué hacer, cómo y por qué frente a cualquier ejercicio matemático.",
+        "Tener estrategias para resolver ejercicios de manera efectiva y eficiente.",
+        "Reconocer patrones y representarlos de forma numérica y algebraica.",
+        "Reconocer tus errores como elementos valiosos del proceso de aprendizaje.",
+        "Aprender nuevos contenidos de forma autónoma.",
+        "Ser reflexivo y crítico con los problemas matemáticos."
+      ]
+    },
+    "footer": "Si te identificas con alguna de estas descripciones, este curso es para ti.",
+    "buttonText": "Inscríbete aquí"
+  },
+  "methodologySection": {
+    "title": "📖 Metodología de aprendizaje",
+    "description": "Aprende desde la reflexión, la curiosidad y la aplicación práctica para un aprendizaje efectivo y emocionante.",
+    "features": [
+      {
+        "title": "Estimular la curiosidad",
+        "description": "Utilizar la curiosidad como una herramienta para impulsar el aprendizaje, motivando a los estudiantes a preguntar y explorar.",
+        "icon": "Lightbulb"
+      },
+      {
+        "title": "Aprendizaje activo",
+        "description": "Los alumnos construyen activamente su conocimiento, integrando la nueva información con sus conocimientos previos.",
+        "icon": "TestTubeDiagonal"
+      },
+      {
+        "title": "Reconocimiento de patrones",
+        "description": "Fomentar la exploración de patrones para identificar relaciones y conexiones en el contenido matemático.",
+        "icon": "BrainCircuit"
+      },
+      {
+        "title": "Aplicación y modelado",
+        "description": "Enseñar a modelar fórmulas, pasando del lenguaje natural al lenguaje algebraico y matemático, aplicando el contenido a contextos prácticos.",
+        "icon": "PencilRuler"
+      },
+      {
+        "title": "Reflexión sobre el error",
+        "description": "Prestar atención a los errores cometidos para comprender su origen y aprender de ellos.",
+        "icon": "ShieldAlert"
+      },
+      {
+        "title": "Exploración emocional",
+        "description": "Integrar las emociones en el proceso de aprendizaje para hacerlo más significativo y memorable.",
+        "icon": "HeartHandshake"
+      }
+    ]
+  },
+  "learningRouteSection": {
+    "title": "🚀 Ruta de Aprendizaje",
+    "description": "El curso se compone de 4 módulos, diseñados para comprender la lógica y las bases de las matemáticas de manera progresiva e integral.",
+    "imagePath": "/landing/learning-route.png",
+    "steps": [
+      {
+        "color": "blue",
+        "title": "Números",
+        "description": "Entenderás la lógica y las bases de las matemáticas",
+        "details": [
+          {
+            "type": "paragraph",
+            "content": "Aprenderás a operar (sumar, restar, multiplicar y dividir) todos los tipos de números:"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Neglativos y de un estudiantes",
+              "Potencias y raíces",
+              "Fracciones y decimales",
+              "Porcentaje"
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": "Además de aprender:"
+          },
+
+          {
+            "type": "list",
+            "items": ["Razones", "Proporcionalidad directa e inversa"]
+          },
+          {
+            "type": "paragraph",
+            "content": "Junto con sus propiedades y aplicaciones"
+          }
+        ]
+      },
+      {
+        "color": "green",
+        "title": "Álgebra y funciones",
+        "description": "Expande tu comprensión de las matemáticas más allá de números",
+        "details": [
+          {
+            "type": "paragraph",
+            "content": "Identificarás patrones y relaciones algebraicas:"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Expresiones algebraicas",
+              "Reducción de términos",
+              "Productos notables",
+              "Ecuación y función lineal",
+              "Sistema de ecuaciones",
+              "Ecuación y función cuadrática"
+            ]
+          }
+        ]
+      },
+      {
+        "color": "yellow",
+        "title": "Geometría",
+        "description": "Desarrollarás una comprensión visual y espacial de las matemáticas",
+        "details": [
+          {
+            "type": "paragraph",
+            "content": "Podrás reconocer cómo se construyen las fórmulas de:"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Perímetro, área de figuras geométricas",
+              "Área y perímetro del círculo",
+              "Volumen de cuerpos geométricos",
+              "Teorema de Pitágoras"
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": "Además de aprender:"
+          },
+
+          {
+            "type": "list",
+            "items": ["Vectores", "Transformaciones isométricas"]
+          }
+        ]
+      },
+      {
+        "color": "red",
+        "title": "Probabilidades y estadística",
+        "description": "Utilizarás TODO lo anterior para comunicar información",
+        "details": [
+          {
+            "type": "paragraph",
+            "content": "Ordenarás y clasificarás los datos para obtener información:"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Medidas de tendencia central (datos agrupados y desagrupados)",
+              "Gráficos y tablas",
+              "Medidas de posición",
+              "Diagrama de cajón",
+              "Regla de Laplace",
+              "Probabilidades"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+
+  "testimonialsSection": {
+    "title": "🤔 ¿Aún no estás seguro?",
+    "description": "Esto es lo que dicen algunos de nuestros estudiantes",
+    "testimonials": {
+      "textTestimonials": [
+        {
+          "testimonial": "He mejorado muchismo mis notas, al principio del año me sacaba 5.0 y mi ultima prueba me saque un 7.0, algo q en matematica creía imposible.",
+          "studentName": "Antonia Oteiza",
+          "studentDescription": "Preparación PAES 2024",
+          "imageAlt": "Avatar de Antonia Oteiza, estudiante de 4to medio"
+        },
+        {
+          "testimonial": "Cada mes fui desarrollando más habilidades matemáticas, de a poco fui perdiendo el miedo a equivocarme y logré entender muchos contenidos que en el colegio nunca entendí.",
+          "studentName": "Julio Hidalgo",
+          "studentDescription": "Preparación PAES 2024",
+          "imageAlt": "Avatar de Julio Hidalgo, estudiante de 4to medio"
+        },
+        {
+          "testimonial": "100% recomendable para aquellas personas q no tienen una buena base.",
+          "studentName": "Emilia Salazar",
+          "studentDescription": "Preparación PAES 2024",
+          "imageAlt": "Avatar de Emilia Salazar, estudiante de 4to medio"
+        },
+        {
+          "testimonial": "Ha sido una experiencia muy buena, aporta mucho y también es una herramienta fundamental para el desarrollo del aprendizaje de las matemáticas.",
+          "studentName": "Lucas Sanhueza",
+          "studentDescription": "Preparación PAES 2024",
+          "imageAlt": "Avatar de Lucas Sanhueza, estudiante egresado"
+        },
+        {
+          "testimonial": "Cambié el miedo por seguridad como el objetivo del curso. ",
+          "studentName": "Julio Hidalgo",
+          "studentDescription": "Preparación PAES 2024",
+          "imageAlt": "Avatar de Julio Hidalgo, estudiante de 4to medio"
+        },
+        {
+          "testimonial": "Creo que me ha ayudado bastante a comprender las matemáticas de una manera más didáctica y entretenida.",
+          "studentName": "Emilia Salazar",
+          "studentDescription": "Preparación PAES 2024",
+          "imageAlt": "Avatar de Emilia Salazar, estudiante de 4to medio"
+        },
+        {
+          "testimonial": "Destaco mucho la energía y dedicación de la profe, eso vale mucho y sobre todo ayuda bastante a comprender mejor las matemáticas.",
+          "studentName": "Julio Hidalgo",
+          "studentDescription": "Preparación PAES 2024",
+          "imageAlt": "Avatar de Julio Hidalgo, estudiante de 4to medio"
+        }
+      ],
+      "imageTestimonials": [
+        {
+          "imageSrc": "/landing/testimonials/testimonial-image9.jpg",
+          "imageAlt": "Pantallazo del mensaje de un estudiante 1"
+        },
+        {
+          "imageSrc": "/landing/testimonials/testimonial-image15.jpg",
+          "imageAlt": "Pantallazo del mensaje de un estudiante 2"
+        },
+        {
+          "imageSrc": "/landing/testimonials/testimonial-image3.jpg",
+          "imageAlt": "Pantallazo del mensaje de un estudiante 3"
+        },
+        {
+          "imageSrc": "/landing/testimonials/testimonial-image11.jpg",
+          "imageAlt": "Pantallazo del mensaje de un estudiante 4"
+        },
+        {
+          "imageSrc": "/landing/testimonials/testimonial-image21.jpg",
+          "imageAlt": "Pantallazo del mensaje de un estudiante 5"
+        },
+        {
+          "imageSrc": "/landing/testimonials/testimonial-image7.jpg",
+          "imageAlt": "Pantallazo del mensaje de un estudiante 6"
+        },
+        {
+          "imageSrc": "/landing/testimonials/testimonial-image4.jpg",
+          "imageAlt": "Pantallazo del mensaje de un estudiante 7"
+        },
+        {
+          "imageSrc": "/landing/testimonials/testimonial-image13.jpg",
+          "imageAlt": "Pantallazo del mensaje de un estudiante 8"
+        },
+        {
+          "imageSrc": "/landing/testimonials/testimonial-image20.jpg",
+          "imageAlt": "Pantallazo del mensaje de un estudiante 9"
+        },
+        {
+          "imageSrc": "/landing/testimonials/testimonial-image10.jpg",
+          "imageAlt": "Pantallazo del mensaje de un estudiante 10"
+        },
+        {
+          "imageSrc": "/landing/testimonials/testimonial-image19.jpg",
+          "imageAlt": "Pantallazo del mensaje de un estudiante 11"
+        },
+        {
+          "imageSrc": "/landing/testimonials/testimonial-image22.jpg",
+          "imageAlt": "Pantallazo del mensaje de un estudiante 12"
+        },
+        {
+          "imageSrc": "/landing/testimonials/testimonial-image2.png",
+          "imageAlt": "Pantallazo del mensaje de un estudiante 13"
+        },
+        {
+          "imageSrc": "/landing/testimonials/testimonial-image5.jpg",
+          "imageAlt": "Pantallazo del mensaje de un estudiante 14"
+        },
+        {
+          "imageSrc": "/landing/testimonials/testimonial-image6.jpg",
+          "imageAlt": "Pantallazo del mensaje de un estudiante 15"
+        },
+        {
+          "imageSrc": "/landing/testimonials/testimonial-image8.jpg",
+          "imageAlt": "Pantallazo del mensaje de un estudiante 16"
+        },
+        {
+          "imageSrc": "/landing/testimonials/testimonial-image18.png",
+          "imageAlt": "Pantallazo del mensaje de un estudiante 17"
+        },
+        {
+          "imageSrc": "/landing/testimonials/testimonial-image1.png",
+          "imageAlt": "Pantallazo del mensaje de un estudiante 18"
+        },
+        {
+          "imageSrc": "/landing/testimonials/testimonial-image14.png",
+          "imageAlt": "Pantallazo del mensaje de un estudiante 19"
+        },
+        {
+          "imageSrc": "/landing/testimonials/testimonial-image23.png",
+          "imageAlt": "Pantallazo del mensaje de un estudiante 20"
+        },
+        {
+          "imageSrc": "/landing/testimonials/testimonial-image16.png",
+          "imageAlt": "Pantallazo del mensaje de un estudiante 21"
+        },
+        {
+          "imageSrc": "/landing/testimonials/testimonial-image12.png",
+          "imageAlt": "Pantallazo del mensaje de un estudiante 22"
+        },
+        {
+          "imageSrc": "/landing/testimonials/testimonial-image17.png",
+          "imageAlt": "Pantallazo del mensaje de un estudiante 23"
+        }
+      ]
+    }
+  },
+  "modalitiesSection": {
+    "title": "🕹️ Elige tu camino de aprendizaje",
+
+    "description": "Existen 3 modalidades de aprendizaje para tomar el curso, que cubren los 4 módulos. Elige la modalidad que mejor se adapte a tus necesidades y estilo de aprendizaje.",
+
+    "modalities": [
+      {
+        "id": "live",
+        "name": "Modalidad en vivo",
+        "icon": "PlayCircle",
+        "tagline": "¡Comenzó el 03 de agosto!",
+        "description": "Aprende de manera dinámica e interactiva para acelerar tu aprendizaje.",
+        "price": "$65.000 CLP por módulo",
+        "duration": "4 meses",
+        "features": [
+          "Aprox 4 meses de duración (1 módulo por mes)",
+          "3 clases semanales de 2 horas",
+          "Trabajo grupal dinámico",
+          "Consultas en vivo",
+          "Acceso a grabaciones por 1 año"
+        ],
+        "urgencyNote": "¡Últimos cupos disponibles!"
+      },
+      {
+        "id": "recorded",
+        "name": "Modalidad grabada",
+        "icon": "Video",
+        "tagline": "¡Comienza cuando quieras!",
+        "description": "Aprende a tu ritmo con clases grabadas y material descargable.",
+        "price": "$45.000 CLP por módulo",
+        "duration": "A tu ritmo",
+        "features": [
+          "Acceso instantáneo",
+          "Clases de generaciones anteriores",
+          "Estudia cuando y donde quieras",
+          "Repasa las veces que necesites",
+          "Acceso por 1 año"
+        ],
+        "notUrgencyNote": "¡Cupos ilimitados!"
+      },
+      {
+        "id": "hybrid",
+        "name": "Modalidad híbrida",
+        "icon": "Users",
+        "tagline": "¡Comienza cuando quieras!",
+        "description": "Obtén un acompañamiento personalizado adaptado a tu ritmo de aprendizaje.",
+        "price": "$100.000 CLP mensuales",
+        "duration": "Personalizada",
+        "features": [
+          "Clases particulares 1 a 1",
+          "Contenido grabado a tu disposición",
+          "Trabajo autónomo guiado",
+          "Diagnóstico inicial personalizado",
+          "Material de trabajo personalizado"
+        ],
+        "semiUrgencyNote": "¡Cupos muy limitados!"
+      }
+    ],
+    "commonBenefits": {
+      "title": "Beneficios en todas las modalidades",
+      "benefits": [
+        "Consultas ilimitadas por WhatsApp",
+        "Material descargable exclusivo",
+        "Guías de estudio especializadas",
+        "Ensayos PAES con resolución detallada"
+      ]
+    },
+    "ctaText": "Invierte en tu futuro académico hoy. Nuestro equipo está listo para guiarte hacia la modalidad que maximice tu potencial en matemáticas.",
+    "ctaButtonText": "Escribenos a WhatsApp para inscribirte"
+  },
+
+  "whoAmISection": {
+    "title": "👩‍🏫 ¿Quién será tu guía?",
+    "description": "Conoce a la profesora detrás de **Reaprende**",
+    "name": "Isidora Pi",
+    "role": "Profesora de Educación Básica con mención en Matemáticas",
+    "instagramUrl": "https://www.instagram.com/reaprende.mate/",
+    "instagramTag": "@reaprende.mate",
+    "bio": "Mi viaje en el mundo de la educación comenzó hace más de 10 años cuando entré a estudiar Ingeniería Comercial en la PUCV. Durante mis años universitarios, descubrí mi pasión por la enseñanza al impartir clases de matemáticas a estudiantes con diferentes dificultades en Valparaíso.\n\nDurante cuatro años, me di cuenta de que muchos problemas de aprendizaje se originan en una **base deficiente en la educación básica**. En 2017, decidí cambiar mi carrera a Educación Básica con mención en Matemáticas. Este cambio no solo fue una decisión profesional, sino una misión para abordar las raíces de los problemas educativos que había identificado.\n\nEn 2021, en tiempos de pandemia, nació **@reaprende.mate** con el objetivo de fomentar una comprensión profunda de las matemáticas, centrándose en construir una base sólida desde cero y con una narrativa distinta.\n\n**Isidora Pi**\n**¡Nos vemos en clases!**",
+    "imageAlt": "Imagen de la profesora",
+    "imagePath": "/shared/logo.png"
+  },
+  "contactSection": {
+    "title": "📞 Contáctame",
+    "description": "Si tienes alguna duda o consulta, no dudes en contactarme. Estoy aquí para ayudarte.",
+    "buttonText": "Contáctame",
+    "email": ""
+  },
+  "vslText": {
+    "description": "¡Hola! Soy Isidora Pi, profesora de Educación Básica con mención en Matemáticas y creadora de Reaprende. Durante más de 10 años, he acompañado a estudiantes en su aprendizaje, identificando que muchos problemas de aprendizaje se originan en una base deficiente en la educación básica. Por eso, en 2021, nació Reaprende, un curso de nivelación en matemáticas diseñado para comprender los contenidos desde cero. ¡Nos vemos en clases!",
+    "script": "Te sientes estancado en matemáticas, ¿verdad? No te preocupes, no estás solo. Muchos estudiantes se sienten igual. Pero, ¿sabías que la clave para superar tus dificultades en matemáticas es comprender los contenidos desde cero? ¡Exacto! Y eso es precisamente lo que te ofrece Reaprende. Un curso de nivelación en matemáticas diseñado para comprender los contenidos desde cero. ¡Así es! Con Reaprende, podrás cambiar el miedo por seguridad y aprender matemáticas de una manera efectiva y emocionante. ¡No esperes más! ¡Reserva tu cupo ahora!",
+    "script2": "Te sientes estancado y atrapado en un ciclo sin fin en tu aprendizaje de las matematicas? ¿Intentas aprender? ¿Pero cada vez que lo haces te sientes estancado y sin progreso? No te preocupes, no estás solo. Muchos estudiantes se sienten igual. Entender las matemáticas no se trata de memorizar formulas, se trata de entender el contenido de manera integral. Si te interesa descubrir como cambiar el miedo por seguridad y aprender matemáticas de una manera más efectiva y emocionante, entonces haz click en el botón de abajo y reserva tu cupo ahora.",
+    "ctaButtonText": "Reservar cupo"
+  }
+}
