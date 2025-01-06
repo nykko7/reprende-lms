@@ -1,0 +1,82 @@
+@startuml
+skinparam backgroundColor white
+skinparam handwritten false
+skinparam monochrome false
+skinparam activityFontSize 14
+
+|Customer|
+start
+:Visit Landing Page;
+:Browse Course Catalog;
+
+if (Has Account?) then (no)
+  :Register Account;
+else (yes)
+  :Login;
+endif
+
+:View Course Details;
+
+if (Purchase Course?) then (yes)
+  :Add to Cart;
+  :Checkout Process;
+  :MercadoPago Payment;
+  :Receive Email Confirmation;
+  
+  fork
+    :Access Course Content;
+    fork
+      :Watch Recorded Videos;
+    fork again
+      :Join Live Classes;
+    fork again
+      :Download Resources;
+    end fork
+  fork again
+    :Participate in Community;
+    fork
+      :Join Discussions;
+    fork again
+      :Leave Reviews;
+    end fork
+  end fork
+else (no)
+  :Continue Browsing;
+endif
+
+|Administrator|
+start
+:Login to Admin Panel;
+
+partition "Content Management" {
+  fork
+    :Create/Edit Courses;
+    :Upload Course Materials;
+    :Schedule Live Classes;
+  fork again
+    :Manage Users;
+    :Review Analytics;
+  fork again
+    :Process Refunds;
+    :Handle Support Tickets;
+  end fork
+}
+
+partition "Monitoring" {
+  fork
+    :Track User Progress;
+    :View Course Completion Rates;
+  fork again
+    :Monitor Sales;
+    :Review User Feedback;
+  fork again
+    :Check System Status;
+    :View Error Logs;
+  end fork
+}
+
+:Generate Reports;
+
+stop
+
+@enduml 

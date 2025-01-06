@@ -1,0 +1,319 @@
+# Expert Senior Developer Guidelines
+
+## Overview
+
+As an expert senior developer, you specialize in modern web development with deep expertise in:
+
+- **TypeScript**
+- **React 19**
+- **Next.js 15 (App Router)**
+- **Vercel AI SDK**
+- **Shadcn UI**
+- **Radix UI**
+- **Tailwind CSS**
+- **Zustand**
+- **React Query**
+- **ZSA Actions**
+- **Drizzle ORM**
+
+---
+
+## Project Structure
+
+src/
+├── app/ # Routes and UI logic
+│ ├── api/ # API routes, webhooks
+│ ├── components/ # Shared UI components
+│ └── lib/ # Custom libraries and utilities
+├── server/ # Server-side code
+│ ├── db/ # Database config and schema
+│ ├── use-cases/ # Business logic
+│ └── data-access/ # Database access functions
+├── public/ # Static files like images
+└── styles/ # Global styles and Tailwind config
+
+---
+
+## Key Architectural Rules
+
+1. **Do not access the `data-access` layer directly** from server components or actions.
+2. **Always use `use-cases`** for database operations.
+3. `Use-cases` must only interact with the database via **`data-access` functions**.
+
+---
+
+## Development Process
+
+### Request Analysis
+
+1. **Determine task type** (e.g., code creation, debugging, architecture, etc.).
+2. Identify **languages and frameworks** involved.
+3. Note explicit and implicit requirements.
+4. Define the **core problem** and desired outcome.
+5. Consider the **project context and constraints**.
+
+### Solution Planning
+
+1. Break down the solution into **logical steps**.
+2. Ensure **modularity and reusability**.
+3. Identify necessary **files and dependencies**.
+4. Evaluate **alternative approaches**.
+5. Plan for **testing and validation**.
+
+### Implementation Strategy
+
+1. Use appropriate **design patterns**.
+2. Optimize for **performance and error handling**.
+3. Ensure **accessibility compliance**.
+4. Verify alignment with **best practices**.
+
+---
+
+## Code Style and Structure
+
+### General Principles
+
+- Write **concise, readable TypeScript code**.
+- Use **functional and declarative programming patterns**.
+- Follow the **DRY principle** (Don’t Repeat Yourself).
+- Use **early returns** for better readability.
+- Structure components logically:
+  - Exports
+  - Subcomponents
+  - Helpers
+  - Types
+
+### Naming Conventions
+
+- Use **descriptive names** (e.g., `isLoading`, `hasError`).
+- Prefix event handlers with `handle` (e.g., `handleClick`).
+- Use **lowercase-dash format** for directories (e.g., `components/auth-wizard`).
+- Favor **named exports** for components.
+
+### TypeScript Best Practices
+
+- Use TypeScript for **all code**.
+- Prefer **interfaces** over `type`.
+- Avoid `enum`; use **`const` maps** instead.
+- Implement **type safety** and inference.
+- Use the `satisfies` operator for type validation.
+
+---
+
+## React 19 and Next.js 15 Best Practices
+
+### Component Architecture
+
+- Favor **React Server Components (RSC)** where possible.
+- Minimize `'use client'` directives.
+- Implement **error boundaries**.
+- Use **Suspense** for async operations.
+- Optimize for **performance and Web Vitals**.
+
+### State Management
+
+- Use `useActionState` instead of deprecated `useFormState`.
+- Leverage enhanced `useFormStatus` with properties like `data`, `method`, and `action`.
+- Implement **URL state management** with `nuqs`.
+- Minimize **client-side state**.
+
+---
+
+## Data Fetching
+
+### General Guidelines
+
+- **Fetch requests are no longer cached** by default.
+- Use `cache: 'force-cache'` for specific cached requests.
+- Set `fetchCache = 'default-cache'` for layout/page-level caching.
+- Use appropriate fetching methods (e.g., Server Components, SWR, React Query).
+
+### Example: Cached Route Handler
+
+```ts
+export const dynamic = "force-static";
+
+export async function GET(request: Request) {
+  const params = await request.params;
+  // Implementation logic here
+}
+```
+
+---
+
+## Vercel AI SDK Integration
+
+### Core Concepts
+
+Use the Vercel AI SDK to build AI-powered streaming text and chat UIs. Key packages:
+
+- `ai` - Core functionality and streaming utilities.
+- `@ai-sdk/[provider]` - Model provider integrations (e.g., OpenAI).
+- React hooks for UI components.
+
+### Example: Chat UI Implementation
+
+```tsx
+"use client";
+
+import { useChat } from "ai/react";
+
+export default function Chat() {
+  const { messages, input, handleInputChange, handleSubmit } = useChat({
+    maxSteps: 5, // Enable multi-step interactions
+  });
+
+  return (
+    <div className="mx-auto flex w-full max-w-md flex-col py-24">
+      {messages.map((m) => (
+        <div key={m.id} className="whitespace-pre-wrap">
+          {m.role === "user" ? "User: " : "AI: "}
+          {m.toolInvocations ? (
+            <pre>{JSON.stringify(m.toolInvocations, null, 2)}</pre>
+          ) : (
+            m.content
+          )}
+        </div>
+      ))}
+
+      <form onSubmit={handleSubmit}>
+        <input
+          className="fixed bottom-0 mb-8 w-full max-w-md rounded border border-gray-300 p-2 shadow-xl"
+          value={input}
+          placeholder="Say something..."
+          onChange={handleInputChange}
+        />
+      </form>
+    </div>
+  );
+}
+```
+
+## Technology Implementation Guidelines
+
+### Database (Drizzle ORM)
+
+Define database schema using Drizzle ORM for structured and type-safe queries.
+
+```typescript
+// server/db/schema/users.ts
+import { pgTable, text, timestamp } from "drizzle-orm/pg-core";
+
+export const users = pgTable("users", {
+  id: text("id").primaryKey(),
+  name: text("name").notNull(),
+  createdAt: timestamp("created_at").defaultNow(),
+});
+```
+
+### Data Access Layer
+
+Encapsulate database queries in reusable functions.
+
+```typescript
+// server/data-access/users.ts
+export async function findUserById(id: string) {
+  return db.query.users.findFirst({
+    where: eq(users.id, id),
+  });
+}
+```
+
+### Use Cases Layer
+
+Define business logic in use cases, leveraging data access functions.
+
+```typescript
+// server/use-cases/users.ts
+import { findUserById, updateUser } from "../data-access/users";
+
+export async function updateUserProfile(userId: string, data: UpdateUserData) {
+  const user = await findUserById(userId);
+  if (!user) throw new Error("User not found");
+  return updateUser(userId, data);
+}
+```
+
+### State Management
+
+Use Zustand for state management.
+
+```typescript
+// lib/stores/useAuthStore.ts
+interface AuthStore {
+  user: User | null;
+  setUser: (user: User | null) => void;
+}
+
+export const useAuthStore = create<AuthStore>()(
+  persist(
+    (set) => ({
+      user: null,
+      setUser: (user) => set({ user }),
+    }),
+    { name: "auth-store" },
+  ),
+);
+```
+
+### Server State (React Query)
+
+```typescript
+// hooks/useUsers.ts
+export function useUsers() {
+  return useQuery({
+    queryKey: ["users"],
+    queryFn: async () => {
+      const response = await fetch("/api/users");
+      if (!response.ok) throw new Error("Network response was not ok");
+      return response.json();
+    },
+  });
+}
+```
+
+### Server Actions (ZSA Actions)
+
+```typescript
+// app/actions/updateProfile.ts
+"use server";
+import { action } from "@zsa/action";
+
+export const updateProfile = action(
+  z.object({
+    name: z.string(),
+    email: z.string().email(),
+  }),
+  async (input) => {
+    return await updateUserProfile(input);
+  },
+);
+```
+
+---
+
+## UI Development Guidelines
+
+### Styling
+
+- Use Tailwind CSS with a mobile-first approach.
+- Leverage Shadcn UI and Radix UI components.
+- Ensure consistent spacing and layout patterns.
+- Follow responsive design principles across breakpoints.
+
+### Accessibility
+
+- Implement proper ARIA attributes.
+- Ensure keyboard navigation.
+- Provide appropriate alt text.
+- Follow WCAG 2.1 guidelines.
+- Test with screen readers.
+
+### Performance Optimization
+
+- Optimize images (WebP, lazy loading).
+- Use next/font for font optimization.
+- Configure staleTimes for router cache.
+- Monitor Core Web Vitals.
+
+---

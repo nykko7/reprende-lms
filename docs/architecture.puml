@@ -1,0 +1,68 @@
+@startuml
+' Basic styling
+skinparam backgroundColor white
+skinparam handwritten false
+skinparam monochrome false
+
+' Components
+package "Frontend (Next.js)" {
+    [Landing Page] as landing
+    [Course Catalog] as catalog
+    [User Dashboard] as dashboard
+    [Admin Panel] as admin
+    [Video Player] as player
+    [Payment UI] as payment_ui
+}
+
+package "Backend (Node.js)" {
+    [Authentication Service] as auth
+    [Course Management] as course_mgmt
+    [Payment Service] as payment
+    [Email Service] as email
+    [Video Service] as video
+    [Analytics Service] as analytics
+}
+
+database "PostgreSQL" {
+    [Users] as users_db
+    [Courses] as courses_db
+    [Orders] as orders_db
+    [Progress] as progress_db
+    [Analytics] as analytics_db
+}
+
+cloud "External Services" {
+    [MercadoPago] as mercadopago
+    [Zoom] as zoom
+    [Resend] as resend
+    [CDN] as cdn
+}
+
+' Connections
+landing --> catalog
+catalog --> payment_ui
+catalog --> dashboard
+dashboard --> player
+
+auth --> course_mgmt
+course_mgmt --> video
+payment --> email
+
+landing ..> auth : Auth API
+catalog ..> course_mgmt : Course API
+dashboard ..> course_mgmt : Progress API
+payment_ui ..> payment : Payment API
+admin ..> analytics : Analytics API
+
+auth --> users_db
+course_mgmt --> courses_db
+payment --> orders_db
+analytics --> analytics_db
+video --> progress_db
+
+payment --> mercadopago : Process Payment
+video --> zoom : Schedule Classes
+email --> resend : Send Notifications
+player ..> cdn : Fetch Content
+
+@enduml 
