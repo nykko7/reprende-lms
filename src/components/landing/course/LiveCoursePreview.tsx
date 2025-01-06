@@ -18,16 +18,18 @@ import {
 import Link from "next/link";
 import { type FC } from "react";
 import { cn } from "@/lib/utils";
-import { ROUTES } from "@/config/routes";
+import { createWhatsAppMessageLink } from "@/lib/whatsapp";
 
 interface LiveCoursePreviewProps {
   nextBatch: string;
   price: number;
+  showMoreInfo?: boolean;
 }
 
 const LiveCoursePreview: FC<LiveCoursePreviewProps> = ({
   nextBatch,
   price,
+  showMoreInfo = false,
 }) => {
   const monthlyPrice = Math.round(price / 6);
 
@@ -46,7 +48,6 @@ const LiveCoursePreview: FC<LiveCoursePreviewProps> = ({
             Próxima generación: <span className="font-bold">{nextBatch}</span>
           </p>
         </div>
-        {/* <div className="absolute inset-0 bg-dot-white/30 [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" /> */}
 
         <CardHeader className="relative space-y-4 text-center">
           <div className="text-center">
@@ -107,12 +108,19 @@ const LiveCoursePreview: FC<LiveCoursePreviewProps> = ({
                   ))}
                 </ul>
 
-                <Button variant="outline" className="w-full" size="lg" asChild>
-                  <Link href={ROUTES.LIVE_COURSE} className="gap-2">
-                    <BookOpen className="h-5 w-5" />
-                    Ver programa completo
-                  </Link>
-                </Button>
+                {showMoreInfo && (
+                  <Button
+                    variant="outline"
+                    className="w-full"
+                    size="lg"
+                    asChild
+                  >
+                    <Link href="/curso" className="gap-2">
+                      <BookOpen className="h-5 w-5" />
+                      Ver programa completo
+                    </Link>
+                  </Button>
+                )}
               </div>
             </div>
 
@@ -159,7 +167,12 @@ const LiveCoursePreview: FC<LiveCoursePreviewProps> = ({
 
         <CardFooter className="relative">
           <Button asChild className="w-full" size="lg">
-            <Link href="/curso" className="py-6 text-lg">
+            <Link
+              href={createWhatsAppMessageLink(
+                "Hola, me gustaría reservar mi cupo para el curso de nivelación de matemáticas",
+              )}
+              className="py-6 text-lg"
+            >
               <MousePointerClick className="mr-2 h-5 w-5" />
               Reserva tu cupo ahora
             </Link>

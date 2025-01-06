@@ -1,4 +1,4 @@
-import LiveCoursePreview from "./LiveCoursePreview";
+import LiveCoursePreview from "@/components/landing/course/LiveCoursePreview";
 import { courseTexts } from "@/config/content/course";
 
 export default function RegistrationSection() {

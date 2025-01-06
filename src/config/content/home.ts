@@ -107,6 +107,7 @@ export type ProductPreview = {
   badge?: string;
   color?: "primary" | "red" | "green";
   isHighlighted?: boolean;
+  ctaText?: string;
 };
 
 export type LiveCourseSection = {
@@ -520,9 +521,12 @@ export const homeTexts: HomeTexts = {
           "Principales errores y como evitarlos",
           "Consejos para estudiar",
         ],
-        href: "/workshops",
+        href: createWhatsAppMessageLink(
+          "Hola, me gustaría acceder al taller de como estudiar las matemáticas",
+        ),
         badge: "Taller grabado",
         color: "red",
+        ctaText: "Acceder al taller",
       },
       {
         type: "recorded_course",
@@ -538,7 +542,10 @@ export const homeTexts: HomeTexts = {
           "Repasa las veces que necesites",
           "Acceso por un año",
         ],
-        href: "/courses",
+        href: createWhatsAppMessageLink(
+          "Hola, me gustaría acceder al curso de nivelación de matemáticas en formato grabado",
+        ),
+        ctaText: "Inscríbete ahora",
         badge: "Curso grabado",
         color: "primary",
         isHighlighted: true,
@@ -556,7 +563,10 @@ export const homeTexts: HomeTexts = {
           "Guías de estudio según nivel académico",
           "Planificación de estudio semanal",
         ],
-        href: "/private-lessons",
+        href: createWhatsAppMessageLink(
+          "Hola, me gustaría saber más sobre el acompañamiento individual",
+        ),
+        ctaText: "Consultar disponibilidad",
         badge: "Clases particulares",
         color: "green",
       },

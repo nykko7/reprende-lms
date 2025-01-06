@@ -88,7 +88,7 @@ export default function ProductPreviewCard({
           </p>
         </div>
         <Button asChild className={cn("w-full", styles.button)}>
-          <Link href={product.href}>Ver más información</Link>
+          <Link href={product.href}>{product.ctaText}</Link>
         </Button>
       </CardFooter>
     </Card>
