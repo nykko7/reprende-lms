@@ -522,7 +522,7 @@ export const homeTexts: HomeTexts = {
           "Consejos para estudiar",
         ],
         href: createWhatsAppMessageLink(
-          "Hola, me gustaría acceder al taller de como estudiar las matemáticas",
+          "Hola, me gustaría acceder al taller de cómo estudiar las matemáticas",
         ),
         badge: "Taller grabado",
         color: "red",
@@ -564,7 +564,7 @@ export const homeTexts: HomeTexts = {
           "Planificación de estudio semanal",
         ],
         href: createWhatsAppMessageLink(
-          "Hola, me gustaría saber más sobre el acompañamiento individual",
+          "Hola, me gustaría saber si tiene disponibilidad para el acompañamiento individual",
         ),
         ctaText: "Consultar disponibilidad",
         badge: "Clases particulares",
