@@ -169,7 +169,7 @@ const LiveCoursePreview: FC<LiveCoursePreviewProps> = ({
           <Button asChild className="w-full" size="lg">
             <Link
               href={createWhatsAppMessageLink(
-                "Hola, me gustaría reservar mi cupo para el curso de nivelación de matemáticas",
+                "Hola, me gustaría reservar mi cupo para el curso de nivelación de matemáticas en vivo",
               )}
               className="py-6 text-lg"
             >
