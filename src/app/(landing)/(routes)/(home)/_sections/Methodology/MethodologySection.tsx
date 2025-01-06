@@ -1,18 +1,10 @@
-import { type FC } from "react";
-import Feature, { type FeatureProps } from "@/components/landing/Feature";
+import Feature from "@/components/landing/Feature";
 import { SectionWrapper } from "@/components/landing/SectionWrapper";
+import { homeTexts } from "@/config/content/home";
 
-interface MethodologySectionProps {
-  title: string;
-  description: string;
-  features: FeatureProps[];
-}
+export default function MethodologySection() {
+  const { title, description, features } = homeTexts.methodologySection;
 
-const MethodologySection: FC<MethodologySectionProps> = ({
-  title,
-  description,
-  features,
-}) => {
   return (
     <SectionWrapper className="my-0 max-w-none py-16">
       <div className="mx-auto mb-12 max-w-3xl text-center">
@@ -35,6 +27,4 @@ const MethodologySection: FC<MethodologySectionProps> = ({
       </div>
     </SectionWrapper>
   );
-};
-
-export default MethodologySection;
+}

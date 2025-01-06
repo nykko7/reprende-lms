@@ -1,32 +1,22 @@
 import Image from "next/image";
 import Link from "next/link";
-import { type FC } from "react";
 import { SectionWrapper } from "@/components/landing/SectionWrapper";
 import { formatText } from "@/lib/text";
+import { homeTexts } from "@/config/content/home";
 
-interface WhoAmISectionProps {
-  title: string;
-  description: string;
-  name: string;
-  role: string;
-  instagramUrl: string;
-  instagramTag: string;
-  bio: string;
-  imagePath: string;
-  imageAlt: string;
-}
+export default function WhoAmISection() {
+  const {
+    title,
+    description,
+    name,
+    role,
+    instagramUrl,
+    instagramTag,
+    bio,
+    imagePath,
+    imageAlt,
+  } = homeTexts.whoAmISection;
 
-const WhoAmISection: FC<WhoAmISectionProps> = ({
-  title,
-  description,
-  name,
-  role,
-  instagramUrl,
-  instagramTag,
-  bio,
-  imagePath,
-  imageAlt,
-}) => {
   return (
     <SectionWrapper>
       <div className="mx-auto mb-8 max-w-3xl text-center">
@@ -64,6 +54,4 @@ const WhoAmISection: FC<WhoAmISectionProps> = ({
       </div>
     </SectionWrapper>
   );
-};
-
-export default WhoAmISection;
+}

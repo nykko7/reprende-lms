@@ -1,21 +1,21 @@
 import HeroSection from "./_sections/Hero/HeroSection";
-import ChooseYourProductSection from "./_sections/ChooseYourProduct/ChooseYourProductSection";
-import MethodologySection from "./_sections/Methodology/MethodologySection";
-import WhoAmISection from "./_sections/WhoAmI/WhoAmISection";
+import LiveCourseSection from "./_sections/LiveCourse/LiveCourseSection";
+import ProductsSection from "./_sections/Products/ProductsSection";
 import TestimonialsSection from "./_sections/Testimonials/TestimonialsSection";
+import WhoAmISection from "./_sections/WhoAmI/WhoAmISection";
 import FAQSection from "./_sections/FAQ/FAQSection";
-
-import { landingTexts } from "../../_config/home";
+import SocialProofBannerSection from "./_sections/SocialProofBanner/SocialProofBannerSection";
 
 export default function LandingPage() {
   return (
     <main className="overflow-clip">
-      <HeroSection {...landingTexts.heroSection} />
-      <ChooseYourProductSection {...landingTexts.chooseYourProductSection} />
-      <MethodologySection {...landingTexts.methodologySection} />
-      <TestimonialsSection {...landingTexts.testimonialsSection} />
-      <WhoAmISection {...landingTexts.whoAmISection} />
-      <FAQSection {...landingTexts.faqSection} />
+      <HeroSection />
+      <SocialProofBannerSection />
+      <LiveCourseSection />
+      <ProductsSection />
+      <TestimonialsSection />
+      <WhoAmISection />
+      <FAQSection />
     </main>
   );
 }

@@ -1,21 +1,22 @@
 import { Badge } from "@/components/ui/badge";
-
-import { type FC } from "react";
-import { FaBookOpen } from "react-icons/fa";
 import CTAButton from "@/components/landing/CTAButton";
 import { SectionWrapper } from "@/components/landing/SectionWrapper";
-import { type HeroSection as HeroSectionProps } from "@/app/(landing)/_config/landing-texts";
+import { GraduationCap, Library } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
+import { homeTexts } from "@/config/content/home";
 
-const HeroSection: FC<HeroSectionProps> = ({
-  badgeText,
-  titleAccent,
-  titleNormal,
-  description,
-  ctaButtonText,
-  modalitiesButtonText,
-}) => {
+export default function HeroSection() {
+  const {
+    badgeText,
+    titleAccent,
+    titleNormal,
+    description,
+    mainCTA,
+    secondaryCTA,
+  } = homeTexts.heroSection;
+
   return (
-    // h-[calc(100vh-250px)] is a utility class that sets the height of the element to the viewport height minus 250px
     <SectionWrapper className="my-0 flex h-[calc(100svh-56px)] flex-col justify-center py-20">
       {/* <div className="h-1/6"></div> */}
       <div className="relative flex flex-col items-center justify-between text-center">
@@ -55,35 +56,28 @@ const HeroSection: FC<HeroSectionProps> = ({
 
           <p className="z-20 max-w-xl text-lg text-foreground">{description}</p>
           <div className="flex flex-wrap justify-center gap-4">
+            <Button
+              size={"lg"}
+              variant={"outline"}
+              className="z-20 w-full font-bold sm:w-fit"
+              asChild
+            >
+              <Link href={"#otros-productos"}>
+                <Library className="mr-2 h-5 w-5 " />
+                {secondaryCTA}
+              </Link>
+            </Button>
             <CTAButton
               className="z-20 w-full sm:w-fit"
               // variant={"outline"}
               isHero
             >
-              {/* <Joystick className="mr-2 h-5 w-5 " /> */}
-              <FaBookOpen className="mr-2 h-5 w-5 " />
-              {ctaButtonText}
+              <GraduationCap className="mr-2 h-5 w-5 " />
+              {mainCTA}
             </CTAButton>
-            {/* <Button
-              size={"lg"}
-              className="z-20 w-full font-bold sm:w-fit"
-              asChild
-            >
-              <Link
-                href={createWhatsAppMessageLink(
-                  "Hola! Vengo desde www.reaprende.cl y me gustaría participar del curso de nivelación",
-                )}
-                target="_blank"
-              >
-                <FaWhatsapp className="mr-2 h-5 w-5 " />
-                {ctaButtonText}
-              </Link>
-            </Button> */}
           </div>
         </div>
       </div>
     </SectionWrapper>
   );
-};
-
-export default HeroSection;
+}

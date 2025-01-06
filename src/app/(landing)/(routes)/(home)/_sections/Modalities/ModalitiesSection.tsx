@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { BookOpen, CheckCircle, PlayCircle, Users, Video } from "lucide-react";
 import Link from "next/link";
-import { type FC } from "react";
+import { type FC, type JSX } from "react";
 import { FaWhatsapp } from "react-icons/fa";
 import { SectionWrapper } from "../../../../../../components/landing/SectionWrapper";
 import { createWhatsAppMessageLink } from "@/lib/whatsapp";
@@ -36,7 +36,6 @@ const ModalitiesSection: FC<ModalitiesSectionProps> = ({
   modalities,
   commonBenefits,
   ctaText,
-  ctaButtonText,
 }) => {
   const iconComponents: Record<string, JSX.Element> = {
     PlayCircle: (

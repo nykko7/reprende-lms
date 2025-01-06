@@ -3,7 +3,7 @@
 import React, { createContext, useRef } from "react";
 
 export const CTAButtonRefContext =
-  createContext<React.RefObject<HTMLAnchorElement> | null>(null);
+  createContext<React.RefObject<HTMLAnchorElement | null> | null>(null);
 
 export const CTAButtonRefProvider = ({
   children,

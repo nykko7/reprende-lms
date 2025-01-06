@@ -6,7 +6,13 @@ export type HeroSection = {
   titleNormal: string;
   description: string;
   modalitiesButtonText?: string;
-  ctaButtonText: string;
+  mainCTA: string;
+  secondaryCTA: string;
+};
+
+export type SocialProof = {
+  number: string;
+  description: string;
 };
 
 export type ChooseYourProductSection = {
@@ -91,25 +97,70 @@ export type Faq = {
   answer: string;
 };
 
-export type LandingTexts = {
+export type ProductPreview = {
+  type: "workshop" | "recorded_course" | "private_lessons";
+  title: string;
+  description: string;
+  price: number;
+  features: string[];
+  href: string;
+  badge?: string;
+  color?: "primary" | "red" | "green";
+  isHighlighted?: boolean;
+};
+
+export type LiveCourseSection = {
+  nextBatch: string;
+  price: number;
+  spots: number;
+};
+
+export type HomeTexts = {
   heroSection: HeroSection;
+  socialProofs: SocialProof[];
+  liveCourseSection: LiveCourseSection;
   chooseYourProductSection: ChooseYourProductSection;
   methodologySection: MethodologySection;
   whoAmISection: WhoAmISection;
   testimonialsSection: TestimonialsSection;
   faqSection: FaqSection;
+  productsSection: {
+    title: string;
+    description: string;
+    products: ProductPreview[];
+  };
 };
 
-export const landingTexts: LandingTexts = {
+export const homeTexts: HomeTexts = {
   heroSection: {
     badgeText: "¿Quieres cambiar el miedo por seguridad?",
     titleAccent: "Reaprende",
     titleNormal: " las matemáticas",
-    // description:
-    //   "Curso de nivelación en matemáticas diseñado para comprender los contenidos desde cero.",
-    description: "Todo lo que necesitas aprender en un sólo lugar",
+    description:
+      "Curso de nivelación diseñado para comprender los contenidos desde cero.",
+    // description: "Curso en vivo - Nueva generación febrero 2024",
     // modalitiesButtonText: "Ver modalidades",
-    ctaButtonText: "Ver cursos",
+    mainCTA: "Ver próximo curso",
+    secondaryCTA: "Ver otros productos",
+  },
+  socialProofs: [
+    {
+      number: "+500",
+      description: "estudiantes satisfechos",
+    },
+    {
+      number: "+3 años",
+      description: "acompañando a estudiantes en su aprendizaje",
+    },
+    {
+      number: "100%",
+      description: "recomendado por nuestros estudiantes",
+    },
+  ],
+  liveCourseSection: {
+    nextBatch: "05 de febrero 2025",
+    price: 247000,
+    spots: 20,
   },
   chooseYourProductSection: {
     title: "🚀 Últimos lanzamientos",
@@ -448,6 +499,66 @@ export const landingTexts: LandingTexts = {
           "¿Cuánto tiempo tengo acceso al curso/taller después de comprarlo?",
         answer:
           "Una vez que completes el pago, tendrás acceso inmediato a todo el contenido del curso/taller. Además, puedes disfrutar de un año completo de acceso a las clases y materiales.",
+      },
+    ],
+  },
+  productsSection: {
+    title: "Otros productos",
+    description:
+      "Explora otras formas de aprender matemáticas según tus necesidades y disponibilidad",
+    products: [
+      {
+        type: "workshop",
+        title: "¿Como estudiar las matemáticas?",
+        description:
+          "Aprende estrategias clave para organizar tu estudio de manera efectiva",
+        price: 7000,
+        features: [
+          "2 horas de duración",
+          "Explicación de los ejes y habilidades",
+          "Progresión de los contenidos",
+          "Principales errores y como evitarlos",
+          "Consejos para estudiar",
+        ],
+        href: "/workshops",
+        badge: "Taller grabado",
+        color: "red",
+      },
+      {
+        type: "recorded_course",
+        title: "Curso en formato grabado",
+        description:
+          "Aprende a tu ritmo con clases grabadas y material descargable",
+        price: 97000,
+        features: [
+          "Más de 100 horas de contenido grabado",
+          "Acceso instantáneo",
+          "Clases de generaciones anteriores",
+          "Estudia cuando y donde quieras",
+          "Repasa las veces que necesites",
+          "Acceso por un año",
+        ],
+        href: "/courses",
+        badge: "Curso grabado",
+        color: "primary",
+        isHighlighted: true,
+      },
+      {
+        type: "private_lessons",
+        title: "Acompañamiento individual",
+        description:
+          "Avanza según tu disponibilidad y adaptado a tu ritmo de aprendizaje",
+        price: 120000,
+        features: [
+          "Diagnóstico inicial personalizado",
+          "Clases particulares en vivo por Zoom",
+          "Acceso a contenido grabado",
+          "Guías de estudio según nivel académico",
+          "Planificación de estudio semanal",
+        ],
+        href: "/private-lessons",
+        badge: "Clases particulares",
+        color: "green",
       },
     ],
   },

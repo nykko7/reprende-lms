@@ -1,38 +1,15 @@
-import CTAButton from "../../../../../../components/landing/CTAButton";
+import CTAButton from "@/components/landing/CTAButton";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import {
-  ArrowDown,
-  ArrowRightIcon,
-  CheckIcon,
-  ChevronRight,
-} from "lucide-react";
-import { type FC } from "react";
-import { SectionWrapper } from "../../../../../../components/landing/SectionWrapper";
+import { ArrowRightIcon, CheckIcon, ChevronRight } from "lucide-react";
+import { SectionWrapper } from "@/components/landing/SectionWrapper";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
+import { courseTexts } from "@/config/content/course";
 
-interface TargetAudienceSectionProps {
-  title: string;
-  profiles: {
-    title: string;
-    list: {
-      title: string;
-      descriptions: string[];
-    }[];
-  };
-  goals: {
-    title: string;
-    list: string[];
-  };
-  footer: string;
-  buttonText: string;
-}
+export default function TargetAudienceSection() {
+  const { title, profiles, goals, footer, buttonText } =
+    courseTexts.courseTargetAudienceSection;
 
-const TargetAudienceSection: FC<TargetAudienceSectionProps> = ({
-  title,
-  profiles,
-  goals,
-  footer,
-  buttonText,
-}) => {
   return (
     <SectionWrapper className="flex flex-col gap-y-6">
       <h2 className="mb-4 text-center text-4xl font-bold sm:text-5xl">
@@ -89,10 +66,10 @@ const TargetAudienceSection: FC<TargetAudienceSectionProps> = ({
       </div>
       <h3 className="text-center text-2xl font-bold">{footer}</h3>
       <div className="flex justify-center">
-        <CTAButton>{buttonText}</CTAButton>
+        <Button asChild size={"lg"} className="font-bold">
+          <Link href="#registro">{buttonText}</Link>
+        </Button>
       </div>
     </SectionWrapper>
   );
-};
-
-export default TargetAudienceSection;
+}

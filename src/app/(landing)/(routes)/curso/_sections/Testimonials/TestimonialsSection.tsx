@@ -1,59 +1,30 @@
-import { type FC } from "react";
-import { SectionWrapper } from "../../../../../../components/landing/SectionWrapper";
-
+import { SectionWrapper } from "@/components/landing/SectionWrapper";
 import TestimonialCarousel from "./TestimonialCarousel";
 import TestimonialMasonry from "./TestimonialMasonry";
+import { courseTexts } from "@/config/content/course";
 
-interface TextTestimonial {
-  type: "text";
-  testimonial: string;
-  studentName: string;
-  studentDescription: string;
-  imageSrc?: string;
-  imageAlt: string;
-}
+export default function TestimonialsSection() {
+  const { title, description, testimonials } =
+    courseTexts.courseTestimonialsSection;
 
-interface ImageTestimonial {
-  type: "image";
-  imageSrc: string;
-  imageAlt: string;
-}
-
-interface TestimonialsSectionProps {
-  title: string;
-  description: string;
-  testimonials: (TextTestimonial | ImageTestimonial)[];
-}
-
-const TestimonialsSection: FC<TestimonialsSectionProps> = ({
-  title,
-  description,
-  testimonials,
-}) => {
   return (
-    <SectionWrapper>
+    <SectionWrapper className="relative mt-0 max-w-none bg-background py-20">
       <div className="mx-auto mb-12 flex max-w-3xl flex-col gap-2 text-center">
         <h2 className="text-4xl font-bold sm:text-5xl">{title}</h2>
         <p className="text-lg text-muted-foreground">{description}</p>
       </div>
       <div className="mx-auto flex max-w-6xl flex-col gap-y-3 px-6 lg:px-8">
         <TestimonialCarousel
-          testimonials={
-            testimonials.filter(
-              (testimonial) => testimonial.type === "text",
-            ) as TextTestimonial[]
-          }
+          testimonials={testimonials.filter(
+            (testimonial) => testimonial.type === "text",
+          )}
         />
         <TestimonialMasonry
-          testimonials={
-            testimonials.filter(
-              (testimonial) => testimonial.type === "image",
-            ) as ImageTestimonial[]
-          }
+          testimonials={testimonials.filter(
+            (testimonial) => testimonial.type === "image",
+          )}
         />
       </div>
     </SectionWrapper>
   );
-};
-
-export default TestimonialsSection;
+}

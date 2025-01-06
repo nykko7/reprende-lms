@@ -6,21 +6,11 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { homeTexts } from "@/config/content/home";
 
-interface FAQSectionProps {
-  title: string;
-  description: string;
-  faqs: {
-    question: string;
-    answer: string;
-  }[];
-}
+export default function FAQSection() {
+  const { title, description, faqs } = homeTexts.faqSection;
 
-export default function FAQSection({
-  title,
-  description,
-  faqs,
-}: FAQSectionProps) {
   return (
     <section className="py-16">
       <div className="container mx-auto">

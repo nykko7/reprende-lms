@@ -6,6 +6,7 @@ export type CourseHeroSection = {
   ctaText: string;
   ctaLink: string;
   rating: number;
+  nextBatch: string;
 };
 
 export type CourseTargetAudienceSection = {
@@ -97,6 +98,11 @@ export type CourseGoalsSection = {
   list: string[];
 };
 
+export type CourseRegistrationSection = {
+  nextBatch: string;
+  price: number;
+};
+
 export type CourseTexts = {
   courseHeroSection: CourseHeroSection;
   courseTargetAudienceSection: CourseTargetAudienceSection;
@@ -105,6 +111,7 @@ export type CourseTexts = {
   courseWhoAmISection: CourseWhoAmISection;
   courseMethodologySection: CourseMethodologySection;
   courseFaqSection: CourseFaqSection;
+  courseRegistrationSection: CourseRegistrationSection;
 };
 
 export const courseTexts: CourseTexts = {
@@ -115,10 +122,11 @@ export const courseTexts: CourseTexts = {
       "**__Descubre como dominar las matemáticas__** en solo 4 meses **__con estrategias que nadie te enseña__**\n(Sin memorizar formulas)",
     subtitle:
       "**Cientos de estudiantes ya han visto resultados y están cumpliendo sus objetivos.**\nComenzaron a mejorar su rendimiento escolar y subieron su puntaje en la PAES M1. \nSi estas listo para ser el próximo en ver resultados reales, **este es el momento de transformar tu aprendizaje.**",
-    videoUrl: "https://www.youtube.com/embed/your-video-id",
+    videoUrl: "https://www.youtube.com/embed/-KJmB1vYYwQ",
     rating: 4.9,
-    ctaText: "¡Accede ahora!",
-    ctaLink: "#inscripcion",
+    ctaText: "¡Reserva tu cupo!",
+    ctaLink: "#registro",
+    nextBatch: "05 de febrero",
   },
   courseTargetAudienceSection: {
     title: "🫵 ¿Para quién es este curso?",
@@ -531,5 +539,9 @@ export const courseTexts: CourseTexts = {
           "Una vez que completes el pago, tendrás acceso inmediato a todo el contenido del curso/taller. Además, puedes disfrutar de un año completo de acceso a las clases y materiales.",
       },
     ],
+  },
+  courseRegistrationSection: {
+    nextBatch: "05 de febrero 2025",
+    price: 247000,
   },
 };

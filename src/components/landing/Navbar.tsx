@@ -52,7 +52,7 @@ export const Navbar = () => {
         </nav> */}
 
         <nav>
-          <Button
+          {/* <Button
             asChild
             ref={buttonRef}
             className={cn(
@@ -61,12 +61,9 @@ export const Navbar = () => {
             )}
           >
             <Link href="#cursos" onClick={handleScroll}>
-              {/* {typeof window !== "undefined" && window?.innerWidth >= 768
-                ? "Inscribirme al curso"
-                : "Inscripción"} */}
               Inscribirme al curso
             </Link>
-          </Button>
+          </Button> */}
         </nav>
 
         <nav className="flex justify-end gap-1 sm:gap-2">

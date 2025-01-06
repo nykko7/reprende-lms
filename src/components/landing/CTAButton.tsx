@@ -23,7 +23,7 @@ export default function CTAButton({
     >
       <Link
         // href="https://wa.me/56944768853?text=Hola!%20Vengo%20desde%20www.reaprende.cl%20y%20me%20gustaría%20consultar%20sobre%20..."
-        href="#cursos"
+        href="#curso-en-vivo"
         onClick={handleScroll}
         target="_blank"
         ref={isHero ? ctaRef : undefined}

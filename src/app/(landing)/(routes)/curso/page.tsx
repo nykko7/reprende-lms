@@ -5,7 +5,6 @@ import WhoAmISection from "./_sections/WhoAmI/WhoAmISection";
 import MethodologySection from "./_sections/Methodology/MethodologySection";
 import FAQSection from "./_sections/FAQ/FAQSection";
 import RegistrationSection from "./_sections/Registration/RegistrationSection";
-import { courseTexts } from "../../_config/course";
 import TargetAudienceSection from "./_sections/TargetAudience/TargetAudienceSection";
 
 import { Montserrat } from "next/font/google";
@@ -20,14 +19,14 @@ export default function CourseInfoPage() {
     <main
       className={`overflow-clip ${montserrat.variable} pt-10 font-montserrat`}
     >
-      <CourseHeroSection {...courseTexts.courseHeroSection} />
-      <TargetAudienceSection {...courseTexts.courseTargetAudienceSection} />
-      <MethodologySection {...courseTexts.courseMethodologySection} />
-      <CourseSyllabusSection {...courseTexts.courseSyllabusSection} />
-      <TestimonialsSection {...courseTexts.courseTestimonialsSection} />
-      <WhoAmISection {...courseTexts.courseWhoAmISection} />
+      <CourseHeroSection />
+      <TargetAudienceSection />
+      <MethodologySection />
+      <CourseSyllabusSection />
+      <TestimonialsSection />
+      <WhoAmISection />
       <RegistrationSection />
-      <FAQSection {...courseTexts.courseFaqSection} />
+      <FAQSection />
     </main>
   );
 }

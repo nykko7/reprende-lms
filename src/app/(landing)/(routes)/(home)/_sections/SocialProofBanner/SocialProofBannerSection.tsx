@@ -1,12 +1,8 @@
-type SocialProofBannerSectionProps = {
-  socialProofs: {
-    number: string;
-    description: string;
-  }[];
-};
-const SocialProofBannerSection = ({
-  socialProofs,
-}: SocialProofBannerSectionProps) => {
+import { homeTexts } from "@/config/content/home";
+
+export default function SocialProofBannerSection() {
+  const { socialProofs } = homeTexts;
+
   return (
     <section className="align center bg-gradient from-bg-primary/60 group z-20 my-0 flex flex-col justify-center gap-4 to-secondary/60 py-8 text-center text-primary-foreground">
       <dl className="mx-auto grid max-w-screen-md gap-16 sm:grid-cols-3">
@@ -23,6 +19,4 @@ const SocialProofBannerSection = ({
       </dl>
     </section>
   );
-};
-
-export default SocialProofBannerSection;
+}

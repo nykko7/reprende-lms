@@ -1,20 +1,23 @@
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { Star, BookOpen, FileWarning, TriangleAlert } from "lucide-react";
-import { Badge } from "@/components/ui/badge";
+import { Star, PenBox, Calendar } from "lucide-react";
 import { SectionWrapper } from "@/components/landing/SectionWrapper";
-import { type CourseHeroSection as CourseHeroSectionType } from "@/app/(landing)/_config/course";
 import { formatText } from "@/lib/text";
+import { YouTubePlayer } from "./YouTubePlayer";
+import { courseTexts } from "@/config/content/course";
 
-export const CourseHeroSection: React.FC<CourseHeroSectionType> = ({
-  badgeText,
-  title,
-  subtitle,
-  videoUrl,
-  ctaText,
-  ctaLink,
-  rating,
-}) => {
+export function CourseHeroSection() {
+  const {
+    badgeText,
+    title,
+    subtitle,
+    videoUrl,
+    ctaText,
+    ctaLink,
+    rating,
+    nextBatch,
+  } = courseTexts.courseHeroSection;
+
   return (
     <SectionWrapper className="my-0 flex max-w-screen-lg flex-col justify-center">
       <div className="relative flex flex-col items-center justify-between text-center">
@@ -27,17 +30,9 @@ export const CourseHeroSection: React.FC<CourseHeroSectionType> = ({
             {formatText(title)}
           </h1>
 
-          <div className="aspect-video w-full max-w-screen-lg overflow-hidden rounded-xl shadow-[0px_0px_20px_0px] shadow-primary">
-            <iframe
-              className="h-full w-full"
-              src={videoUrl}
-              title="Course Video"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe>
-          </div>
+          <YouTubePlayer videoUrl={videoUrl} />
 
-          <p className="whitespace-pre-wrap text-sm leading-normal text-foreground md:text-lg">
+          <p className="whitespace-pre-wrap text-sm leading-normal text-foreground md:text-base">
             {formatText(subtitle)}
           </p>
 
@@ -50,14 +45,20 @@ export const CourseHeroSection: React.FC<CourseHeroSectionType> = ({
               />
             ))}
           </div>
+          <div className="flex items-center justify-center space-x-1">
+            <Calendar className="mr-2 h-8 w-8" />
+            <span className="text-3xl font-bold uppercase ">
+              Proxima fecha: {nextBatch}
+            </span>
+          </div>
 
           <Button
             asChild
             size="lg"
-            className="z-20 w-full p-9 text-base font-bold  sm:w-fit md:text-xl"
+            className="z-20 w-full p-6 text-base font-bold  sm:w-fit md:text-lg"
           >
             <Link href={ctaLink}>
-              <BookOpen className="mr-2 h-6 w-6" />
+              <PenBox className="mr-2 h-6 w-6" />
               {ctaText}
             </Link>
           </Button>
@@ -74,4 +75,4 @@ export const CourseHeroSection: React.FC<CourseHeroSectionType> = ({
       </div>
     </SectionWrapper>
   );
-};
+}

@@ -1,14 +1,12 @@
-import { SectionWrapper } from "@/components/landing/SectionWrapper";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { formatText } from "@/lib/text";
-import { Check } from "lucide-react";
-import Image from "next/image";
+import LiveCoursePreview from "./LiveCoursePreview";
+import { courseTexts } from "@/config/content/course";
 
-const RegistrationSection = () => {
+export default function RegistrationSection() {
+  const { nextBatch, price } = courseTexts.courseRegistrationSection;
+
   return (
-    <section className="group">
-      <div className="align center my-0 flex flex-col justify-center gap-4  border-t-2 bg-accent py-24 text-center text-accent-foreground transition duration-700 ease-out">
+    <section className="group" id="registro">
+      <div className="align center my-0 flex flex-col justify-center gap-4  border-y-2 bg-primary/25 py-24 text-center text-accent-foreground transition duration-700 ease-out">
         <h2 className="text-4xl">
           ¿Te convenciste ya de{" "}
           <span className="relative z-10 font-bold text-primary-foreground">
@@ -38,49 +36,8 @@ const RegistrationSection = () => {
         </h2>
       </div>
       <div className="align-center flex justify-center py-10">
-        <Card>
-          <CardHeader>
-            <CardTitle className="text-center">
-              Esto es todo lo que recibirás:
-            </CardTitle>
-          </CardHeader>
-          <CardContent>
-            <ul className="space-y-4">
-              {[
-                `**Taller 0**: Como estudiar las matemáticas ($7.000)`,
-                "**Módulo 1**: Números ($45.000)",
-                "**Módulo 2**: Álgebra y funciones ($45.000)",
-                "**Módulo 3**: Geometría ($45.000)",
-                "**Módulo 4**: Probabilidad y estadística ($45.000)",
-              ].map((item, index) => (
-                <li key={index} className="flex items-start">
-                  <Check className="mr-2 h-5 w-5 flex-shrink-0 text-green-400" />
-                  <span>{formatText(item)}</span>
-                </li>
-              ))}
-            </ul>
-            <div className="mt-8 text-center">
-              <div className="mb-2 text-2xl font-semibold">
-                <p>Valor Total:</p>
-                <p className="line-through">$187.000</p>
-              </div>
-              <div className="mb-4 text-4xl font-bold">
-                <p>Precio lanzamiento</p>
-                <p>$97.000</p>
-              </div>
-
-              <p className="my-2 text-center text-sm font-bold text-muted-foreground">
-                🚨 SOLO POR TIEMPO LIMITADO 🚨
-              </p>
-              <Button size="lg" className="w-full text-lg font-bold">
-                ¡Quiero Acceder Ahora!
-              </Button>
-            </div>
-          </CardContent>
-        </Card>
+        <LiveCoursePreview nextBatch={nextBatch} price={price} />
       </div>
     </section>
   );
-};
-
-export default RegistrationSection;
+}
