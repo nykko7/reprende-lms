@@ -482,7 +482,7 @@ export const courseTexts: CourseTexts = {
       {
         title: "Material 100% actualizado",
         description:
-          "Videos, guías y ejercicios basados en el temario oficial del DEMRE. Todo el contenido está alineado con lo indicado por el MINEDUC para la PAES.",
+          "Videos, guías y ejercicios basados en el temario oficial del DEMRE. Todo el contenido está alineado con lo indicado por el MINEDUC.",
         icon: "BookOpen",
       },
       {
