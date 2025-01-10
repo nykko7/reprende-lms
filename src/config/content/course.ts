@@ -189,7 +189,7 @@ export const courseTexts: CourseTexts = {
           {
             type: "list",
             items: [
-              "Neglativos y de un estudiantes",
+              "Negativos y positivos",
               "Potencias y raíces",
               "Fracciones y decimales",
               "Porcentaje",
@@ -475,45 +475,45 @@ export const courseTexts: CourseTexts = {
     imagePath: "/shared/logo.png",
   },
   courseMethodologySection: {
-    title: "📖 Metodología de aprendizaje",
+    title: "💫 ¿Por qué este curso es diferente?",
     description:
-      "Aprende desde la reflexión, la curiosidad y la aplicación práctica para un aprendizaje efectivo y emocionante.",
+      "Descubre las características que hacen único nuestro método de enseñanza.",
     features: [
       {
-        title: "Estimular la curiosidad",
+        title: "Material 100% actualizado",
         description:
-          "Utilizar la curiosidad como una herramienta para impulsar el aprendizaje, motivando a los estudiantes a preguntar y explorar.",
-        icon: "Lightbulb",
+          "Videos, guías y ejercicios basados en el temario oficial del DEMRE. Todo el contenido está alineado con lo indicado por el MINEDUC para la PAES.",
+        icon: "BookOpen",
       },
       {
-        title: "Aprendizaje activo",
+        title: "Ensayos con preguntas reales",
         description:
-          "Los alumnos construyen activamente su conocimiento, integrando la nueva información con sus conocimientos previos.",
-        icon: "TestTubeDiagonal",
+          "Realizarás ensayos generales con preguntas muy similares (o iguales) a las que verás en la PAES. Podrás evaluar tu progreso y descubrir las áreas que necesitas reforzar antes del gran día.",
+        icon: "FileCheck",
       },
       {
-        title: "Reconocimiento de patrones",
+        title: "Clases teórico/prácticas",
         description:
-          "Fomentar la exploración de patrones para identificar relaciones y conexiones en el contenido matemático.",
-        icon: "BrainCircuit",
+          "Porque se aprende haciendo, nuestras clases combinan teoría y práctica. Primero comprendes el concepto, luego resuelves ejercicios para afianzar tu aprendizaje.",
+        icon: "GraduationCap",
       },
       {
-        title: "Aplicación y modelado",
+        title: "Horario intensivo: 3 clases por semana",
         description:
-          "Enseñar a modelar fórmulas, pasando del lenguaje natural al lenguaje algebraico y matemático, aplicando el contenido a contextos prácticos.",
-        icon: "PencilRuler",
+          "6 horas de clase semanales, con un día de descanso entre sesiones para poner en práctica lo aprendido. Este ritmo requiere disciplina y compromiso.",
+        icon: "Calendar",
       },
       {
-        title: "Reflexión sobre el error",
+        title: "Tecnología y neurociencia",
         description:
-          "Prestar atención a los errores cometidos para comprender su origen y aprender de ellos.",
-        icon: "ShieldAlert",
+          "Utilizamos plataformas digitales interactivas y estrategias basadas en la neurociencia para reforzar tu aprendizaje, y asegurar un progreso constante.",
+        icon: "Brain",
       },
       {
-        title: "Exploración emocional",
+        title: "Acceso a consultas ilimitadas",
         description:
-          "Integrar las emociones en el proceso de aprendizaje para hacerlo más significativo y memorable.",
-        icon: "HeartHandshake",
+          "Tendrás contacto directo con tu profesora vía WhatsApp, correo, audio o videollamada. Pregunta todo lo que necesites, en cualquier momento, para que no te quedes con dudas.",
+        icon: "MessagesSquare",
       },
     ],
   },
