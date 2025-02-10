@@ -119,7 +119,7 @@ export const courseTexts: CourseTexts = {
     badgeText:
       "¿Te estás preparando para la PAES M1 o necesitas subir tus notas en matemáticas?",
     title:
-      "**__Descubre como dominar las matemáticas__** en solo 4 meses **__con estrategias que nadie te enseña__**\n(Sin memorizar formulas)",
+      "**__Descubre como dominar las matemáticas__** en solo 4 meses **__con estrategias que nadie te enseña__**\n(Sin memorizar fórmulas)",
     subtitle:
       "**Cientos de estudiantes ya han visto resultados y están cumpliendo sus objetivos.**\nComenzaron a mejorar su rendimiento académico y subieron su puntaje en la PAES M1. \nSi estas listo para ser el próximo en ver resultados reales, **este es el momento de transformar tu aprendizaje.**",
     videoUrl: "https://www.youtube.com/embed/XGkKFs6UACc",

@@ -118,14 +118,16 @@ const CourseGenerationCard: FC<CourseGenerationProps> = ({
             </Badge>
 
             <div>
-              <p className="text-4xl font-bold">${price.toLocaleString()}</p>
+              <p className="text-4xl font-bold">
+                ${price.toLocaleString("es-CL")}
+              </p>
               <p className="text-sm text-muted-foreground">Pago único</p>
             </div>
 
             <div className="mt-4 space-y-2 rounded-lg bg-muted/50 p-3">
               <p className="text-sm font-medium">O paga en cuotas</p>
               <p className="text-2xl font-bold">
-                6 x ${Math.round(price / 6).toLocaleString()}
+                6 x ${Math.round(price / 6).toLocaleString("es-CL")}
               </p>
               <p className="text-xs text-muted-foreground">
                 Sin interés con tarjeta de crédito

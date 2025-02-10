@@ -48,7 +48,7 @@ export default function LiveCourseSection() {
             A través de <strong>clases en vivo</strong>,{" "}
             <strong>material exclusivo</strong> y{" "}
             <strong>seguimiento personalizado</strong>, aprenderás a resolver
-            ejercicios de manera efectiva y a comprender los conceptos
+            ejercicios de manera efectiva y comprenderás los conceptos
             fundamentales.
           </p>
         </div>
