@@ -23,7 +23,7 @@ export default function LiveCourseSection() {
       "6 horas de clase semanales",
       "No importa tu nivel actual",
       "Temario actualizado según el DEMRE",
-      "Las clases son teoricas y practicas",
+      "Las clases son teóricas y prácticas",
     ],
   };
 
