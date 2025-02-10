@@ -96,7 +96,7 @@ const LiveCoursePreview: FC<LiveCoursePreviewProps> = ({
                 <ul className="space-y-3">
                   {[
                     "4 meses de clases en vivo",
-                    "Grupos reducidos (máx. 40 estudiantes)",
+                    "Grupos reducidos (máx. 30 estudiantes)",
                     "Seguimiento personalizado",
                     "Material de estudio exclusivo",
                     "Acceso a grabaciones por 1 año",
@@ -107,20 +107,6 @@ const LiveCoursePreview: FC<LiveCoursePreviewProps> = ({
                     </li>
                   ))}
                 </ul>
-
-                {showMoreInfo && (
-                  <Button
-                    variant="outline"
-                    className="w-full"
-                    size="lg"
-                    asChild
-                  >
-                    <Link href="/curso" className="gap-2">
-                      <BookOpen className="h-5 w-5" />
-                      Ver programa completo
-                    </Link>
-                  </Button>
-                )}
               </div>
             </div>
 
@@ -165,7 +151,15 @@ const LiveCoursePreview: FC<LiveCoursePreviewProps> = ({
           </div>
         </CardContent>
 
-        <CardFooter className="relative">
+        <CardFooter className="relative flex flex-col gap-2">
+          {showMoreInfo && (
+            <Button variant="outline" className="w-full" size="lg" asChild>
+              <Link href="/curso" className="gap-2">
+                <BookOpen className="h-5 w-5" />
+                Ver programa completo
+              </Link>
+            </Button>
+          )}
           <Button asChild className="w-full" size="lg">
             <Link
               href={createWhatsAppMessageLink(

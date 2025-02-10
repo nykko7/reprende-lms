@@ -16,7 +16,7 @@ const LandingLayout = ({ children }: { children: React.ReactNode }) => {
           <Link href={ROUTES.LIVE_COURSE} className="hover:underline">
             La próxima generación del curso <strong> en vivo</strong> comienza
             el
-            <strong> 05 de febrero 2025</strong>
+            <strong> 04 de Marzo 2025</strong>
           </Link>
         </div>
         <Navbar />

@@ -1,11 +1,12 @@
 import { createWhatsAppMessageLink } from "@/lib/whatsapp";
+import { Calendar, Heart, type LucideIcon, Users } from "lucide-react";
 
 export type HeroSection = {
   badgeText: string;
   titleAccent: string;
   titleNormal: string;
   description: string;
-  modalitiesButtonText?: string;
+  features: string[];
   mainCTA: string;
   secondaryCTA: string;
 };
@@ -13,6 +14,7 @@ export type HeroSection = {
 export type SocialProof = {
   number: string;
   description: string;
+  icon: LucideIcon;
 };
 
 export type ChooseYourProductSection = {
@@ -120,8 +122,6 @@ export type HomeTexts = {
   heroSection: HeroSection;
   socialProofs: SocialProof[];
   liveCourseSection: LiveCourseSection;
-  chooseYourProductSection: ChooseYourProductSection;
-  methodologySection: MethodologySection;
   whoAmISection: WhoAmISection;
   testimonialsSection: TestimonialsSection;
   faqSection: FaqSection;
@@ -136,26 +136,35 @@ export const homeTexts: HomeTexts = {
   heroSection: {
     badgeText: "¿Quieres cambiar el miedo por seguridad?",
     titleAccent: "Reaprende",
-    titleNormal: " las matemáticas",
+    titleNormal: " las matemáticas desde cero",
+    // description: "Domina todo lo que no entendiste en el colegio y más...",
     description:
-      "Curso de nivelación diseñado para comprender los contenidos desde cero.",
+      "Entiende las **bases** y desarrolla **habilidades** de manera progresiva",
+    features: [
+      "Aprende estrategias sencillas y prácticas",
+      "Sin memorizar fórmulas innecesarias",
+      "Reconoce tus errores y aprende a evitarlos",
+    ],
     // description: "Curso en vivo - Nueva generación febrero 2024",
     // modalitiesButtonText: "Ver modalidades",
-    mainCTA: "Ver próximo curso",
-    secondaryCTA: "Ver otros productos",
+    mainCTA: "Comienza ahora",
+    secondaryCTA: "",
   },
   socialProofs: [
     {
       number: "+500",
-      description: "estudiantes satisfechos",
+      description: "Estudiantes satisfechos",
+      icon: Users,
     },
     {
-      number: "+3 años",
-      description: "acompañando a estudiantes en su aprendizaje",
+      number: "+4 años",
+      description: "Acompañando a estudiantes en su aprendizaje",
+      icon: Calendar,
     },
     {
       number: "100%",
-      description: "recomendado por nuestros estudiantes",
+      description: "Recomendado por nuestros estudiantes",
+      icon: Heart,
     },
   ],
   liveCourseSection: {
@@ -163,145 +172,74 @@ export const homeTexts: HomeTexts = {
     price: 247000,
     spots: 20,
   },
-  chooseYourProductSection: {
-    title: "🚀 Últimos lanzamientos",
+  productsSection: {
+    title: "Otros productos",
     description:
-      "Explora nuestros cursos y talleres diseñados para ayudarte a mejorar tus habilidades matemáticas.",
+      "Explora otras formas de aprender matemáticas según tus necesidades y disponibilidad",
     products: [
       {
-        type: "recorded_workshop",
-        title: "Taller: Cómo estudiar las matemáticas",
-        subtitle: "Taller grabado de 2 horas de duración",
+        type: "workshop",
+        title: "¿Como estudiar las matemáticas?",
         description:
-          "Aprende estrategias clave para organizar tu estudio, técnicas y consejos prácticos para maximizar tu rendimiento en matemáticas. ",
-        ctaType: "whatsapp_message",
-        ctaUrl: createWhatsAppMessageLink(
-          "¡Hola! Me interesa el taller de preparación para la PAES M1. ¿Podrías darme más detalles sobre el contenido y el precio?",
-        ),
-        targetAudience: "Estudiantes de enseñanza media y egresados",
-        ctaText: "Acceder al taller",
+          "Aprende estrategias clave para organizar tu estudio de manera efectiva",
         price: 7000,
-        originalPrice: 7000,
-        showPrice: true,
         features: [
-          "2 horas de contenido grabado",
-          `Explicación de los ejes y habilidades`,
+          "2 horas de duración",
+          "Explicación de los ejes y habilidades",
           "Progresión de los contenidos",
-          "Reconocimiento de los errores más comunes",
-          "Checklist del temario PAES M1",
-          "Acceso por 1 año",
+          "Principales errores y como evitarlos",
+          "Consejos para estudiar",
         ],
-        notUrgencyNote: "¡Acceso inmediato disponible!",
+        href: createWhatsAppMessageLink(
+          "Hola, me gustaría acceder al taller de cómo estudiar las matemáticas",
+        ),
+        badge: "Taller grabado",
+        color: "red",
+        ctaText: "Acceder al taller",
       },
       {
         type: "recorded_course",
-        featured: true,
-        title: "Curso: Reaprende las matemáticas desde cero",
-        subtitle: "+100 hrs de contenido grabado",
+        title: "Curso en formato grabado",
         description:
-          "Comprende los conceptos fundamentales y avanza hacia contenidos más complejos, con un enfoque estructurado y progresivo.",
-        more_details: "/curso",
-        ctaType: "url",
-        ctaUrl: "/curso",
-        ctaText: "Inscríbete ahora",
-        targetAudience: "Estudiantes de enseñanza media y egresados",
+          "Aprende a tu ritmo con clases grabadas y material descargable",
         price: 97000,
-        originalPrice: 187000,
-        launchPrice: true,
-        showPrice: true,
         features: [
           "Más de 100 horas de contenido grabado",
-          "Guías de estudio con resolución de ejercicios",
-          "Ensayos PAES con resolución detallada",
-          "Material descargable exclusivo",
-          "Consultas ilimitadas por Whatsapp",
-          "Taller: Cómo estudiar las matemáticas",
-          "Acceso por 1 año",
+          "Acceso instantáneo",
+          "Clases de generaciones anteriores",
+          "Estudia cuando y donde quieras",
+          "Repasa las veces que necesites",
+          "Acceso por un año",
         ],
-        semiUrgencyNote: "¡Precio de lanzamiento por tiempo limitado!",
+        href: createWhatsAppMessageLink(
+          "Hola, me gustaría acceder al curso de nivelación de matemáticas en formato grabado",
+        ),
+        ctaText: "Inscríbete ahora",
+        badge: "Curso grabado",
+        color: "primary",
+        isHighlighted: true,
       },
       {
-        type: "personalized_lessons",
-        title: "Aprendizaje flexible con acompañamiento personalizado",
-        subtitle: "Contenido grabado + clases particulares",
+        type: "private_lessons",
+        title: "Acompañamiento individual",
         description:
-          "Avanza según tu disponibilidad con clases pregrabadas y el acompañamiento directo de la profesora en clases particulares.",
-        targetAudience: "Estudiantes de enseñanza media y egresados",
-        ctaType: "whatsapp_message",
-        ctaUrl: createWhatsAppMessageLink(
-          "Hola! Me interesa el formato híbrido de aprendizaje. ¿Podrías darme más detalles sobre cómo funciona y cuál es el costo?",
-        ),
-        ctaText: "Consultar disponibilidad",
-        showPrice: false,
-        originalPrice: 0,
-        price: 0,
+          "Avanza según tu disponibilidad y adaptado a tu ritmo de aprendizaje",
+        price: 120000,
         features: [
           "Diagnóstico inicial personalizado",
-          "Clases particulares 1 a 1 en vivo por Zoom",
+          "Clases particulares en vivo por Zoom",
           "Acceso a contenido grabado",
-          "Ensayos PAES con resolución detallada",
           "Guías de estudio según nivel académico",
           "Planificación de estudio semanal",
-          "Material de trabajo personalizado",
-          "Consultas ilimitadas por Whatsapp",
         ],
-        urgencyNote: "¡Cupos muy limitados!",
+        href: createWhatsAppMessageLink(
+          "Hola, me gustaría saber si tiene disponibilidad para el acompañamiento individual",
+        ),
+        ctaText: "Consultar disponibilidad",
+        badge: "Clases particulares",
+        color: "green",
       },
     ],
-  },
-  methodologySection: {
-    title: "📖 Metodología de aprendizaje",
-    description:
-      "Aprende desde la reflexión, la curiosidad y la aplicación práctica para un aprendizaje efectivo y emocionante.",
-    features: [
-      {
-        title: "Estimular la curiosidad",
-        description:
-          "Utilizar la curiosidad como una herramienta para impulsar el aprendizaje, motivando a los estudiantes a preguntar y explorar.",
-        icon: "Lightbulb",
-      },
-      {
-        title: "Aprendizaje activo",
-        description:
-          "Los alumnos construyen activamente su conocimiento, integrando la nueva información con sus conocimientos previos.",
-        icon: "TestTubeDiagonal",
-      },
-      {
-        title: "Reconocimiento de patrones",
-        description:
-          "Fomentar la exploración de patrones para identificar relaciones y conexiones en el contenido matemático.",
-        icon: "BrainCircuit",
-      },
-      {
-        title: "Aplicación y modelado",
-        description:
-          "Enseñar a modelar fórmulas, pasando del lenguaje natural al lenguaje algebraico y matemático, aplicando el contenido a contextos prácticos.",
-        icon: "PencilRuler",
-      },
-      {
-        title: "Reflexión sobre el error",
-        description:
-          "Prestar atención a los errores cometidos para comprender su origen y aprender de ellos.",
-        icon: "ShieldAlert",
-      },
-      {
-        title: "Exploración emocional",
-        description:
-          "Integrar las emociones en el proceso de aprendizaje para hacerlo más significativo y memorable.",
-        icon: "HeartHandshake",
-      },
-    ],
-  },
-  whoAmISection: {
-    title: "👩‍🏫 ¿Quién soy?",
-    description: "Conoce a la profesora detrás de **Reaprende**",
-    name: "Isidora Pi",
-    role: "Profesora de Educación Básica con mención en Matemáticas",
-    instagramUrl: "https://www.instagram.com/reaprende.mate/",
-    instagramTag: "@reaprende.mate",
-    bio: "Mi viaje en el mundo de la educación comenzó hace más de 10 años cuando ingresé a estudiar Ingeniería Comercial en la PUCV. Durante mis años universitarios, descubrí mi pasión por la enseñanza al impartir clases de matemáticas a estudiantes con diferentes dificultades en Valparaíso.\n\nTras varios años, me di cuenta de que muchos problemas de aprendizaje se originan en una **base deficiente en la educación básica**. Motivada por este desafio, en 2017, decidí cambiar mi carrera a Educación Básica con mención en Matemáticas. Este paso no solo fue un cambio de carrera, sino una misión personal para abordar las raíces de los problemas educativos que había identificado.\n\nEn 2021, en tiempos de pandemia, nació **@reaprende.mate** con el objetivo de fomentar una comprensión profunda de las matemáticas, centrándose en construir una base sólida desde cero y con una narrativa distinta.\n\n**Isidora Pi**\n**¡Nos vemos en clases!**",
-    imageAlt: "Imagen de la profesora",
-    imagePath: "/shared/logo.png",
   },
   testimonialsSection: {
     title: "💬 Testimonios de nuestros estudiantes",
@@ -480,6 +418,17 @@ export const homeTexts: HomeTexts = {
       },
     ],
   },
+  whoAmISection: {
+    title: "👩‍🏫 ¿Quién soy?",
+    description: "Conoce a la profesora detrás de **Reaprende**",
+    name: "Isidora Pi",
+    role: "Profesora de Educación Básica con mención en Matemáticas",
+    instagramUrl: "https://www.instagram.com/reaprende.mate/",
+    instagramTag: "@reaprende.mate",
+    bio: "Mi viaje en el mundo de la educación comenzó hace más de 10 años cuando ingresé a estudiar Ingeniería Comercial en la PUCV. Durante mis años universitarios, descubrí mi pasión por la enseñanza al impartir clases de matemáticas a estudiantes con diferentes dificultades en Valparaíso.\n\nTras varios años, me di cuenta de que muchos problemas de aprendizaje se originan en una **base deficiente en la educación básica**. Motivada por este desafio, en 2017, decidí cambiar mi carrera a Educación Básica con mención en Matemáticas. Este paso no solo fue un cambio de carrera, sino una misión personal para abordar las raíces de los problemas educativos que había identificado.\n\nEn 2021, en tiempos de pandemia, nació **@reaprende.mate** con el objetivo de fomentar una comprensión profunda de las matemáticas, centrándose en construir una base sólida desde cero y con una narrativa distinta.\n\n**Isidora Pi**\n**¡Nos vemos en clases!**",
+    imageAlt: "Imagen de la profesora",
+    imagePath: "/shared/logo.png",
+  },
   faqSection: {
     title: "🤔 Preguntas frecuentes",
     description:
@@ -500,75 +449,6 @@ export const homeTexts: HomeTexts = {
           "¿Cuánto tiempo tengo acceso al curso/taller después de comprarlo?",
         answer:
           "Una vez que completes el pago, tendrás acceso inmediato a todo el contenido del curso/taller. Además, puedes disfrutar de un año completo de acceso a las clases y materiales.",
-      },
-    ],
-  },
-  productsSection: {
-    title: "Otros productos",
-    description:
-      "Explora otras formas de aprender matemáticas según tus necesidades y disponibilidad",
-    products: [
-      {
-        type: "workshop",
-        title: "¿Como estudiar las matemáticas?",
-        description:
-          "Aprende estrategias clave para organizar tu estudio de manera efectiva",
-        price: 7000,
-        features: [
-          "2 horas de duración",
-          "Explicación de los ejes y habilidades",
-          "Progresión de los contenidos",
-          "Principales errores y como evitarlos",
-          "Consejos para estudiar",
-        ],
-        href: createWhatsAppMessageLink(
-          "Hola, me gustaría acceder al taller de cómo estudiar las matemáticas",
-        ),
-        badge: "Taller grabado",
-        color: "red",
-        ctaText: "Acceder al taller",
-      },
-      {
-        type: "recorded_course",
-        title: "Curso en formato grabado",
-        description:
-          "Aprende a tu ritmo con clases grabadas y material descargable",
-        price: 97000,
-        features: [
-          "Más de 100 horas de contenido grabado",
-          "Acceso instantáneo",
-          "Clases de generaciones anteriores",
-          "Estudia cuando y donde quieras",
-          "Repasa las veces que necesites",
-          "Acceso por un año",
-        ],
-        href: createWhatsAppMessageLink(
-          "Hola, me gustaría acceder al curso de nivelación de matemáticas en formato grabado",
-        ),
-        ctaText: "Inscríbete ahora",
-        badge: "Curso grabado",
-        color: "primary",
-        isHighlighted: true,
-      },
-      {
-        type: "private_lessons",
-        title: "Acompañamiento individual",
-        description:
-          "Avanza según tu disponibilidad y adaptado a tu ritmo de aprendizaje",
-        price: 120000,
-        features: [
-          "Diagnóstico inicial personalizado",
-          "Clases particulares en vivo por Zoom",
-          "Acceso a contenido grabado",
-          "Guías de estudio según nivel académico",
-          "Planificación de estudio semanal",
-        ],
-        href: createWhatsAppMessageLink(
-          "Hola, me gustaría saber si tiene disponibilidad para el acompañamiento individual",
-        ),
-        ctaText: "Consultar disponibilidad",
-        badge: "Clases particulares",
-        color: "green",
       },
     ],
   },

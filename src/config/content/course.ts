@@ -121,12 +121,12 @@ export const courseTexts: CourseTexts = {
     title:
       "**__Descubre como dominar las matemáticas__** en solo 4 meses **__con estrategias que nadie te enseña__**\n(Sin memorizar formulas)",
     subtitle:
-      "**Cientos de estudiantes ya han visto resultados y están cumpliendo sus objetivos.**\nComenzaron a mejorar su rendimiento escolar y subieron su puntaje en la PAES M1. \nSi estas listo para ser el próximo en ver resultados reales, **este es el momento de transformar tu aprendizaje.**",
+      "**Cientos de estudiantes ya han visto resultados y están cumpliendo sus objetivos.**\nComenzaron a mejorar su rendimiento académico y subieron su puntaje en la PAES M1. \nSi estas listo para ser el próximo en ver resultados reales, **este es el momento de transformar tu aprendizaje.**",
     videoUrl: "https://www.youtube.com/embed/XGkKFs6UACc",
     rating: 4.9,
     ctaText: "¡Reserva tu cupo!",
     ctaLink: "#registro",
-    nextBatch: "05 de febrero",
+    nextBatch: "04 de Marzo",
   },
   courseTargetAudienceSection: {
     title: "🫵 ¿Para quién es este curso?",

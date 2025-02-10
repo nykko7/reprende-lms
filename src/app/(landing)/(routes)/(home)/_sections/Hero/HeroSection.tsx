@@ -1,10 +1,16 @@
 import { Badge } from "@/components/ui/badge";
 import CTAButton from "@/components/landing/CTAButton";
 import { SectionWrapper } from "@/components/landing/SectionWrapper";
-import { GraduationCap, Library } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import Link from "next/link";
+import {
+  ArrowRight,
+  Blocks,
+  Check,
+  CheckCheck,
+  CheckCircle,
+  CheckSquare,
+} from "lucide-react";
 import { homeTexts } from "@/config/content/home";
+import { formatText } from "@/lib/text";
 
 export default function HeroSection() {
   const {
@@ -13,7 +19,8 @@ export default function HeroSection() {
     titleNormal,
     description,
     mainCTA,
-    secondaryCTA,
+    features,
+    // secondaryCTA,
   } = homeTexts.heroSection;
 
   return (
@@ -39,7 +46,7 @@ export default function HeroSection() {
 
           <div className="relative">
             <div className="z-1 absolute inset-0 rounded-full bg-white opacity-25 blur-sm filter"></div>
-            <Badge variant={"animated"} className="relative z-20 h-8">
+            <Badge variant={"animated"} className="relative z-20 h-10 text-sm">
               {badgeText}
             </Badge>
           </div>
@@ -54,9 +61,33 @@ export default function HeroSection() {
             </span>
           </h1>
 
-          <p className="z-20 max-w-xl text-lg text-foreground">{description}</p>
+          <p className="z-20 max-w-xl text-lg text-foreground">
+            {formatText(description)}
+          </p>
+          <div className="flex flex-col justify-center gap-2">
+            {features.map((feature) => (
+              <p
+                key={feature}
+                className="flex items-center gap-2 text-sm sm:text-base"
+              >
+                <Check className="h-5 w-5 text-green-500" />
+                {feature}
+              </p>
+            ))}
+            <div className="mt-4">
+              <CTAButton
+                className="z-20 w-full"
+                // variant={"outline"}
+
+                isHero
+              >
+                {mainCTA}
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </CTAButton>
+            </div>
+          </div>
           <div className="flex flex-wrap justify-center gap-4">
-            <Button
+            {/* <Button
               size={"lg"}
               variant={"outline"}
               className="z-20 w-full font-bold sm:w-fit"
@@ -66,15 +97,7 @@ export default function HeroSection() {
                 <Library className="mr-2 h-5 w-5 " />
                 {secondaryCTA}
               </Link>
-            </Button>
-            <CTAButton
-              className="z-20 w-full sm:w-fit"
-              // variant={"outline"}
-              isHero
-            >
-              <GraduationCap className="mr-2 h-5 w-5 " />
-              {mainCTA}
-            </CTAButton>
+            </Button> */}
           </div>
         </div>
       </div>

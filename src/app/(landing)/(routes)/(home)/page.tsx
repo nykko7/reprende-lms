@@ -1,6 +1,7 @@
 import HeroSection from "./_sections/Hero/HeroSection";
 import LiveCourseSection from "./_sections/LiveCourse/LiveCourseSection";
 import ProductsSection from "./_sections/Products/ProductsSection";
+// import ServicesSection from "./_sections/Services/ServicesSection";
 import TestimonialsSection from "./_sections/Testimonials/TestimonialsSection";
 import WhoAmISection from "./_sections/WhoAmI/WhoAmISection";
 import FAQSection from "./_sections/FAQ/FAQSection";
@@ -11,6 +12,7 @@ export default function LandingPage() {
     <main className="overflow-clip">
       <HeroSection />
       <SocialProofBannerSection />
+      {/* <ServicesSection /> */}
       <LiveCourseSection />
       <ProductsSection />
       <TestimonialsSection />
