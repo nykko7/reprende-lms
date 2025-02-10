@@ -174,7 +174,7 @@ export const homeTexts: HomeTexts = {
     spots: 20,
   },
   productsSection: {
-    title: "Otros productos",
+    title: "📚 Otros productos",
     description:
       "Explora otras formas de aprender matemáticas según tus necesidades y disponibilidad",
     products: [
