@@ -80,7 +80,7 @@ export default function ProductPreviewCard({
         >
           <p className="text-sm">Precio</p>
           <p className="text-xl font-bold">
-            ${product.price.toLocaleString()}
+            ${product.price.toLocaleString("es-CL")}
             <span className="text-sm"> CLP</span>
             {product.type === "private_lessons" && (
               <span className="text-sm">/mes</span>
