@@ -130,6 +130,7 @@ export type HomeTexts = {
     description: string;
     products: ProductPreview[];
   };
+  methodologySection: MethodologySection;
 };
 
 export const homeTexts: HomeTexts = {
@@ -449,6 +450,19 @@ export const homeTexts: HomeTexts = {
           "¿Cuánto tiempo tengo acceso al curso/taller después de comprarlo?",
         answer:
           "Una vez que completes el pago, tendrás acceso inmediato a todo el contenido del curso/taller. Además, puedes disfrutar de un año completo de acceso a las clases y materiales.",
+      },
+    ],
+  },
+  methodologySection: {
+    title: "🚀 Ruta de aprendizaje",
+    description:
+      "Descubre cómo nuestro curso de nivelación de matemáticas te ayudará a alcanzar tus objetivos académicos.",
+    features: [
+      {
+        title: "Módulo 1: Fundamentos de Matemáticas",
+        description:
+          "Revisión de los temas fundamentales de matemáticas, incluyendo números, operaciones y ecuaciones.",
+        icon: "🔢",
       },
     ],
   },
