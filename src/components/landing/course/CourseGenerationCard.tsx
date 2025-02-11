@@ -12,6 +12,7 @@ import {
   CheckCircle2,
   Sparkles,
   ChevronRight,
+  Clock,
 } from "lucide-react";
 import Link from "next/link";
 import { type FC } from "react";
@@ -22,6 +23,7 @@ type CourseGenerationProps = {
   title: string;
   schedule: string[];
   startDate: string;
+  duration: string;
   price: number;
   variant: "primary" | "secondary";
   isHighlighted?: boolean;
@@ -32,6 +34,7 @@ const CourseGenerationCard: FC<CourseGenerationProps> = ({
   title,
   schedule,
   startDate,
+  duration,
   price,
   variant,
   isHighlighted = false,
@@ -68,8 +71,8 @@ const CourseGenerationCard: FC<CourseGenerationProps> = ({
       {isHighlighted && (
         <div
           className={cn(
-            "absolute -right-[4.5rem] top-8 z-10 w-[15rem]",
-            "rotate-45 bg-gradient-to-r py-1.5 text-center",
+            "absolute -right-[5rem] top-8 z-10 w-[15rem]",
+            "rotate-45 bg-gradient-to-r py-1.5 pr-2.5 text-center",
             "text-sm font-medium text-primary-foreground",
             colors.ribbon,
           )}
@@ -103,6 +106,11 @@ const CourseGenerationCard: FC<CourseGenerationProps> = ({
           <div className="flex items-center gap-2">
             <CheckCircle2 className={cn("h-5 w-5", colors.text)} />
             <p className="text-sm">Inicio: {startDate}</p>
+          </div>
+
+          <div className="flex items-center gap-2">
+            <Clock className={cn("h-5 w-5", colors.text)} />
+            <p className="text-sm">Duración: {duration}</p>
           </div>
 
           <div className="flex items-center gap-2">

@@ -109,6 +109,7 @@ export default function LiveCourseSection() {
             title="Generación Diurna"
             schedule={["Lunes, Miércoles y Viernes: 10:00 a 12:00 hrs"]}
             startDate="03 de Marzo 2025"
+            duration="4 meses"
             price={price}
             variant="primary"
             isHighlighted
@@ -121,6 +122,7 @@ export default function LiveCourseSection() {
               "Sábado: 10:00 a 12:00 hrs",
             ]}
             startDate="04 de Marzo 2025"
+            duration="4 meses"
             price={price}
             variant="secondary"
             isHighlighted
