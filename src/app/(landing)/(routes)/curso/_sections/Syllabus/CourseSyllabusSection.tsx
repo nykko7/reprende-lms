@@ -88,7 +88,7 @@ export default function CourseSyllabusSection() {
           initial="hidden"
           animate={inView ? "visible" : "hidden"}
           className={cn(
-            "font-inter relative mx-auto flex max-w-3xl justify-center",
+            "relative mx-auto flex max-w-3xl justify-center font-inter",
             inter.variable,
           )}
         >

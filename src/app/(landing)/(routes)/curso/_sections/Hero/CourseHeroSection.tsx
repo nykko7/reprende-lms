@@ -21,12 +21,12 @@ export function CourseHeroSection() {
   return (
     <SectionWrapper className="my-0 flex max-w-screen-lg flex-col justify-center">
       <div className="relative flex flex-col items-center justify-between text-center">
-        <div className="flex flex-col items-center gap-y-8">
+        <div className="flex flex-col items-center gap-y-6">
           <h3 className="bg-primary text-lg font-bold text-primary-foreground md:text-xl">
             {badgeText}
           </h3>
 
-          <h1 className="whitespace-pre-wrap text-2xl md:text-3xl lg:text-4xl">
+          <h1 className="whitespace-pre-wrap text-xl sm:text-2xl md:text-3xl lg:text-4xl">
             {formatText(title)}
           </h1>
 
@@ -51,9 +51,9 @@ export function CourseHeroSection() {
               disponible únicamente{" "}
               <span className="font-bold">un par de veces en el año.</span>
             </p>
-            <div className="flex items-center justify-center space-x-1">
-              <Calendar className="mr-2 h-8 w-8" />
-              <span className="text-3xl font-bold uppercase ">
+            <div className="flex items-center justify-center space-x-2">
+              <Calendar className="size-8" />
+              <span className="text-xl font-bold uppercase sm:text-2xl md:text-3xl">
                 Proxima fecha: {nextBatch}
               </span>
             </div>
