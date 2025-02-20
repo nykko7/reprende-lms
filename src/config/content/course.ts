@@ -1,120 +1,4 @@
-export type CourseHeroSection = {
-  badgeText: string;
-  title: string;
-  subtitle: string;
-  videoUrl: string;
-  ctaText: string;
-  ctaLink: string;
-  rating: number;
-  nextBatch: string;
-};
-
-export type CourseTargetAudienceSection = {
-  title: string;
-  profiles: {
-    title: string;
-    list: {
-      title: string;
-      descriptions: string[];
-    }[];
-  };
-  goals: {
-    title: string;
-    list: string[];
-  };
-  footer: string;
-  buttonText: string;
-};
-
-export type CourseSyllabusSection = {
-  title: string;
-  description: string;
-  imagePath: string;
-  steps: {
-    color: string;
-    title: string;
-    description: string;
-    details: {
-      type: string;
-      content?: string;
-      items?: string[];
-    }[];
-  }[];
-};
-
-export type CourseTestimonialsSection = {
-  title: string;
-  description: string;
-  testimonials: (
-    | {
-        type: "text";
-        testimonial: string;
-        studentName: string;
-        studentDescription: string;
-        imageAlt: string;
-      }
-    | {
-        type: "image";
-        imageSrc: string;
-        imageAlt: string;
-      }
-  )[];
-};
-
-export type CourseWhoAmISection = {
-  title: string;
-  description: string;
-  name: string;
-  role: string;
-  instagramUrl: string;
-  instagramTag: string;
-  bio: string;
-  imageAlt: string;
-  imagePath: string;
-};
-
-export type CourseMethodologySection = {
-  title: string;
-  description: string;
-  features: {
-    title: string;
-    description: string;
-    icon: string;
-  }[];
-};
-
-export type CourseFaqSection = {
-  title: string;
-  description: string;
-  faqs: {
-    question: string;
-    answer: string;
-  }[];
-};
-
-export type CourseGoalsSection = {
-  title: string;
-  description: string;
-  list: string[];
-};
-
-export type CourseRegistrationSection = {
-  nextBatch: string;
-  price: number;
-};
-
-export type CourseTexts = {
-  courseHeroSection: CourseHeroSection;
-  courseTargetAudienceSection: CourseTargetAudienceSection;
-  courseSyllabusSection: CourseSyllabusSection;
-  courseTestimonialsSection: CourseTestimonialsSection;
-  courseWhoAmISection: CourseWhoAmISection;
-  courseMethodologySection: CourseMethodologySection;
-  courseFaqSection: CourseFaqSection;
-  courseRegistrationSection: CourseRegistrationSection;
-};
-
-export const courseTexts: CourseTexts = {
+export const courseTexts = {
   courseHeroSection: {
     badgeText:
       "¿Te estás preparando para la PAES M1 o necesitas subir tus notas en matemáticas?",
@@ -128,6 +12,7 @@ export const courseTexts: CourseTexts = {
     ctaLink: "#registro",
     nextBatch: "04 de Marzo",
   },
+
   courseTargetAudienceSection: {
     title: "🫵 ¿Para quién es este curso?",
     profiles: {
@@ -167,8 +52,58 @@ export const courseTexts: CourseTexts = {
       ],
     },
     footer:
-      "Si te identificas con alguna de estas descripciones, este curso es para ti.",
+      "Si te identificas con alguna de estas descripciones, **este curso es para ti**",
     buttonText: "Inscríbete aquí",
+  },
+
+  courseMethodologySection: {
+    // title: "💫 ¿Por qué este curso es diferente?",
+    // description:
+    //   "Descubre las características que hacen único nuestro método de enseñanza.",
+
+    title: "✨ Nuestra propuesta",
+    description: "Un método probado para dominar las matemáticas paso a paso.",
+    // description: "Aprende matemáticas de una forma diferente y efectiva.",
+
+    features: [
+      {
+        title: "Clases teórico/prácticas",
+        description:
+          "Porque se aprende haciendo, nuestras clases combinan teoría y práctica. Primero comprendes el concepto, luego resuelves ejercicios para afianzar tu aprendizaje.",
+        icon: "GraduationCap",
+      },
+      {
+        title: "Material 100% actualizado",
+        description:
+          "Videos, guías y ejercicios basados en el temario oficial del DEMRE. Todo el contenido está alineado con lo indicado por el MINEDUC.",
+        icon: "BookOpen",
+      },
+      {
+        title: "Ensayos con preguntas reales",
+        description:
+          "Realizarás ensayos generales con preguntas muy similares (o iguales) a las que verás en la PAES. Podrás evaluar tu progreso y descubrir las áreas que necesitas reforzar antes del gran día.",
+        icon: "FileCheck",
+      },
+
+      {
+        title: "Horario intensivo: 3 clases por semana",
+        description:
+          "6 horas de clase semanales, con un día de descanso entre sesiones para poner en práctica lo aprendido. Este ritmo requiere disciplina y compromiso.",
+        icon: "Calendar",
+      },
+      {
+        title: "Tecnología y neurociencia",
+        description:
+          "Utilizamos plataformas digitales interactivas y estrategias basadas en la neurociencia para reforzar tu aprendizaje, y asegurar un progreso constante.",
+        icon: "Brain",
+      },
+      {
+        title: "Acceso a consultas ilimitadas",
+        description:
+          "Tendrás contacto directo con tu profesora vía WhatsApp, correo, audio o videollamada. Pregunta todo lo que necesites, en cualquier momento, para que no te quedes con dudas.",
+        icon: "MessagesSquare",
+      },
+    ],
   },
   courseSyllabusSection: {
     title: "🚀 Ruta de Aprendizaje",
@@ -285,6 +220,8 @@ export const courseTexts: CourseTexts = {
         ],
       },
     ],
+    ctaText: "¡Inscríbete ahora!",
+    ctaLink: "#registro",
   },
   courseTestimonialsSection: {
     title: "💬 Testimonios",
@@ -345,6 +282,56 @@ export const courseTexts: CourseTexts = {
         studentName: "Julio Hidalgo",
         studentDescription: "Preparación PAES 2024",
         imageAlt: "Avatar de Julio Hidalgo, estudiante de 4to medio",
+      },
+      {
+        type: "image",
+        imageSrc: "/landing/testimonials/2024_1.PNG",
+        imageAlt: "Pantallazo del mensaje de un estudiante del curso 2024",
+      },
+      {
+        type: "image",
+        imageSrc: "/landing/testimonials/2024_2.PNG",
+        imageAlt: "Pantallazo del mensaje de un estudiante del curso 2024",
+      },
+      {
+        type: "image",
+        imageSrc: "/landing/testimonials/2024_3.PNG",
+        imageAlt: "Pantallazo del mensaje de un estudiante del curso 2024",
+      },
+      {
+        type: "image",
+        imageSrc: "/landing/testimonials/2024_4.PNG",
+        imageAlt: "Pantallazo del mensaje de un estudiante del curso 2024",
+      },
+      {
+        type: "image",
+        imageSrc: "/landing/testimonials/2024_5.PNG",
+        imageAlt: "Pantallazo del mensaje de un estudiante del curso 2024",
+      },
+      {
+        type: "image",
+        imageSrc: "/landing/testimonials/2024_6.PNG",
+        imageAlt: "Pantallazo del mensaje de un estudiante del curso 2024",
+      },
+      {
+        type: "image",
+        imageSrc: "/landing/testimonials/2024_7.PNG",
+        imageAlt: "Pantallazo del mensaje de un estudiante del curso 2024",
+      },
+      {
+        type: "image",
+        imageSrc: "/landing/testimonials/2024_8.PNG",
+        imageAlt: "Pantallazo del mensaje de un estudiante del curso 2024",
+      },
+      {
+        type: "image",
+        imageSrc: "/landing/testimonials/2024_9.PNG",
+        imageAlt: "Pantallazo del mensaje de un estudiante del curso 2024",
+      },
+      {
+        type: "image",
+        imageSrc: "/landing/testimonials/2024_10.PNG",
+        imageAlt: "Pantallazo del mensaje de un estudiante del curso 2024",
       },
       {
         type: "image",
@@ -474,49 +461,7 @@ export const courseTexts: CourseTexts = {
     imageAlt: "Imagen de la profesora",
     imagePath: "/shared/logo.png",
   },
-  courseMethodologySection: {
-    title: "💫 ¿Por qué este curso es diferente?",
-    description:
-      "Descubre las características que hacen único nuestro método de enseñanza.",
-    features: [
-      {
-        title: "Material 100% actualizado",
-        description:
-          "Videos, guías y ejercicios basados en el temario oficial del DEMRE. Todo el contenido está alineado con lo indicado por el MINEDUC.",
-        icon: "BookOpen",
-      },
-      {
-        title: "Ensayos con preguntas reales",
-        description:
-          "Realizarás ensayos generales con preguntas muy similares (o iguales) a las que verás en la PAES. Podrás evaluar tu progreso y descubrir las áreas que necesitas reforzar antes del gran día.",
-        icon: "FileCheck",
-      },
-      {
-        title: "Clases teórico/prácticas",
-        description:
-          "Porque se aprende haciendo, nuestras clases combinan teoría y práctica. Primero comprendes el concepto, luego resuelves ejercicios para afianzar tu aprendizaje.",
-        icon: "GraduationCap",
-      },
-      {
-        title: "Horario intensivo: 3 clases por semana",
-        description:
-          "6 horas de clase semanales, con un día de descanso entre sesiones para poner en práctica lo aprendido. Este ritmo requiere disciplina y compromiso.",
-        icon: "Calendar",
-      },
-      {
-        title: "Tecnología y neurociencia",
-        description:
-          "Utilizamos plataformas digitales interactivas y estrategias basadas en la neurociencia para reforzar tu aprendizaje, y asegurar un progreso constante.",
-        icon: "Brain",
-      },
-      {
-        title: "Acceso a consultas ilimitadas",
-        description:
-          "Tendrás contacto directo con tu profesora vía WhatsApp, correo, audio o videollamada. Pregunta todo lo que necesites, en cualquier momento, para que no te quedes con dudas.",
-        icon: "MessagesSquare",
-      },
-    ],
-  },
+
   courseFaqSection: {
     title: "🤔 Preguntas frecuentes",
     description:
@@ -543,5 +488,13 @@ export const courseTexts: CourseTexts = {
   courseRegistrationSection: {
     nextBatch: "05 de febrero 2025",
     price: 247000,
+  },
+  courseCTASection: {
+    title: "UN PROGRAMA COMPLETO",
+    subtitle: "DISEÑADO PARA TRANSFORMAR TU COMPRENSIÓN MATEMÁTICA",
+    description:
+      "Cada módulo está cuidadosamente estructurado para abordar los **fundamentos esenciales** de las matemáticas. No son solo lecciones aisladas, sino un **sistema integrado** que te guiará desde los conceptos básicos hasta el razonamiento avanzado. A través de este viaje, desarrollarás una **nueva perspectiva** que te permitirá enfrentar cualquier desafío matemático con confianza.",
+    ctaText: "RESERVA TU CUPO",
+    ctaLink: "#registro",
   },
 };
