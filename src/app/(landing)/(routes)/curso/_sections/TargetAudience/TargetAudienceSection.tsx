@@ -1,10 +1,16 @@
 import CTAButton from "@/components/landing/CTAButton";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { ArrowRightIcon, CheckIcon, ChevronRight } from "lucide-react";
+import {
+  ArrowRightIcon,
+  CheckIcon,
+  ChevronDown,
+  ChevronRight,
+} from "lucide-react";
 import { SectionWrapper } from "@/components/landing/SectionWrapper";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { courseTexts } from "@/config/content/course";
+import { formatText } from "@/lib/text";
 
 export default function TargetAudienceSection() {
   const { title, profiles, goals, footer, buttonText } =
@@ -64,10 +70,13 @@ export default function TargetAudienceSection() {
           </CardContent>
         </Card>
       </div>
-      <h3 className="text-center text-2xl font-bold">{footer}</h3>
+      <h3 className="text-center text-2xl ">{formatText(footer)}</h3>
       <div className="flex justify-center">
-        <Button asChild size={"lg"} className="font-bold">
-          <Link href="#registro">{buttonText}</Link>
+        <Button asChild size={"xl"} className="font-bold">
+          <Link href="#registro">
+            <ChevronDown className="mr-2" />
+            {buttonText}
+          </Link>
         </Button>
       </div>
     </SectionWrapper>

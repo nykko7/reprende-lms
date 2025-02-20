@@ -15,14 +15,28 @@ export default function TestimonialsSection() {
       </div>
       <div className="mx-auto flex max-w-6xl flex-col gap-y-3 px-6 lg:px-8">
         <TestimonialCarousel
-          testimonials={testimonials.filter(
-            (testimonial) => testimonial.type === "text",
-          )}
+          testimonials={
+            testimonials.filter(
+              (testimonial) => testimonial.type === "text",
+            ) as Array<{
+              type: string;
+              testimonial: string;
+              studentName: string;
+              studentDescription: string;
+              imageAlt: string;
+            }>
+          }
         />
         <TestimonialMasonry
-          testimonials={testimonials.filter(
-            (testimonial) => testimonial.type === "image",
-          )}
+          testimonials={
+            testimonials.filter(
+              (testimonial) => testimonial.type === "image",
+            ) as Array<{
+              type: string;
+              imageSrc: string;
+              imageAlt: string;
+            }>
+          }
         />
       </div>
     </SectionWrapper>

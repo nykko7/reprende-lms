@@ -1,5 +1,6 @@
 import { CourseHeroSection } from "./_sections/Hero/CourseHeroSection";
 import CourseSyllabusSection from "./_sections/Syllabus/CourseSyllabusSection";
+import CourseCtaSection from "./_sections/CTA/CourseCtaSection";
 import TestimonialsSection from "./_sections/Testimonials/TestimonialsSection";
 import WhoAmISection from "./_sections/WhoAmI/WhoAmISection";
 import MethodologySection from "./_sections/Methodology/MethodologySection";
@@ -23,9 +24,10 @@ export default function CourseInfoPage() {
       <TargetAudienceSection />
       <MethodologySection />
       <CourseSyllabusSection />
+      <CourseCtaSection />
       <TestimonialsSection />
-      <WhoAmISection />
       <RegistrationSection />
+      <WhoAmISection />
       <FAQSection />
     </main>
   );

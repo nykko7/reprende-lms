@@ -45,18 +45,21 @@ export function CourseHeroSection() {
               />
             ))}
           </div>
-          <div className="flex items-center justify-center space-x-1">
-            <Calendar className="mr-2 h-8 w-8" />
-            <span className="text-3xl font-bold uppercase ">
-              Proxima fecha: {nextBatch}
-            </span>
+          <div className="flex flex-col items-center gap-y-2">
+            <p className="text-sm text-muted-foreground">
+              El <span className="font-bold">curso en vivo</span> estará
+              disponible únicamente{" "}
+              <span className="font-bold">un par de veces en el año.</span>
+            </p>
+            <div className="flex items-center justify-center space-x-1">
+              <Calendar className="mr-2 h-8 w-8" />
+              <span className="text-3xl font-bold uppercase ">
+                Proxima fecha: {nextBatch}
+              </span>
+            </div>
           </div>
 
-          <Button
-            asChild
-            size="lg"
-            className="z-20 w-full p-6 text-base font-bold  sm:w-fit md:text-lg"
-          >
+          <Button asChild size="xl" className="z-20">
             <Link href={ctaLink}>
               <PenBox className="mr-2 h-6 w-6" />
               {ctaText}
