@@ -4,7 +4,8 @@ import TestimonialMasonry from "./TestimonialMasonry";
 import { homeTexts } from "@/config/content/home";
 
 export default function TestimonialsSection() {
-  const { title, description, testimonials } = homeTexts.testimonialsSection;
+  const { title, description, textTestimonials, imageTestimonials } =
+    homeTexts.testimonialsSection;
 
   return (
     <SectionWrapper className="my-0">
@@ -13,16 +14,8 @@ export default function TestimonialsSection() {
         <p className="text-lg text-muted-foreground">{description}</p>
       </div>
       <div className="mx-auto flex max-w-6xl flex-col gap-y-3 px-6 lg:px-8">
-        <TestimonialCarousel
-          testimonials={testimonials.filter(
-            (testimonial) => testimonial.type === "text",
-          )}
-        />
-        <TestimonialMasonry
-          testimonials={testimonials.filter(
-            (testimonial) => testimonial.type === "image",
-          )}
-        />
+        <TestimonialCarousel testimonials={textTestimonials} />
+        <TestimonialMasonry testimonials={imageTestimonials} />
       </div>
     </SectionWrapper>
   );

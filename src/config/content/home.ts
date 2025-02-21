@@ -91,7 +91,7 @@ export const homeTexts = {
   testimonialsSection: {
     title: "💬 Testimonios de nuestros estudiantes",
     description: "Esto es lo que dicen algunos de nuestros estudiantes",
-    testimonials: [
+    textTestimonials: [
       {
         type: "text",
         testimonial:
@@ -148,6 +148,8 @@ export const homeTexts = {
         studentDescription: "Preparación PAES 2024",
         imageAlt: "Avatar de Julio Hidalgo, estudiante de 4to medio",
       },
+    ],
+    imageTestimonials: [
       {
         type: "image",
         imageSrc: "/landing/testimonials/testimonial-image9.jpg",

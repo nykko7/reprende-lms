@@ -4,7 +4,7 @@ import TestimonialMasonry from "./TestimonialMasonry";
 import { courseTexts } from "@/config/content/course";
 
 export default function TestimonialsSection() {
-  const { title, description, testimonials } =
+  const { title, description, textTestimonials, imageTestimonials } =
     courseTexts.courseTestimonialsSection;
 
   return (
@@ -14,30 +14,8 @@ export default function TestimonialsSection() {
         <p className="text-lg text-muted-foreground">{description}</p>
       </div>
       <div className="mx-auto flex max-w-6xl flex-col gap-y-3 px-6 lg:px-8">
-        <TestimonialCarousel
-          testimonials={
-            testimonials.filter(
-              (testimonial) => testimonial.type === "text",
-            ) as Array<{
-              type: string;
-              testimonial: string;
-              studentName: string;
-              studentDescription: string;
-              imageAlt: string;
-            }>
-          }
-        />
-        <TestimonialMasonry
-          testimonials={
-            testimonials.filter(
-              (testimonial) => testimonial.type === "image",
-            ) as Array<{
-              type: string;
-              imageSrc: string;
-              imageAlt: string;
-            }>
-          }
-        />
+        <TestimonialCarousel testimonials={textTestimonials} />
+        <TestimonialMasonry testimonials={imageTestimonials} />
       </div>
     </SectionWrapper>
   );

@@ -9,10 +9,10 @@ import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { CheckSquare } from "lucide-react";
-import { type ProductPreview } from "@/config/content/home";
+import { type homeTexts } from "@/config/content/home";
 
 interface ProductPreviewCardProps {
-  product: ProductPreview;
+  product: (typeof homeTexts.productsSection.products)[number];
 }
 
 const colorStyles = {
@@ -39,16 +39,10 @@ const colorStyles = {
 export default function ProductPreviewCard({
   product,
 }: ProductPreviewCardProps) {
-  const styles = colorStyles[product.color ?? "primary"];
+  const styles = colorStyles[product.color as keyof typeof colorStyles];
 
   return (
-    <Card
-      className={cn(
-        "flex h-full flex-col border",
-        product.isHighlighted && "border-2",
-        styles.card,
-      )}
-    >
+    <Card className={cn("flex h-full flex-col border", styles.card)}>
       <CardHeader>
         {product.badge && (
           <Badge
