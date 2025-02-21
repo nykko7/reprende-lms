@@ -287,56 +287,6 @@ export const courseTexts = {
     imageTestimonials: [
       {
         type: "image",
-        imageSrc: "/landing/testimonials/2024_1.PNG",
-        imageAlt: "Pantallazo del mensaje de un estudiante del curso 2024",
-      },
-      {
-        type: "image",
-        imageSrc: "/landing/testimonials/2024_2.PNG",
-        imageAlt: "Pantallazo del mensaje de un estudiante del curso 2024",
-      },
-      {
-        type: "image",
-        imageSrc: "/landing/testimonials/2024_3.PNG",
-        imageAlt: "Pantallazo del mensaje de un estudiante del curso 2024",
-      },
-      {
-        type: "image",
-        imageSrc: "/landing/testimonials/2024_4.PNG",
-        imageAlt: "Pantallazo del mensaje de un estudiante del curso 2024",
-      },
-      {
-        type: "image",
-        imageSrc: "/landing/testimonials/2024_5.PNG",
-        imageAlt: "Pantallazo del mensaje de un estudiante del curso 2024",
-      },
-      {
-        type: "image",
-        imageSrc: "/landing/testimonials/2024_6.PNG",
-        imageAlt: "Pantallazo del mensaje de un estudiante del curso 2024",
-      },
-      {
-        type: "image",
-        imageSrc: "/landing/testimonials/2024_7.PNG",
-        imageAlt: "Pantallazo del mensaje de un estudiante del curso 2024",
-      },
-      {
-        type: "image",
-        imageSrc: "/landing/testimonials/2024_8.PNG",
-        imageAlt: "Pantallazo del mensaje de un estudiante del curso 2024",
-      },
-      {
-        type: "image",
-        imageSrc: "/landing/testimonials/2024_9.PNG",
-        imageAlt: "Pantallazo del mensaje de un estudiante del curso 2024",
-      },
-      {
-        type: "image",
-        imageSrc: "/landing/testimonials/2024_10.PNG",
-        imageAlt: "Pantallazo del mensaje de un estudiante del curso 2024",
-      },
-      {
-        type: "image",
         imageSrc: "/landing/testimonials/testimonial-image9.jpg",
         imageAlt: "Pantallazo del mensaje de un estudiante 1",
       },
