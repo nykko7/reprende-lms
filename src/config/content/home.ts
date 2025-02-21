@@ -1,139 +1,7 @@
 import { createWhatsAppMessageLink } from "@/lib/whatsapp";
-import { Calendar, Heart, type LucideIcon, Users } from "lucide-react";
+import { Calendar, Heart, Users } from "lucide-react";
 
-export type HeroSection = {
-  badgeText: string;
-  titleAccent: string;
-  titleNormal: string;
-  description: string;
-  features: string[];
-  mainCTA: string;
-  secondaryCTA: string;
-};
-
-export type SocialProof = {
-  number: string;
-  description: string;
-  icon: LucideIcon;
-};
-
-export type ChooseYourProductSection = {
-  title: string;
-  description: string;
-  products: Product[];
-};
-
-export type Product = {
-  type: "recorded_workshop" | "recorded_course" | "personalized_lessons";
-  title: string;
-  subtitle: string;
-  description: string;
-  featured?: boolean;
-  more_details?: string;
-  targetAudience?: string;
-  ctaUrl: string;
-  ctaType: "url" | "whatsapp_message";
-  ctaText: string;
-  originalPrice: number;
-  price: number;
-  showPrice: boolean;
-  launchPrice?: boolean;
-  features: string[];
-  notUrgencyNote?: string;
-  semiUrgencyNote?: string;
-  urgencyNote?: string;
-};
-
-export type MethodologySection = {
-  title: string;
-  description: string;
-  features: Feature[];
-};
-
-export type Feature = {
-  title: string;
-  description: string;
-  icon: string;
-};
-
-export type WhoAmISection = {
-  title: string;
-  description: string;
-  name: string;
-  role: string;
-  instagramUrl: string;
-  instagramTag: string;
-  bio: string;
-  imageAlt: string;
-  imagePath: string;
-};
-
-export type TextTestimonial = {
-  type: "text";
-  testimonial: string;
-  studentName: string;
-  studentDescription: string;
-  imageAlt: string;
-};
-
-export type ImageTestimonial = {
-  type: "image";
-  imageSrc: string;
-  imageAlt: string;
-};
-
-export type TestimonialsSection = {
-  title: string;
-  description: string;
-  testimonials: (TextTestimonial | ImageTestimonial)[];
-};
-
-export type FaqSection = {
-  title: string;
-  description: string;
-  faqs: Faq[];
-};
-
-export type Faq = {
-  question: string;
-  answer: string;
-};
-
-export type ProductPreview = {
-  type: "workshop" | "recorded_course" | "private_lessons";
-  title: string;
-  description: string;
-  price: number;
-  features: string[];
-  href: string;
-  badge?: string;
-  color?: "primary" | "red" | "green";
-  isHighlighted?: boolean;
-  ctaText?: string;
-};
-
-export type LiveCourseSection = {
-  nextBatch: string;
-  price: number;
-  spots: number;
-};
-
-export type HomeTexts = {
-  heroSection: HeroSection;
-  socialProofs: SocialProof[];
-  liveCourseSection: LiveCourseSection;
-  whoAmISection: WhoAmISection;
-  testimonialsSection: TestimonialsSection;
-  faqSection: FaqSection;
-  productsSection: {
-    title: string;
-    description: string;
-    products: ProductPreview[];
-  };
-  methodologySection: MethodologySection;
-};
-
-export const homeTexts: HomeTexts = {
+export const homeTexts = {
   heroSection: {
     badgeText: "¿Quieres cambiar el miedo por seguridad?",
     titleAccent: "Reaprende",
@@ -197,28 +65,6 @@ export const homeTexts: HomeTexts = {
         badge: "Taller grabado",
         color: "red",
         ctaText: "Acceder al taller",
-      },
-      {
-        type: "recorded_course",
-        title: "Curso en formato grabado",
-        description:
-          "Aprende a tu ritmo con clases grabadas y material descargable",
-        price: 97000,
-        features: [
-          "Más de 100 horas de contenido grabado",
-          "Acceso instantáneo",
-          "Clases de generaciones anteriores",
-          "Estudia cuando y donde quieras",
-          "Repasa las veces que necesites",
-          "Acceso por un año",
-        ],
-        href: createWhatsAppMessageLink(
-          "Hola, me gustaría acceder al curso de nivelación de matemáticas en formato grabado",
-        ),
-        ctaText: "Inscríbete ahora",
-        badge: "Curso grabado",
-        color: "primary",
-        isHighlighted: true,
       },
       {
         type: "private_lessons",
@@ -450,19 +296,6 @@ export const homeTexts: HomeTexts = {
           "¿Cuánto tiempo tengo acceso al curso/taller después de comprarlo?",
         answer:
           "Una vez que completes el pago, tendrás acceso inmediato a todo el contenido del curso/taller. Además, puedes disfrutar de un año completo de acceso a las clases y materiales.",
-      },
-    ],
-  },
-  methodologySection: {
-    title: "🚀 Ruta de aprendizaje",
-    description:
-      "Descubre cómo nuestro curso de nivelación de matemáticas te ayudará a alcanzar tus objetivos académicos.",
-    features: [
-      {
-        title: "Módulo 1: Fundamentos de Matemáticas",
-        description:
-          "Revisión de los temas fundamentales de matemáticas, incluyendo números, operaciones y ecuaciones.",
-        icon: "🔢",
       },
     ],
   },

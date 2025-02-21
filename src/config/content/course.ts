@@ -5,7 +5,7 @@ export const courseTexts = {
     title:
       "**__Descubre como dominar las matemáticas__** en solo 4 meses **__con estrategias que nadie te enseña__**\n(Sin memorizar fórmulas)",
     subtitle:
-      "**Cientos de estudiantes ya han visto resultados y están cumpliendo sus objetivos.**\nComenzaron a mejorar su rendimiento académico y subieron su puntaje en la PAES M1. \nSi estas listo para ser el próximo en ver resultados reales, **este es el momento de transformar tu aprendizaje.**",
+      "**+500 estudiantes han aprendido nuestro método**\nMejoraron su rendimiento académico y subieron su puntaje en la PAES M1.",
     videoUrl: "https://www.youtube.com/embed/XGkKFs6UACc",
     rating: 4.9,
     ctaText: "¡Reserva tu cupo!",

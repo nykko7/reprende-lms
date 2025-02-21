@@ -1,119 +1,116 @@
 import { Button } from "@/components/ui/button";
 import { SectionWrapper } from "@/components/landing/SectionWrapper";
 import CourseGenerationCard from "@/components/landing/course/CourseGenerationCard";
+import RecordedCourseCard from "@/components/landing/course/RecordedCourseCard";
 import { homeTexts } from "@/config/content/home";
-import { BookOpen, CheckSquare2, Info, Package } from "lucide-react";
+import { BookOpen, Clock, Users, PlayCircle } from "lucide-react";
 import Link from "next/link";
-import { cn } from "@/lib/utils";
-import { Badge } from "@/components/ui/badge";
+import { createWhatsAppMessageLink } from "@/lib/whatsapp";
 
 export default function LiveCourseSection() {
-  const { price } = homeTexts.liveCourseSection;
-
   const courseFeatures = {
     mainFeatures: [
       "4 meses de clases en vivo",
+      "Clases 3 veces por semana",
+      "100 horas de estudio",
       "Seguimiento personalizado",
       "Material de estudio exclusivo",
+      "Guías y ensayos descargables",
       "Consultas ilimitadas por WhatsApp",
       "Acceso a grabaciones por 1 año",
-    ],
-    additionalInfo: [
-      "Es un curso intensivo",
-      "6 horas de clase semanales",
-      "No importa tu nivel actual",
-      "Temario actualizado según el DEMRE",
-      "Las clases son teóricas y prácticas",
     ],
   };
 
   return (
-    <SectionWrapper className="my-0 max-w-none py-16" id="curso-en-vivo">
-      {/* Course Introduction */}
-      <div className="mx-auto mb-16 max-w-4xl space-y-8">
-        <div className="text-center">
-          <h2 className="text-4xl font-bold sm:text-5xl">✨ Curso en vivo</h2>
-          <p className="mt-4 text-lg text-muted-foreground">
-            Domina las matemáticas en 4 meses con estrategias que nadie te
-            enseñó
-          </p>
-        </div>
+    <SectionWrapper
+      className="my-0 max-w-none space-y-8 py-16"
+      id="curso-en-vivo"
+    >
+      <div className="text-center">
+        <h2 className="text-4xl font-bold sm:text-5xl">✨ Curso en vivo</h2>
+        <p className="mt-4 text-lg text-muted-foreground">
+          Domina las matemáticas en 4 meses con estrategias que nadie te enseñó
+        </p>
+      </div>
 
-        <div className="mx-auto max-w-3xl text-center">
-          {/* <p className="text-lg">
-            Este curso intensivo está diseñado para ayudarte a construir una
-            base sólida en matemáticas, sin importar tu nivel actual.
-          </p> */}
-          <p className="text-lg">
-            A través de <strong>clases en vivo</strong>,{" "}
-            <strong>material exclusivo</strong> y{" "}
-            <strong>seguimiento personalizado</strong>, aprenderás a resolver
-            ejercicios de manera efectiva y comprenderás los conceptos
-            fundamentales.
-          </p>
-        </div>
-
-        {/* Course Features in Two Columns */}
-        <div className="grid gap-8 rounded-xl border-2 border-muted bg-card p-8 md:grid-cols-2">
-          <div className="space-y-4">
-            <div className="flex items-center gap-2">
-              <Package className="h-5 w-5 shrink-0 " />
-              <h3 className="text-xl font-bold">El curso incluye:</h3>
+      <div className="mx-auto max-w-6xl space-y-8">
+        <div className="grid gap-6 sm:grid-cols-3">
+          <div className="group relative overflow-hidden rounded-xl border border-purple-500/30 bg-gradient-to-br from-purple-50 to-purple-100 p-6 transition-all dark:border-purple-400/30 dark:from-purple-950/20 dark:to-purple-900/20">
+            <div className="absolute right-0 top-0 h-20 w-20 -translate-y-6 translate-x-6 bg-gradient-to-br from-purple-500/20 to-purple-600/20 opacity-50 blur-2xl transition-all duration-300 group-hover:scale-[2] group-hover:opacity-100" />
+            <div className="absolute inset-0 bg-gradient-to-br from-purple-500/5 to-purple-600/5 opacity-0 transition-all duration-300 group-hover:scale-110 group-hover:opacity-100" />
+            <div className="relative">
+              <div className="mb-4 inline-block rounded-lg bg-purple-100 p-3 dark:bg-purple-900/50">
+                <Users className="h-6 w-6 text-purple-600 dark:text-purple-400" />
+              </div>
+              <p className="mb-2 text-lg font-semibold text-purple-700 dark:text-purple-400">
+                Cupos Limitados
+              </p>
+              <p className="text-sm text-purple-900/80 dark:text-purple-300/80">
+                Solo abrimos dos <strong>generaciones en vivo</strong> al
+                semestre y en <strong>Marzo</strong> comienzan nuestros nuevos
+                grupos.
+              </p>
             </div>
-            <ul className="space-y-2">
-              {courseFeatures.mainFeatures.map((feature, i) => (
-                <li key={i} className="flex items-center gap-2">
-                  <CheckSquare2 className="h-5 w-5 shrink-0 text-primary" />
-                  <span>{feature}</span>
-                </li>
-              ))}
-            </ul>
           </div>
 
-          <div className="space-y-4">
-            <div className="flex items-center gap-2">
-              <Info className="h-5 w-5 shrink-0" />
-              <h3 className="text-xl font-bold">Importante:</h3>
+          <div className="group relative overflow-hidden rounded-xl border border-blue-500/30 bg-gradient-to-br from-blue-50 to-blue-100 p-6 transition-all dark:border-blue-400/30 dark:from-blue-950/20 dark:to-blue-900/20">
+            <div className="absolute right-0 top-0 h-20 w-20 -translate-y-6 translate-x-6 bg-gradient-to-br from-blue-500/20 to-blue-600/20 opacity-50 blur-2xl transition-all duration-300 group-hover:scale-[2] group-hover:opacity-100" />
+            <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-blue-600/5 opacity-0 transition-all duration-300 group-hover:scale-110 group-hover:opacity-100" />
+            <div className="relative">
+              <div className="mb-4 inline-block rounded-lg bg-blue-100 p-3 dark:bg-blue-900/50">
+                <Clock className="h-6 w-6 text-blue-600 dark:text-blue-400" />
+              </div>
+              <p className="mb-2 text-lg font-semibold text-blue-700 dark:text-blue-400">
+                Flexibilidad
+              </p>
+              <p className="text-sm text-blue-900/80 dark:text-blue-300/80">
+                Puedes tomar el curso en horarios <strong>diurnos</strong> o{" "}
+                <strong>vespertinos</strong>, o seguir el programa{" "}
+                <strong>a tu propio ritmo</strong> con las clases grabadas.
+              </p>
             </div>
-            <ul className="space-y-2">
-              {courseFeatures.additionalInfo.map((info, i) => (
-                <li key={i} className="flex items-center gap-2">
-                  <CheckSquare2 className="h-5 w-5 shrink-0 text-secondary" />
-                  <span>{info}</span>
-                </li>
-              ))}
-            </ul>
+          </div>
+
+          <div className="group relative overflow-hidden rounded-xl border border-emerald-500/30 bg-gradient-to-br from-emerald-50 to-emerald-100 p-6 transition-all dark:border-emerald-400/30 dark:from-emerald-950/20 dark:to-emerald-900/20">
+            <div className="absolute right-0 top-0 h-20 w-20 -translate-y-6 translate-x-6 bg-gradient-to-br from-emerald-500/20 to-emerald-600/20 opacity-50 blur-2xl transition-all duration-300 group-hover:scale-[2] group-hover:opacity-100" />
+            <div className="absolute inset-0 bg-gradient-to-br from-emerald-500/5 to-emerald-600/5 opacity-0 transition-all duration-300 group-hover:scale-110 group-hover:opacity-100" />
+            <div className="relative">
+              <div className="mb-4 inline-block rounded-lg bg-emerald-100 p-3 dark:bg-emerald-900/50">
+                <PlayCircle className="h-6 w-6 text-emerald-600 dark:text-emerald-400" />
+              </div>
+              <p className="mb-2 text-lg font-semibold text-emerald-700 dark:text-emerald-400">
+                A tu ritmo
+              </p>
+              <p className="text-sm text-emerald-900/80 dark:text-emerald-300/80">
+                Accede a las grabaciones de las clases para repasar cuando lo
+                necesites, ya sea que estés en el <strong>curso en vivo</strong>{" "}
+                o <strong>grabado</strong>.
+              </p>
+            </div>
           </div>
         </div>
       </div>
 
-      {/* Next Generations */}
       <div className="mx-auto max-w-6xl space-y-8">
-        <div className="space-y-4 text-center">
-          <h3 className="text-2xl font-bold">
-            📅 Próximas generaciones - Marzo 2024
-          </h3>
-          <div className="mx-auto max-w-2xl space-y-2">
-            <p className="text-lg text-muted-foreground">
-              Elige el horario que mejor se adapte a tu disponibilidad
-            </p>
-            <p className="text-sm text-muted-foreground">
-              Ambas generaciones tienen el mismo contenido y beneficios, solo
-              cambian los horarios
-            </p>
-          </div>
+        <div className="text-center">
+          <h3 className="text-2xl font-semibold">Modalidad en vivo</h3>
+          <p className="text-muted-foreground">
+            Clases en tiempo real con interacción directa
+          </p>
         </div>
-
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
           <CourseGenerationCard
             title="Generación Diurna"
             schedule={["Lunes, Miércoles y Viernes: 10:00 a 12:00 hrs"]}
             startDate="03 de Marzo 2025"
             duration="4 meses"
-            price={price}
+            price={297000}
+            discountPrice={247000}
             variant="primary"
             isHighlighted
             registrationLink="https://forms.gle/h9EJWLtduDw2LER89"
+            features={courseFeatures.mainFeatures}
+            showInfoButton={true}
           />
           <CourseGenerationCard
             title="Generación Vespertina"
@@ -123,35 +120,51 @@ export default function LiveCourseSection() {
             ]}
             startDate="04 de Marzo 2025"
             duration="4 meses"
-            price={price}
+            price={297000}
+            discountPrice={247000}
             variant="secondary"
             isHighlighted
             registrationLink="https://forms.gle/UvA2njjSL1bjX3mBA"
+            features={courseFeatures.mainFeatures}
+            showInfoButton={true}
           />
         </div>
 
-        {/* Call to Action */}
-        <div className="relative mt-16 rounded-xl border-2 border-muted bg-card p-8">
-          <div className="mx-auto flex max-w-3xl flex-col items-center gap-6 text-center">
-            <div className="space-y-2">
-              <h4 className="text-xl font-bold">¿Quieres saber más?</h4>
-              <p className="text-lg text-muted-foreground">
-                Conoce en detalle el programa del curso, la metodología y los
-                testimonios de estudiantes anteriores
-              </p>
-            </div>
-            <Button
-              size="lg"
-              variant="outline"
-              asChild
-              className="min-w-[200px]"
-            >
-              <Link href="/curso" className="gap-2">
-                <BookOpen className="h-5 w-5" />
-                Ver programa completo
-              </Link>
-            </Button>
+        <div className="relative py-12">
+          <div className="absolute inset-0 flex items-center">
+            <div className="w-full border-t border-muted-foreground/20" />
           </div>
+          <div className="relative flex justify-center">
+            <div className="bg-background px-6">
+              <div className="text-center">
+                <h3 className="mb-2 text-xl font-semibold">
+                  ¿No te acomodan los horarios?
+                </h3>
+                <p className="max-w-2xl text-muted-foreground">
+                  Si prefieres estudiar a tu propio ritmo o los horarios no se
+                  ajustan a tu agenda, tenemos una alternativa flexible que te
+                  permitirá acceder al contenido cuando y donde quieras.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="mx-auto max-w-3xl">
+          <RecordedCourseCard
+            title="Modalidad Grabada"
+            price={97000}
+            registrationLink={"https://forms.gle/86au4hCnqN1FCa5BA"}
+            features={[
+              "Más de 100 horas de contenido grabado",
+              "Acceso instantáneo",
+              "Clases de generaciones anteriores",
+              "Estudia cúando y dónde tú quieras",
+              "Repasa las veces que necesites",
+              "Acceso por un año",
+              "Consultas ilimitadas por WhatsApp",
+            ]}
+          />
         </div>
       </div>
     </SectionWrapper>

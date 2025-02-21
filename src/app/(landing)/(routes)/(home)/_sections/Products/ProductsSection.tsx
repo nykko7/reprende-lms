@@ -13,7 +13,7 @@ export default function ProductsSection() {
       </div>
       <div className="relative mx-auto max-w-6xl p-4 lg:p-6">
         <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-background [mask-image:radial-gradient(ellipse_at_center,transparent_90%,black)]"></div>
-        <div className="grid gap-6 md:grid-cols-3">
+        <div className="grid gap-6 md:grid-cols-2">
           {products.map((product) => (
             <ProductPreviewCard key={product.type} product={product} />
           ))}
