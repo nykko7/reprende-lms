@@ -105,7 +105,7 @@ const RecordedCourseCard: FC<RecordedCourseProps> = ({
           <div className="rounded-lg bg-muted/50 p-3 text-center">
             <p className="text-sm font-medium">O paga en cuotas</p>
             <p className="text-2xl font-bold">
-              3 x ${Math.round(price / 3).toLocaleString("es-CL")}
+              6 x ${Math.round(price / 6).toLocaleString("es-CL")}
             </p>
             <p className="text-xs text-muted-foreground">
               Sin interés con tarjeta de crédito
