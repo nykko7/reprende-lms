@@ -93,7 +93,6 @@ export const homeTexts = {
     description: "Esto es lo que dicen algunos de nuestros estudiantes",
     textTestimonials: [
       {
-        type: "text",
         testimonial:
           "He mejorado muchismo mis notas, al principio del año me sacaba 5.0 y mi ultima prueba me saque un 7.0, algo q en matematica creía imposible.",
         studentName: "Antonia Oteiza",
@@ -101,7 +100,6 @@ export const homeTexts = {
         imageAlt: "Avatar de Antonia Oteiza, estudiante de 4to medio",
       },
       {
-        type: "text",
         testimonial:
           "Cada mes fui desarrollando más habilidades matemáticas, de a poco fui perdiendo el miedo a equivocarme y logré entender muchos contenidos que en el colegio nunca entendí.",
         studentName: "Julio Hidalgo",
@@ -109,7 +107,6 @@ export const homeTexts = {
         imageAlt: "Avatar de Julio Hidalgo, estudiante de 4to medio",
       },
       {
-        type: "text",
         testimonial:
           "100% recomendable para aquellas personas q no tienen una buena base.",
         studentName: "Emilia Salazar",
@@ -117,7 +114,6 @@ export const homeTexts = {
         imageAlt: "Avatar de Emilia Salazar, estudiante de 4to medio",
       },
       {
-        type: "text",
         testimonial:
           "Ha sido una experiencia muy buena, aporta mucho y también es una herramienta fundamental para el desarrollo del aprendizaje de las matemáticas.",
         studentName: "Lucas Sanhueza",
@@ -125,7 +121,6 @@ export const homeTexts = {
         imageAlt: "Avatar de Lucas Sanhueza, estudiante egresado",
       },
       {
-        type: "text",
         testimonial:
           "Cambié el miedo por seguridad como el objetivo del curso. ",
         studentName: "Julio Hidalgo",
@@ -133,7 +128,6 @@ export const homeTexts = {
         imageAlt: "Avatar de Julio Hidalgo, estudiante de 4to medio",
       },
       {
-        type: "text",
         testimonial:
           "Creo que me ha ayudado bastante a comprender las matemáticas de una manera más didáctica y entretenida.",
         studentName: "Emilia Salazar",
@@ -141,7 +135,6 @@ export const homeTexts = {
         imageAlt: "Avatar de Emilia Salazar, estudiante de 4to medio",
       },
       {
-        type: "text",
         testimonial:
           "Destaco mucho la energía y dedicación de la profe, eso vale mucho y sobre todo ayuda bastante a comprender mejor las matemáticas.",
         studentName: "Julio Hidalgo",
@@ -151,117 +144,140 @@ export const homeTexts = {
     ],
     imageTestimonials: [
       {
-        type: "image",
-        imageSrc: "/landing/testimonials/testimonial-image9.jpg",
-        imageAlt: "Pantallazo del mensaje de un estudiante 1",
+        imageSrc: "/landing/testimonials/2024_1.png",
+        imageAlt:
+          "Pantallazo del mensaje de un estudiante Preparación PAES 2024",
       },
       {
-        type: "image",
-        imageSrc: "/landing/testimonials/testimonial-image15.jpg",
+        imageSrc: "/landing/testimonials/2024_2.png",
+        imageAlt:
+          "Pantallazo del mensaje de un estudiante Preparación PAES 2024",
+      },
+      {
+        imageSrc: "/landing/testimonials/2024_3.png",
+        imageAlt:
+          "Pantallazo del mensaje de un estudiante Preparación PAES 2024",
+      },
+      {
+        imageSrc: "/landing/testimonials/2024_4.png",
+        imageAlt:
+          "Pantallazo del mensaje de un estudiante Preparación PAES 2024",
+      },
+      {
+        imageSrc: "/landing/testimonials/2024_5.png",
+        imageAlt:
+          "Pantallazo del mensaje de un estudiante Preparación PAES 2024",
+      },
+      {
+        imageSrc: "/landing/testimonials/2024_6.png",
+        imageAlt:
+          "Pantallazo del mensaje de un estudiante Preparación PAES 2024",
+      },
+      {
+        imageSrc: "/landing/testimonials/2024_7.png",
+        imageAlt:
+          "Pantallazo del mensaje de un estudiante Preparación PAES 2024",
+      },
+      {
+        imageSrc: "/landing/testimonials/2024_8.png",
+        imageAlt:
+          "Pantallazo del mensaje de un estudiante Preparación PAES 2024",
+      },
+      {
+        imageSrc: "/landing/testimonials/2024_9.png",
+        imageAlt:
+          "Pantallazo del mensaje de un estudiante Preparación PAES 2024",
+      },
+      {
+        imageSrc: "/landing/testimonials/2024_10.png",
+        imageAlt:
+          "Pantallazo del mensaje de un estudiante Preparación PAES 2024",
+      },
+      {
+        imageSrc: "/landing/testimonials/testimonial-image9.jpg",
         imageAlt: "Pantallazo del mensaje de un estudiante 2",
       },
       {
-        type: "image",
         imageSrc: "/landing/testimonials/testimonial-image3.jpg",
         imageAlt: "Pantallazo del mensaje de un estudiante 3",
       },
       {
-        type: "image",
         imageSrc: "/landing/testimonials/testimonial-image11.jpg",
         imageAlt: "Pantallazo del mensaje de un estudiante 4",
       },
       {
-        type: "image",
         imageSrc: "/landing/testimonials/testimonial-image21.jpg",
         imageAlt: "Pantallazo del mensaje de un estudiante 5",
       },
       {
-        type: "image",
         imageSrc: "/landing/testimonials/testimonial-image7.jpg",
         imageAlt: "Pantallazo del mensaje de un estudiante 6",
       },
       {
-        type: "image",
         imageSrc: "/landing/testimonials/testimonial-image4.jpg",
         imageAlt: "Pantallazo del mensaje de un estudiante 7",
       },
       {
-        type: "image",
         imageSrc: "/landing/testimonials/testimonial-image13.jpg",
         imageAlt: "Pantallazo del mensaje de un estudiante 8",
       },
       {
-        type: "image",
         imageSrc: "/landing/testimonials/testimonial-image20.jpg",
         imageAlt: "Pantallazo del mensaje de un estudiante 9",
       },
       {
-        type: "image",
         imageSrc: "/landing/testimonials/testimonial-image10.jpg",
         imageAlt: "Pantallazo del mensaje de un estudiante 10",
       },
       {
-        type: "image",
         imageSrc: "/landing/testimonials/testimonial-image19.jpg",
         imageAlt: "Pantallazo del mensaje de un estudiante 11",
       },
       {
-        type: "image",
         imageSrc: "/landing/testimonials/testimonial-image22.jpg",
         imageAlt: "Pantallazo del mensaje de un estudiante 12",
       },
       {
-        type: "image",
         imageSrc: "/landing/testimonials/testimonial-image2.png",
         imageAlt: "Pantallazo del mensaje de un estudiante 13",
       },
       {
-        type: "image",
         imageSrc: "/landing/testimonials/testimonial-image5.jpg",
         imageAlt: "Pantallazo del mensaje de un estudiante 14",
       },
       {
-        type: "image",
         imageSrc: "/landing/testimonials/testimonial-image6.jpg",
         imageAlt: "Pantallazo del mensaje de un estudiante 15",
       },
       {
-        type: "image",
         imageSrc: "/landing/testimonials/testimonial-image8.jpg",
         imageAlt: "Pantallazo del mensaje de un estudiante 16",
       },
       {
-        type: "image",
         imageSrc: "/landing/testimonials/testimonial-image18.png",
         imageAlt: "Pantallazo del mensaje de un estudiante 17",
       },
       {
-        type: "image",
         imageSrc: "/landing/testimonials/testimonial-image1.png",
         imageAlt: "Pantallazo del mensaje de un estudiante 18",
       },
       {
-        type: "image",
         imageSrc: "/landing/testimonials/testimonial-image14.png",
         imageAlt: "Pantallazo del mensaje de un estudiante 19",
       },
       {
-        type: "image",
         imageSrc: "/landing/testimonials/testimonial-image23.png",
         imageAlt: "Pantallazo del mensaje de un estudiante 20",
       },
       {
-        type: "image",
         imageSrc: "/landing/testimonials/testimonial-image16.png",
         imageAlt: "Pantallazo del mensaje de un estudiante 21",
       },
       {
-        type: "image",
         imageSrc: "/landing/testimonials/testimonial-image12.png",
         imageAlt: "Pantallazo del mensaje de un estudiante 22",
       },
       {
-        type: "image",
         imageSrc: "/landing/testimonials/testimonial-image17.png",
         imageAlt: "Pantallazo del mensaje de un estudiante 23",
       },
