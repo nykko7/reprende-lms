@@ -279,52 +279,52 @@ export const courseTexts = {
     ],
     imageTestimonials: [
       {
-        imageSrc: "/landing/testimonials/2024_1.png",
+        imageSrc: "/landing/testimonials/2024_1.PNG",
         imageAlt:
           "Pantallazo del mensaje de un estudiante Preparación PAES 2024",
       },
       {
-        imageSrc: "/landing/testimonials/2024_2.png",
+        imageSrc: "/landing/testimonials/2024_2.PNG",
         imageAlt:
           "Pantallazo del mensaje de un estudiante Preparación PAES 2024",
       },
       {
-        imageSrc: "/landing/testimonials/2024_3.png",
+        imageSrc: "/landing/testimonials/2024_3.PNG",
         imageAlt:
           "Pantallazo del mensaje de un estudiante Preparación PAES 2024",
       },
       {
-        imageSrc: "/landing/testimonials/2024_4.png",
+        imageSrc: "/landing/testimonials/2024_4.PNG",
         imageAlt:
           "Pantallazo del mensaje de un estudiante Preparación PAES 2024",
       },
       {
-        imageSrc: "/landing/testimonials/2024_5.png",
+        imageSrc: "/landing/testimonials/2024_5.PNG",
         imageAlt:
           "Pantallazo del mensaje de un estudiante Preparación PAES 2024",
       },
       {
-        imageSrc: "/landing/testimonials/2024_6.png",
+        imageSrc: "/landing/testimonials/2024_6.PNG",
         imageAlt:
           "Pantallazo del mensaje de un estudiante Preparación PAES 2024",
       },
       {
-        imageSrc: "/landing/testimonials/2024_7.png",
+        imageSrc: "/landing/testimonials/2024_7.PNG",
         imageAlt:
           "Pantallazo del mensaje de un estudiante Preparación PAES 2024",
       },
       {
-        imageSrc: "/landing/testimonials/2024_8.png",
+        imageSrc: "/landing/testimonials/2024_8.PNG",
         imageAlt:
           "Pantallazo del mensaje de un estudiante Preparación PAES 2024",
       },
       {
-        imageSrc: "/landing/testimonials/2024_9.png",
+        imageSrc: "/landing/testimonials/2024_9.PNG",
         imageAlt:
           "Pantallazo del mensaje de un estudiante Preparación PAES 2024",
       },
       {
-        imageSrc: "/landing/testimonials/2024_10.png",
+        imageSrc: "/landing/testimonials/2024_10.PNG",
         imageAlt:
           "Pantallazo del mensaje de un estudiante Preparación PAES 2024",
       },

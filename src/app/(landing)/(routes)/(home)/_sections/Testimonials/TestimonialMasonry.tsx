@@ -13,7 +13,7 @@ type TestimonialMasonryPros = {
 };
 
 function TestimonialMasonry({ testimonials }: TestimonialMasonryPros) {
-  const [visibleImagesCount, setVisibleImagesCount] = useState(3);
+  const [visibleImagesCount, setVisibleImagesCount] = useState(6);
   const [showDiscount, setShowDiscount] = useState(false);
 
   const handleLoadMore = () => {
